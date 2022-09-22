@@ -1,0 +1,16 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    *,&::after,*::before{
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+    }
+}
+
+.components-container{
+    width: 560px;
+    margin: 0 auto;
+}

@@ -1,0 +1,24 @@
+@use "../base/colors" as *;
+@use "../function/colors" as *;
+
+@mixin button-100per($selected-color: null) {
+    width: 100%;
+    background-color: getColor();
+    color: #{$white};
+    &:focus{
+        border: solid getColor($var:900) 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    &:disabled{
+        background-color: getColor($var:100);
+        color: #{$disabled};
+    }
+    padding: 16px 0;
+    font-size: 32px;
+    border-radius: 8px;
+}
+
+@mixin button-icon{
+    
+}
+

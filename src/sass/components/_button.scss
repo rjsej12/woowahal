@@ -1,0 +1,15 @@
+@use "../mixin/button" as *;
+
+button{
+    border: none;
+    background:transparent;
+
+}
+.btn{
+    &-order{
+        @include button-100per;
+        margin:16px 0;
+        
+    }   
+
+}
