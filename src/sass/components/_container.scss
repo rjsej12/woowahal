@@ -1,0 +1,28 @@
+ul{
+    list-style-type: none;
+}
+.container{
+    &-row{
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        overflow: scroll;
+        li{
+            margin-right: 50px;
+            background-color: red;
+            width: 30%;
+        }
+
+    }
+
+    &-col{
+        display: flex;
+        flex-flow: column nowrap;
+        height: 30vh;
+        overflow: scroll;
+        li{
+            background-color: yellow;
+            margin-bottom: 20px;
+        }
+    }
+}
