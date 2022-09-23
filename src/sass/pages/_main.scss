@@ -1,0 +1,75 @@
+@use "../base" as *;
+@use "../function" as *;
+body {
+  background: $grey;
+}
+
+.main-header {
+  background: getColor(Woowahal-green, 500);
+  padding: $spacing-base;
+}
+
+.search-bar {
+  margin-top: $spacing-base;
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+  label {
+    position: absolute;
+    background: yellow;
+    width: 32px;
+    height: 32px;
+    top: 50%;
+    left: $spacing-base;
+    transform: translateY(-50%);
+  }
+  &-input {
+    border: 1px solid $grey;
+    border-radius: 0 0 4px 4px;
+    width: 100%;
+    padding: $spacing-base $spacing-xl;
+  }
+}
+
+.sitemenu-list {
+  background: red;
+  padding: $spacing-base;
+  display: flex;
+  flex-flow: row wrap;
+  gap: $spacing-base;
+  .w-50 {
+    width: 48%;
+    background: yellow;
+  }
+  .w-100 {
+    width: 100%;
+    background: green;
+  }
+  .w-25 {
+    width: 22%;
+    background: pink;
+  }
+}
+
+.advertisement {
+  margin: $spacing-base 0;
+  background: green;
+  width: 100%;
+}
+
+.guide-list {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.main-footer {
+  padding: $spacing-base;
+  p {
+    margin-top: $spacing-base;
+  }
+  small {
+    margin-top: $spacing-base;
+  }
+}
