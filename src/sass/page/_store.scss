@@ -1,0 +1,17 @@
+
+.menu{
+    &-add{
+        background-color: lime;
+        align-items: center;
+    }
+
+    .info-box{
+        background-color: tan;
+        padding: 16px 0;
+        margin: 16px 0;
+        align-items: center;
+        > *{
+            margin-top: 16px;
+        }
+    }
+}

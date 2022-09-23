@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가게 메뉴 페이지</title>
+
+    <link rel="stylesheet" href="style/index.css" />
+    <style>
+        .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+  
+        .header-icon {
+          display: inline-block;
+          background: silver;
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+  
+        .header-left-area,
+        .header-right-area {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 16px;
+        }
+  
+        .cart-image{
+          background-color: yellow;
+          width: 100%;
+          height: 10vh;
+        }
+  
+      </style>
+
+  </head>
+  <body>
+
+    <header class="header">
+        <div class="header-left-area"><a class="header-icon back-icon" href="#" title="뒤로가기 버튼">back</a></div>
+  
+        <div class="header-right-area">
+          <a class="header-icon home-icon" href="#" title="">home</a>
+          <a class="header-icon cart-icon" href="#" title="">cart</a>
+        </div>
+      </header>
+
+    <main>
+
+
+        <!-- form으로 처리? -->
+        <artcle class="menu">
+            <!-- 대표 정보 박스 -->
+            <section class="info-box container-col">
+                <h2> 메뉴 이름 </h2>
+                <div class="rating">별 별 별 별 별 4.8</div>
+                <p>
+                    최근 뭐시기
+                    <span class="divider">|</span>
+                    최근 뭐시기 2
+
+                </p>
+                <div class="offscreen" aria-label>세스코</div>
+            </section>
+
+
+
+            <!-- info section -->
+            <section class="menu-depth">
+                <h3 class="menu-depth-title">가격 (뎁스 종류)</h3>
+                <ul class="menu-depth-list">
+                    <li>
+                        <input type="radio" id="lb1" name="depth_price" value="족발 11" />
+                        <label for="lb1">족발 11</label>
+                        <span class="price">0</span>
+                    </li>
+                    <li>
+                        <input type="radio" id="lb2" name="depth_price" value="족발 22" />
+                        <label for="lb2">족발 22</label>
+                        <span class="price">0</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="menu-depth">
+                <h3 class="menu-depth-title">리뷰 서비스 (뎁스 종류)</h3>
+                <ul class="menu-depth-list">
+                    <li>
+                        <input type="radio" id="depth_review_lb1" name="depth_review" value="리뷰 서비스 11" />
+                        <label for="depth_review_lb1">리뷰 서비스 11</label>
+                        <span class="price">0</span>
+                    </li>
+                    
+                    <li>
+                        <input type="radio" id="depth_review_lb2" name="depth_review" value="리뷰 서비스 22" />
+                        <label for="depth_review_lb2">리뷰 서비스 22</label>
+                        <span class="price">0</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="menu-depth">
+                <h3 class="menu-depth-title">추가 메뉴</h3>
+                <ul class="menu-depth-list">
+                    <li>
+                        <input type="checkbox" id="depth_more_lb1" name="depth_review" value="추가 메뉴 11" />
+                        <label for="depth_more_lb1">추가 메뉴 11</label>
+                        <span class="price">0</span>
+                    </li>
+                    
+                    <li>
+                        <input type="checkbox" id="depth_more_lb2" name="depth_review" value="추가 메뉴 22" />
+                        <label for="depth_more_lb2">추가 메뉴 22</label>
+                        <span class="price">0</span>
+                    </li>
+                </ul>
+            </section>
+            
+
+
+
+            <!-- 수량 -->
+            <section class="menu-amount key-value-box">
+                <h3 class="menu-amount-title">수량</h3>
+                <div class="selected-menu-button-wrapper">
+                    <button class="amount-reduce">수량변경 뺴기</button>
+                    <span class="amount">1</span>
+                    <button class="amount-add">수량변경 더하기</button>
+                  </div>
+            </section>
+        </artcle>
+
+
+        <!-- 태그나 aria-role 생각 -->
+
+        <section class="menu-add container-row">
+            <p>
+                <b>최소주문 금액</b>
+                <span class="price">17000</span>
+            </p>
+
+            <button class="btn-order"><span class="price">0000</span> 담기</button>
+        </section>
+
+
+    </main>
+
+  </body>
+</html>
