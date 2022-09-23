@@ -9,6 +9,14 @@ body {
     padding: 0;
     box-sizing: content-box;
   }
+
+  font-family: "BMHANNAPro";
+}
+@font-face {
+  font-family: "BMHANNAPro";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .components-container {
