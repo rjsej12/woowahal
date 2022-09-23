@@ -1,13 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
   *,
   &::after,
   *::before {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
   }
 
   font-family: "BMHANNAPro";
@@ -22,4 +22,7 @@ body {
 .components-container {
   width: 560px;
   margin: 0 auto;
+}
+
+.divider {
 }

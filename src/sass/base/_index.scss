@@ -1,4 +1,5 @@
-@use "base";
-@use "colors";
-@use "font";
-@use "spacing";
+@forward "base";
+@forward "colors";
+@forward "font";
+@forward "spacing";
+@forward "a11y";
