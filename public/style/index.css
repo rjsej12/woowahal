@@ -316,7 +316,7 @@ body {
 }
 .selected-menus .selected-menu-remove {
   position: absolute;
-  top: 0;
+  top: 16px;
   right: 16px;
 }
 .selected-menus-add {
