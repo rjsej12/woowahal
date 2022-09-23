@@ -1,0 +1,65 @@
+@use "../base/base" as *;
+
+.selected-menus{
+    .selected-menu{
+        position: relative;
+        border-top: solid #ccc 2px;
+        border-bottom: solid #ccc 2px;
+    
+        &-button-wrapper{
+           display: flex;
+            justify-content: flex-end;
+            .option{
+                background-color: aqua;
+                margin-right: 16px;
+            }
+            .amount{
+                background-color: pink;
+                &-reduce{
+                    border: 1px solid red;
+                }
+                &-add{
+                    border: 1px solid red;
+                }
+            }
+        }    
+
+        &-remove{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    &-add{
+        width: 100%;
+        text-align: center;
+        &::before{
+            content: "+ ";
+            font-weight: 900;
+        }
+    }
+}
+
+.delivery{
+    background-color: tan;
+    padding: 16px 0;
+    strong{
+        font-weight: 900;
+    }
+}
+.selected-price{
+    &-info{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.menus-order{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+     
+    span{
+        font-size: 16px;
+    }
+}

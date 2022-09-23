@@ -17,11 +17,34 @@ ul {
   &-col {
     display: flex;
     flex-flow: column nowrap;
-    height: 30vh;
     overflow: scroll;
     li {
       background-color: yellow;
       margin-bottom: 20px;
     }
   }
+
+  &-img-info{
+    display: flow-root;
+    width: 100%;
+    .left{
+      float: left;
+      height: 10vh;
+      &+ul{
+        float: left;
+      }
+    }
+    .right{
+      float: right;
+      height: 10vh;
+      &+ul{
+        float: left;
+      }
+    }
+  }
+}
+
+.key-value-box{
+  display: flex;
+  justify-content: space-between;
 }
