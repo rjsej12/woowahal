@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left-area"><a class="header-icon back-icon" href="#" title="뒤로가기 버튼">back</a></div>
+
+      <div class="header-right-area">
+        <a class="header-icon home-icon" href="#" title="">홈</a>
+        <a class="header-icon cart-icon" href="#" title="">cart</a>
+      </div>
+    </header>
+    <h2>카테고리 선택 버튼</h2>
+    <!-- 승학님 컴포넌트 -->
+    <ul class="category">
+      <li class="category-ltem"><button>족발·보쌈</button></li>
+      <li class="category-ltem"><button>찜·탕·찌개</button></li>
+      <li class="category-ltem"><button>돈까스·회·일식</button></li>
+      <li class="category-ltem"><button>피자</button></li>
+      <li class="category-ltem"><button>고기·구이</button></li>
+    </ul>
+    <h2>가게 리스트 정렬 기준</h2>
+    <ul class="sortbys">
+      <li class="sortby">
+        <button>기본순</button>
+        <div class="sortby-click">
+          <h3>정렬</h3>
+          <ul class="sortby-list">
+            <!-- 클릭하면 클래스 줘서 가상요소 선택자로 체크 표시 -->
+            <li><button>기본순</button></li>
+            <li><button>이름순</button></li>
+            <li><button>별점 높은 순</button></li>
+          </ul>
+        </div>
+      </li>
+      <li class="sortby"><button>쿠폰</button></li>
+      <li class="sortby"><button>1인분</button></li>
+      <li class="sortby"><button>배달팁</button></li>
+      <li class="sortby"><button>별점</button></li>
+      <li class="sortby"><button>최소주문금액</button></li>
+      <li class="sortby"><button>기타</button></li>
+    </ul>
+    <h2>가게 리스트</h2>
+    <!-- 승학님 컴포넌트가 들어올 부분 -->
+    <ul class="store">
+      <li class="store-list">
+        <a href="#"
+          ><div class="imgbox"><img src="/" alt="/" /></div>
+          <div class="store-info">
+            <div>둘레보쌈</div>
+            <div><img src="/" alt="/" />보쌈 도시락 + 마약떡갈비 1p, 연탄불고기 도시락</div>
+          </div>
+          <div>최소주문 9,000원, 배달팁 4,000원</div></a
+        >
+        <div>38~53분</div>
+      </li>
+    </ul>
+  </body>
+</html>
