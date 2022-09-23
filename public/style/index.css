@@ -258,36 +258,72 @@ body {
   bottom: 0;
 }
 
+.selected-menus-title {
+  align-items: center;
+}
+.selected-menus-title > img {
+  width: 1.5rem;
+}
+.selected-menus-title > figcaption {
+  text-indent: 1em;
+}
 .selected-menus .selected-menu {
+  background-color: #fff;
   position: relative;
   border-top: solid #ccc 2px;
   border-bottom: solid #ccc 2px;
+  padding: 16px;
+}
+.selected-menus .selected-menu img.left {
+  border: solid gray 1px;
+  border-radius: 8px;
+}
+.selected-menus .selected-menu-info {
+  color: gray;
+  margin-left: 16px;
+  font-size: 12px;
+}
+.selected-menus .selected-menu-info li {
+  margin-top: 8px;
+}
+.selected-menus .selected-menu-info-price {
+  color: black;
+  font-weight: 700;
 }
 .selected-menus .selected-menu-button-wrapper {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 .selected-menus .selected-menu-button-wrapper .option {
-  background-color: aqua;
   margin-right: 16px;
+  padding: 8px;
+  border: solid gray 1px;
+  border-radius: 8px;
 }
 .selected-menus .selected-menu-button-wrapper .amount {
-  background-color: pink;
+  margin: 0 8px;
 }
 .selected-menus .selected-menu-button-wrapper .amount-reduce {
-  border: 1px solid red;
+  padding: 8px;
+  border: solid gray 1px;
+  border-radius: 8px;
 }
 .selected-menus .selected-menu-button-wrapper .amount-add {
-  border: 1px solid red;
+  padding: 8px;
+  border: solid gray 1px;
+  border-radius: 8px;
 }
 .selected-menus .selected-menu-remove {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 16px;
 }
 .selected-menus-add {
   width: 100%;
   text-align: center;
+  padding: 8px 0;
+  background-color: white;
 }
 .selected-menus-add::before {
   content: "+ ";
@@ -295,13 +331,20 @@ body {
 }
 
 .delivery {
-  background-color: tan;
+  margin-top: 8px;
+  background-color: #fff;
+  text-indent: 16px;
   padding: 16px 0;
 }
 .delivery strong {
   font-weight: 900;
 }
 
+.selected-price {
+  padding: 16px;
+  margin-top: 8px;
+  background-color: white;
+}
 .selected-price-info {
   display: flex;
   justify-content: space-between;
@@ -311,6 +354,9 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .menus-order span {
   font-size: 16px;
