@@ -1,0 +1,30 @@
+
+.result{
+    background-color: #ccc;
+    & > section{
+        border: 2px solid blue;
+        margin-bottom: 16px;
+        background-color: white;
+    }
+
+    .ordered-status{
+        display: flow-root;
+        .decoration-img{
+            background-color: red;
+            display:block;
+            height: 10vh;
+            float: right;
+        }
+        &-progress{
+            background-color: lime;
+            margin: 0 16px;
+        }
+    }
+
+    .requirement{
+        &-title{
+            font-size: 14px;
+            color: #ccc;
+        }
+    }
+}

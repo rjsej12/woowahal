@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>결과 페이지</title>
+
+    <link rel="stylesheet" href="style/index.css" />
+
+    <style>
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .header-icon {
+        display: inline-block;
+        background: silver;
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+
+      .header-left-area,
+      .header-right-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .cart-image{
+        background-color: yellow;
+        width: 100%;
+        height: 10vh;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left-area"><a class="header-icon back-icon" href="#" title="뒤로가기 버튼">닫기</a></div>
+      결과(안보이는 텍스트임 지워야하는)
+      <div class="header-right-area">
+      <a class="header-icon home-icon" href="#" title="">refresh</a>
+      </div>
+    </header>
+    
+    <main class="result">
+      
+      <!-- 주문을 확인하고 있어요나, 주문 준비중 상태를 알려주는 박스 -->
+      <section class="ordered-status">
+        <h3 class="ordered-status-title">주문을 확인하고 있어요 | 열심히 만들고 있어요</h3>
+        <p class="ordered-status-addtion">상태에 대한 추가 정보</p>
+        <button class="cancel">주문 취소</button>
+        
+        <div class="ordered-status-progress">
+          진행 상황
+        </div>
+        
+        <img class="decoration-img" aria-hidden="true" src="./asset/imgs/test-imgae.svg" alt="" />
+      </section>
+
+      <!-- 주소 및 요구사항 -->
+      <!-- 클래스명 추가 -->
+      <section>
+        <section class="key-value-box">
+          <span>Key</span>
+          <span>Value</span>
+        </section>
+        <address>주소 세부 사항</address>
+        <section class="requirement owner">
+          <h3 class="requirement-title">사장님께</h3>
+          <p>
+            쏼라 쏼라
+          </p>
+        </section>
+        <section class="requirement rider">
+          <h3 class="requirement-title">라이더님께</h3>
+          <p>
+            쌀라 쏼라
+          </p>
+        </section>
+      </section>
+      
+      <!-- 가게 정보 및 주문내역 요약 -->
+      <section class="ordered-info">
+        <h3 class="ordered-info-title">가게이름</h3>
+        <p class="ordered-info-detail">주문내역</p>
+      </section>
+
+      <section class="carousel">
+        <h2 class="carousel-title a11y-hidden">캐러셀 제목</h2>
+      <ul class="carousel-slider">
+        <li class="carousel-slide">
+          <a href="#">ir</a>
+        </li>
+        <li class="carousel-slide">
+          <a href="#"><img src="/" alt="" />2</a>
+        </li>
+        <li class="carousel-slide">
+          <a href="#"><img src="/" alt="" />3</a>
+        </li>
+      </ul>
+      <div class="offscreen"><span>오프스크린텍스트</span></div>
+      </section>
+
+      
+    </main>
+
+
+  </body>
+</html>
