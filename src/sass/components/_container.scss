@@ -17,7 +17,6 @@ ul {
   &-col {
     display: flex;
     flex-flow: column nowrap;
-    height: 30vh;
     overflow: scroll;
     li {
       background-color: yellow;
