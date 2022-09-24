@@ -1,38 +1,77 @@
-@use "../base/base" as *;
+@use "../base" as *;
 
 .selected-menus{
+    &-title{
+        align-items: center;
+        &>img{
+            width: 1.5rem;
+        }
+        &>figcaption{
+            text-indent: 1em;
+        }
+    }
     .selected-menu{
+        background-color: #fff;
         position: relative;
         border-top: solid #ccc 2px;
         border-bottom: solid #ccc 2px;
+        padding: #{$spacing-base};
+
+        img.left{
+            border: solid gray 1px;
+            border-radius: 8px;
+        }
+        &-info{
+            color: gray;
+            margin-left: #{$spacing-base};
+            font-size: 12px;
+            
+            li{
+                margin-top: 8px;
+            }
+            &-price{
+                color: black;
+                font-weight: 700;
+            }
+        }
     
         &-button-wrapper{
-           display: flex;
+            display: flex;
             justify-content: flex-end;
+            align-items: center;
             .option{
-                background-color: aqua;
                 margin-right: 16px;
+                padding: 8px;
+                border: solid gray 1px;
+                border-radius: 8px;
             }
             .amount{
-                background-color: pink;
+                margin: 0 8px;
                 &-reduce{
-                    border: 1px solid red;
+                    padding: 8px;
+                    border: solid gray 1px;
+                    border-radius: 8px;
+
                 }
                 &-add{
-                    border: 1px solid red;
+                    padding: 8px;
+                    border: solid gray 1px;
+                    border-radius: 8px;
                 }
             }
         }    
 
         &-remove{
             position: absolute;
-            top: 0;
-            right: 0;
+            top: 16px;
+            right: 16px;
         }
     }
     &-add{
         width: 100%;
         text-align: center;
+        padding: 8px 0;
+        background-color: white;
         &::before{
             content: "+ ";
             font-weight: 900;
@@ -41,13 +80,18 @@
 }
 
 .delivery{
-    background-color: tan;
+    margin-top: 8px;
+    background-color: #fff;
+    text-indent: 16px;
     padding: 16px 0;
     strong{
         font-weight: 900;
     }
 }
 .selected-price{
+    padding: 16px;
+    margin-top: 8px;
+    background-color: white;
     &-info{
         display: flex;
         justify-content: space-between;
@@ -58,6 +102,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    position: fixed;
+    bottom: 0;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
      
     span{
         font-size: 16px;
