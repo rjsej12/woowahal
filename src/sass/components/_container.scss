@@ -24,27 +24,27 @@ ul {
     }
   }
 
-  &-img-info{
+  &-img-info {
     display: flow-root;
     width: 100%;
-    .left{
+    .left {
       float: left;
       height: 10vh;
-      &+ul{
+      & + ul {
         float: left;
       }
     }
-    .right{
+    .right {
       float: right;
       height: 10vh;
-      &+ul{
+      & + ul {
         float: left;
       }
     }
   }
 }
 
-.key-value-box{
+.key-value-box {
   display: flex;
   justify-content: space-between;
 }
