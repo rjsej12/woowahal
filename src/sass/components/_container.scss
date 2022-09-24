@@ -8,9 +8,8 @@ ul {
     width: 100%;
     overflow: scroll;
     li {
-      margin-right: 50px;
       background-color: red;
-      width: 30%;
+      // width: 30%;
     }
   }
 
@@ -20,31 +19,30 @@ ul {
     overflow: scroll;
     li {
       background-color: yellow;
-      margin-bottom: 20px;
     }
   }
 
-  &-img-info{
+  &-img-info {
     display: flow-root;
     width: 100%;
-    .left{
+    .left {
       float: left;
       height: 10vh;
-      &+ul{
+      & + ul {
         float: left;
       }
     }
-    .right{
+    .right {
       float: right;
       height: 10vh;
-      &+ul{
+      & + ul {
         float: left;
       }
     }
   }
 }
 
-.key-value-box{
+.key-value-box {
   display: flex;
   justify-content: space-between;
 }
