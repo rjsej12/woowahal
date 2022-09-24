@@ -3,41 +3,90 @@
 
 .category-header {
   padding: $spacing-base;
-  background: skyblue;
+  background: $white;
   position: fixed;
   top: 0;
   width: 100%;
-
-  div {
-    background: magenta;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-left-area,
+  &-right-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $spacing-base;
   }
-  address {
-    background: cyan;
-    margin-top: $spacing-base;
+  &-icon {
+    font-size: $font-md;
+  }
+  .pagename {
+    width: $font-xl;
   }
 }
 
-.promotion {
-  padding-top: 100px;
-  background: pink;
-}
-
-.container-row {
-  padding: $spacing-base;
+.now-address {
+  font-style: normal;
   background: $white;
+  font-size: $font-base;
+  margin-top: 55px;
+  padding-left: $spacing-base;
+  padding-bottom: $spacing-base;
+}
+
+.category-promotion {
+  width: 100%;
+  li {
+    width: 100%;
+  }
+}
+
+.aboutmenu-list {
+  padding: $spacing-base $spacing-md 0 $spacing-md;
+  background: $white;
+  overflow: hidden;
+  li {
+    background: none;
+    position: relative;
+    margin-right: $spacing-base;
+  }
+  .aboutmenu {
+    width: 130px;
+    height: 80px;
+    border-radius: $spacing-base;
+  }
+  p {
+    display: flex;
+    flex-flow: column;
+    gap: $spacing-sm;
+    color: $white;
+    position: absolute;
+    top: $spacing-sm;
+    left: $spacing-sm;
+  }
 }
 
 .category-list {
-  background: lime;
-  padding: $spacing-base;
+  padding: 0 $spacing-base $spacing-md $spacing-base;
+  background: $white;
   display: flex;
   flex-flow: row wrap;
   gap: $spacing-base;
   justify-content: space-between;
   li {
-    background: yellow;
     width: 15%;
     height: 50px;
+    margin-top: $spacing-base;
+    a {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      white-space: nowrap;
+      img {
+        width: 50px;
+      }
+    }
   }
 }
 
@@ -46,6 +95,16 @@
   background: $white;
   &-list {
     height: 100vh;
+  }
+}
+
+.sortbys {
+  gap: $spacing-base;
+  button {
+    white-space: nowrap;
+  }
+  .sortby-list {
+    display: none;
   }
 }
 

@@ -7,6 +7,39 @@ body {
 .main-header {
   background: getColor(Woowahal-green, 500);
   padding: $spacing-base;
+  border-radius: 0 0 $spacing-base $spacing-base;
+  display: flex;
+  position: relative;
+  flex-flow: column;
+  &-list {
+    position: absolute;
+    right: $spacing-base;
+    top: $spacing-base;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    text-align: center;
+    gap: $spacing-base;
+  }
+  a {
+    display: block;
+  }
+  &-icon {
+    color: $white;
+    margin-left: $spacing-base;
+    font-size: $font-md;
+  }
+}
+
+.order-address {
+  font-style: normal;
+  color: $white;
+  display: inline-block;
+  font-size: $font-md;
+}
+
+.menu-icon {
+  width: $font-md;
 }
 
 .search-bar {
@@ -14,11 +47,10 @@ body {
   display: flex;
   flex-flow: row nowrap;
   position: relative;
-  label {
+  &-icon {
+    color: getColor(Woowahal-green, 500);
+    font-size: $font-md;
     position: absolute;
-    background: yellow;
-    width: 32px;
-    height: 32px;
     top: 50%;
     left: $spacing-base;
     transform: translateY(-50%);
@@ -32,29 +64,114 @@ body {
 }
 
 .sitemenu-list {
-  background: red;
-  padding: $spacing-base;
+  padding: $spacing-md;
   display: flex;
   flex-flow: row wrap;
   gap: $spacing-base;
-  .w-50 {
-    width: 48%;
-    background: yellow;
+  li {
+    border-radius: $spacing-base;
+    background: $white;
+  }
+  a {
+    display: block;
+    padding: $spacing-base;
+    width: 100%;
+    height: 100%;
+    span {
+      display: block;
+    }
+    .accent {
+      display: inline;
+    }
+    h2 {
+      margin-bottom: $spacing-base;
+    }
+  }
+
+  .square-50 {
+    width: 248px;
+    height: 200px;
+    background-image: url(/asset/imgs/배달bg.png);
+    background-size: cover;
   }
   .w-100 {
-    width: 100%;
-    background: green;
+    width: 512px;
+    background-image: url(/asset/imgs/포장bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
   }
-  .w-25 {
-    width: 22%;
-    background: pink;
+  .w-50 {
+    width: 248px;
+    height: 112px;
+    &-2 {
+      height: 116px;
+      a {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+      }
+    }
+  }
+  .square-25 {
+    width: 116px;
+    height: 116px;
+  }
+}
+
+.promotion {
+  width: 512px;
+  margin: 0 auto;
+  li {
+    width: 512px;
+  }
+}
+
+.fastdelivery,
+.gift,
+.baemindo {
+  margin-top: $spacing-base;
+  background: $white;
+  width: 560px;
+  padding: $spacing-base;
+  h2 {
+    font-weight: 500;
+  }
+}
+
+.fastdelivery {
+  .container-row {
+    padding: 0;
+    margin-top: $spacing-base;
+  }
+  li {
+    background: $white;
+  }
+  .storeinfo {
+    width: 150px;
+    height: 150px;
+    border-radius: $spacing-sm;
+  }
+  p {
+    margin-top: $spacing-sm;
+  }
+  .deliverytime {
+    border: 1px solid getColor(Woowahal-green, 500);
+    border-radius: $spacing-base;
+    display: flex;
+    width: fit-content;
+    padding: $spacing-xs $spacing-sm;
+    gap: $spacing-xs;
+    background-color: rgba($color: getColor(Woowahal-green, 500), $alpha: 0.1);
+  }
+  .baeminlogo {
+    width: $font-lg;
   }
 }
 
 .advertisement {
+  width: 560px;
   margin: $spacing-base 0;
-  background: green;
-  width: 100%;
 }
 
 .guide-list {
@@ -66,10 +183,14 @@ body {
 
 .main-footer {
   padding: $spacing-base;
-  p {
+  .detailinfo {
     margin-top: $spacing-base;
+    div {
+      margin-top: $spacing-sm;
+    }
   }
   small {
-    margin-top: $spacing-base;
+    display: block;
+    margin-top: $spacing-sm;
   }
 }

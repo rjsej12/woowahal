@@ -1,0 +1,31 @@
+@use "../base/" as *;
+
+.carousel {
+  width: 560px;
+  height: 100px;
+  position: relative;
+  &-slide {
+    display: none;
+    width: 560px;
+  }
+  .is-active {
+    display: block;
+  }
+  a {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-image: url(/asset/imgs/메인광고배너.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: $spacing-base;
+    flex-flow: column;
+    justify-content: center;
+    color: $white;
+
+    p {
+      margin-top: $spacing-base;
+    }
+  }
+}
