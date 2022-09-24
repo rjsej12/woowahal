@@ -1,0 +1,32 @@
+@use "../base" as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .header-left-area,
+  .header-right-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $spacing-base;
+
+    .header-icon {
+      display: inline-block;
+      background: silver;
+      width: 2.5em;
+      height: 2.5em;
+    }
+  }
+}
+
+.header-haveimg {
+  // 이미지 들어갈 자리
+  background: skyblue;
+  color: white;
+  height: 15rem;
+  .header-icon {
+    background-color: transparent;
+  }
+}

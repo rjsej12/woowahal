@@ -4,24 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>장바구니 페이지</title>
-
+    <title>우아할형제들 장바구니</title>
     <link rel="stylesheet" href="style/index.css" />
-
     <style>
       .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
-
       .header-icon {
         display: inline-block;
         background: silver;
         width: 2.5rem;
         height: 2.5rem;
       }
-
       .header-left-area,
       .header-right-area {
         display: flex;
@@ -29,15 +25,13 @@
         align-items: center;
         gap: 16px;
       }
-
       .cart-image{
         background-color: yellow;
         width: 100%;
         height: 10vh;
       }
-
     </style>
-
+    <script type="module" src="./js/cart.js"></script>
   </head>
   <body>
     <!-- should be sticky -->
@@ -49,26 +43,25 @@
     <a class="header-icon cart-icon" href="#" title="">cart</a>
     </div>
   </header>
-
     <!-- 선택한 메뉴들의 박스 -->
-    <main>
-
+    <main class="cart">
     <article class="selected-menus">
-      <h3 class="selected-menus-title">담은 메뉴들의 가게의 대표이미지와 이름</h3>
-
+      <!-- <h3 class="selected-menus-title">담은 메뉴들의 가게의 대표이미지와 이름</h3> -->
+      <figure class="selected-menus-title container-row">
+        <img src="./asset/imgs/store/pizzahut/pizzahut-logo.png" alt="피자헛 가게 로고 이미지"/>
+        <figcaption>피자헛</figcaption>
+      </figure>
       <!-- section태그로 각 선택한 메뉴들의 정보를 담은 박스지정 -->
       <section class="selected-menu">
-        <h3 class="selected-menu-title">선택한 메뉴의 이름 1</h3>
+        <!-- <h3 class="selected-menu-title">선택한 메뉴의 이름 1</h3> -->
+        <h3 class="selected-menu-title">돈마호크</h3>
         <div class="container-img-info">
+          <img class="left" src="./asset/imgs/store/pizzahut/돈마호크.png" alt="" />
           <ul class="selected-menu-info">
-            <li>예시) 가격</li>
-            <li>예시) 맛 선택</li>
-            <li>예시) 떡</li>
-            <li>예시) 돈까스 선택</li>
-            <li class="selected-menu-info-price price">19000</li>
+            <li>가격 L (24,900원)</li>
+            <li class="selected-menu-info-price price">19,000원</li>
           </ul>
         </div>
-        
         <div class="selected-menu-button-wrapper">
           <button class="option">옵션변경</button>
           <button class="amount-reduce">수량변경 뺴기</button>
@@ -77,17 +70,12 @@
         </div>
         <button class="selected-menu-remove">X</button>
       </section>
-
-
       <button class="selected-menus-add">더 담으러 가기</button>
     </article>
-
     <article class="delivery">
       <strong>배달</strong>로 받을께요.
     </article>
-    
     <article class="selected-price">
-
       <section class="selected-price-info">
         <h3>정보(KEY)</h3>
         값 (value)
@@ -101,18 +89,12 @@
         <h3>정보(KEY)</h3>
         값 (value)
       </section>
-
     </article>
-
     <button class="menus-order btn-order">
       <span class="offscreen">1</span>
       배달 주문하기
       <span class="price">1900</span>
     </button>
- 
     </main>
-
-
-
   </body>
 </html>

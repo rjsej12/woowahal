@@ -3,56 +3,163 @@
 
 .category-header {
   padding: $spacing-base;
-  background: skyblue;
+  background: $white;
   position: fixed;
   top: 0;
   width: 100%;
-
-  div {
-    background: magenta;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-left-area,
+  &-right-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $spacing-base;
   }
-  address {
-    background: cyan;
-    margin-top: $spacing-base;
+  &-icon {
+    font-size: $font-md;
+  }
+  .pagename {
+    width: $font-xl;
   }
 }
 
-.promotion {
-  padding-top: 100px;
-  background: pink;
-}
-
-.container-row {
-  padding: $spacing-base;
+.now-address {
+  font-style: normal;
   background: $white;
+  font-size: $font-base;
+  margin-top: 55px;
+  padding-left: $spacing-base;
+  padding-bottom: $spacing-base;
+  i {
+    margin-left: $spacing-sm;
+  }
+}
+
+.category-promotion {
+  width: 100%;
+  li {
+    width: 100%;
+  }
+}
+
+.aboutmenu-list {
+  padding: $spacing-base $spacing-md 0 $spacing-md;
+  background: $white;
+  overflow: hidden;
+  li {
+    background: none;
+    position: relative;
+    margin-right: $spacing-base;
+  }
+  .aboutmenu {
+    width: 130px;
+    height: 80px;
+    border-radius: $spacing-base;
+  }
+  p {
+    display: flex;
+    flex-flow: column;
+    gap: $spacing-sm;
+    color: $white;
+    position: absolute;
+    top: $spacing-sm;
+    left: $spacing-sm;
+  }
 }
 
 .category-list {
-  background: lime;
-  padding: $spacing-base;
+  padding: 0 $spacing-base $spacing-md $spacing-base;
+  background: $white;
   display: flex;
   flex-flow: row wrap;
   gap: $spacing-base;
   justify-content: space-between;
   li {
-    background: yellow;
     width: 15%;
     height: 50px;
+    margin-top: $spacing-base;
+    a {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      white-space: nowrap;
+      img {
+        width: 50px;
+      }
+    }
   }
 }
 
 .recommended {
   margin-top: $spacing-base;
-  background: $white;
+  background: skyblue;
+  padding: $spacing-base;
   &-list {
+    margin-top: $spacing-base;
     height: 100vh;
+    li {
+      margin-top: $spacing-md;
+      width: 524px;
+      height: 25vh;
+      padding: $spacing-base;
+      img {
+        width: 480px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.sortbys {
+  gap: $spacing-base;
+  button {
+    white-space: nowrap;
+  }
+  .sortby-list {
+    display: none;
   }
 }
 
 .circle-navigation {
-  background: orange;
-  height: 100px;
+  background: $white;
+  height: fit-content;
   width: 100%;
   position: fixed;
   bottom: 0;
+  padding: $spacing-base $spacing-md;
+  &-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: relative;
+    li {
+      display: flex;
+      flex-flow: column;
+      text-align: center;
+      justify-content: center;
+      color: rgba($color: $black, $alpha: 0.5);
+      span {
+        margin-top: $spacing-sm;
+        display: block;
+      }
+    }
+  }
+  &-icon {
+    font-size: $font-lg;
+  }
+  img {
+    position: absolute;
+    width: 120px;
+    height: 160px;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-70px);
+  }
+}
+
+.homelink {
+  width: fit-content;
 }
