@@ -5,54 +5,155 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>배달의민족</title>
-    <link rel="stylesheet" href="style/index.css" />   
+    <link rel="stylesheet" href="style/index.css" />
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
     <header class="main-header">
-      <address>주소</address>
+      <address class="order-address">동대문구 제기동 272-18<i class="fa-solid fa-caret-down main-header-icon"></i></address>
 
       <ul class="main-header-list">
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
+        <li>
+          <a href="#"><img src="./asset/imgs/menu-icon.svg" class="menu-icon" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-light fa-bell main-header-icon"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-light fa-face-smile-tongue main-header-icon"></i></a>
+        </li>
       </ul>
 
       <div class="search-bar">
-        <!-- 돋보기 아이콘 -->
-        <label for="input-search">돋</label>
+        <label for="input-search"><i class="fa-regular fa-magnifying-glass search-bar-icon"></i></label>
         <input id="input-search" class="search-bar-input" type="search" placeholder="막국수? 꼬막무침? 갈비탕?" />
       </div>
     </header>
     <main>
       <nav aria-label="site menu">
         <ul class="sitemenu-list">
-          <li class="w-50"><a href="/">배민1</a></li>
-          <li class="w-50"><a href="/">배달</a></li>
-          <li class="w-100"><a href="/">포장</a></li>
-          <li class="w-50"><a href="/">B마트</a></li>
-          <li class="w-50"><a href="/">밀키트/간편식</a></li>
-          <li class="w-100"><a href="/">배민스토어</a></li>
-          <li class="w-50"><a href="/">쇼핑라이브</a></li>
-          <li class="w-25"><a href="/">선물하기</a></li>
-          <li class="w-25"><a href="/">전국별미</a></li>
+          <li class="square-50">
+            <a href="./category.html"
+              ><h2>배민1</h2>
+              <p><span>한 번에 한 집만</span> <span>빠르게 배달해요!</span></p></a
+            >
+          </li>
+          <li class="square-50">
+            <a href="./category.html"
+              ><h2>배달</h2>
+              <span>세상은 넓고</span><span>맛집은 많다</span></a
+            >
+          </li>
+          <li class="w-100">
+            <a href="/"
+              ><h2>포장</h2>
+              <span>가까운 가게는 직접 가지러 가지요</span></a
+            >
+          </li>
+          <li class="w-50">
+            <a href="/"
+              ><h2>B마트</h2>
+              <span>지금 주문하면</span><span class="accent">21분 후 도착!</span></a
+            >
+          </li>
+          <li class="w-50">
+            <a href="/"
+              ><h2>밀키트/간편식</h2>
+              <span>뚝딱 만드는</span><span>근사한 한끼</span></a
+            >
+          </li>
+          <li class="w-100">
+            <a href="/"
+              ><h2>배민스토어</h2>
+              <span>기간 한정 슈퍼 세일! 누구나 <span class="accent">7천원</span> 할인!</span></a
+            >
+          </li>
+          <li class="w-50 w-50-2">
+            <a href="/"
+              ><h2>쇼핑라이브</h2>
+              <span>베베숲 물티슈</span></a
+            >
+          </li>
+          <li class="square-25">
+            <a href="/"><h2>선물하기</h2></a>
+          </li>
+          <li class="square-25">
+            <a href="/"><h2>전국별미</h2></a>
+          </li>
         </ul>
       </nav>
       <section class="carousel promotion">
         <h2 class="carousel-title a11y-hidden">배달 프로모션</h2>
         <ul class="carousel-slider">
-          <li class="carousel-slide">
-            <a href="#">누구나 7천원 할인</a>
+          <li class="carousel-slide is-active">
+            <a href="#"
+              ><h3>당신의 마음을 전해보세요</h3>
+              <p>배민 첫 이용시 5000원 할인</p></a
+            >
           </li>
           <li class="carousel-slide">
-            <a href="#"><img src="/" alt="" />오늘의 차림</a>
+            <a href="#"
+              ><img src="/" alt="" />
+              <h3>오늘의 차림</h3></a
+            >
           </li>
           <li class="carousel-slide">
-            <a href="#"><img src="/" alt="" />밀키트 간편식 모두 5천원 할인!</a>
+            <a href="#"
+              ><img src="/" alt="" />
+              <h3>밀키트 간편식 모두 5천원 할인!</h3></a
+            >
           </li>
         </ul>
-        <div class="offscreen"><span>1/10 모두보기</span></div>
+        <div class="offscreen"><span class="offscreen-text">1 / 10 모두보기</span></div>
       </section>
-      <section class="shoppinglive"><h2>배민쇼핑라이브</h2>
+      <section class="fastdelivery">
+        <h2>우리 동네 빠른 배달</h2>
+        <ul class="container-row">
+          <li>
+            <a href="#">
+              <img class="storeinfo" src="/asset/imgs/제육대가.png" alt="" />
+              <p>제육대가 <i class="fa-sharp fa-solid fa-star"></i> 4.9</p>
+              <p>배달팁 2,000원</p>
+              <p class="deliverytime"><img class="baeminlogo" src="./asset/imgs/배민1_로고_모니터(RGB)_1민트.png" alt="배민1" />13~23분</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="storeinfo" src="/asset/imgs/제육대가.png" alt="" />
+              <p>제육대가 <i class="fa-sharp fa-solid fa-star"></i> 4.9</p>
+              <p>배달팁 2,000원</p>
+              <p class="deliverytime"><img class="baeminlogo" src="./asset/imgs/배민1_로고_모니터(RGB)_1민트.png" alt="배민1" />13~23분</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="storeinfo" src="/asset/imgs/제육대가.png" alt="" />
+              <p>제육대가 <i class="fa-sharp fa-solid fa-star"></i> 4.9</p>
+              <p>배달팁 2,000원</p>
+              <p class="deliverytime"><img class="baeminlogo" src="./asset/imgs/배민1_로고_모니터(RGB)_1민트.png" alt="배민1" />13~23분</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="storeinfo" src="/asset/imgs/제육대가.png" alt="" />
+              <p>제육대가 <i class="fa-sharp fa-solid fa-star"></i> 4.9</p>
+              <p>배달팁 2,000원</p>
+              <p class="deliverytime"><img class="baeminlogo" src="./asset/imgs/배민1_로고_모니터(RGB)_1민트.png" alt="배민1" />13~23분</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="storeinfo" src="/asset/imgs/제육대가.png" alt="" />
+              <p>제육대가 <i class="fa-sharp fa-solid fa-star"></i> 4.9</p>
+              <p>배달팁 2,000원</p>
+              <p class="deliverytime"><img class="baeminlogo" src="./asset/imgs/배민1_로고_모니터(RGB)_1민트.png" alt="배민1" />13~23분</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="gift">
+        <h2>마음을 선물해보세요</h2>
         <ul class="container-row">
           <li>Play DATA</li>
           <li>Play DATA</li>
@@ -78,47 +179,24 @@
           <li>Play DATA</li>
           <li>Play DATA</li>
           <li>Play DATA</li>
-        </ul></section>
-      <section class="gift"><h2>마음을 선물해보세요</h2>
-        <ul class="container-row">
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-          <li>Play DATA</li>
-        </ul></section>
-      <section class=""><h2>이런 일도 한답니다</h2></section>
+        </ul>
+      </section>
+      <section class="baemindo"><h2>이런 일도 한답니다</h2></section>
     </main>
     <section class="carousel advertisement">
       <h2 class="carousel-title a11y-hidden">광고</h2>
       <ul class="carousel-slider">
-        <li class="carousel-slide">
-          <a href="#">무료로 만화 보러 가기!</a>
+        <li class="carousel-slide is-active">
+          <a href="#"
+            ><h3>당신의 마음을 전해보세요</h3>
+            <p>배민 첫 이용시 5000원 할인</p></a
+          >
         </li>
         <li class="carousel-slide">
           <a href="#"><img src="/" alt="" />배달로 용돈 버는 사람들</a>
-        </li>        
+        </li>
       </ul>
-      <div class="offscreen"><span>1/2</span></div>
+      <div class="offscreen"><span class="offscreen-text">1 / 2</span></div>
     </section>
     <footer class="main-footer">
       <ul class="guide-list">
@@ -130,20 +208,28 @@
         <span aria-hidden="true" class="divider">|</span>
         <li><a href="">개인정보처리방침</a></li>
       </ul>
-      <p>
+
+      <div class="detailinfo">
         <h2>(주)우아한형제들</h2>
-        <span>대표이사 김범준</span>
-        <span>사업자등록번호 120-87-65763</span>
-        <span>통신판매업 서울 송파-0515</span>
-        <span>호스팅서비스제공자 (주)우아한형제들</span>
-        <span>CS@woowaha.com</span>
-        <span>서울특별시 송파구 위례성대로 2 장은빌딩</span>
-        <span>전자금융분쟁처리 Tel 1600-0987(유료), 080-849-0987(무료)</span>
-        <span>Fax 050-6050-0400</span>
-      </p>
-      <small>
-        (주)우아한형제들은 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 따라서 (주)우아한형제들은 상품, 거래정보 및 거래에 대하여 책임을 지지 않습니다.
-      </small>
+        <div>
+          <span>대표이사 김범준</span>
+          <span aria-hidden="true" class="divider">|</span>
+          <span>사업자등록번호 120-87-65763</span>
+        </div>
+        <div>
+          <span>통신판매업 서울 송파-0515</span>
+          <span aria-hidden="true" class="divider">|</span>
+          <span>호스팅서비스제공자 (주)우아한형제들</span>
+        </div>
+        <div>
+          <span>CS@woowaha.com</span>
+          <span aria-hidden="true" class="divider">|</span>
+          <span>서울특별시 송파구 위례성대로 2 장은빌딩</span>
+        </div>
+        <div><span>전자금융분쟁처리 Tel 1600-0987(유료), 080-849-0987(무료)</span></div>
+        <div><span>Fax 050-6050-0400</span></div>
+      </div>
+      <small> (주)우아한형제들은 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 따라서 (주)우아한형제들은 상품, 거래정보 및 거래에 대하여 책임을 지지 않습니다. </small>
     </footer>
   </body>
 </html>
