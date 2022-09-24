@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>결과 페이지</title>
+    <title>우아한 형제들 주문 결과</title>
+    <meta rel="description" content="
+      우아한 형제들에서 주문한 배달의 결과를 보여주는 페이지입니다.
+    "/>
 
     <link rel="stylesheet" href="style/index.css" />
 
@@ -37,6 +40,8 @@
       }
 
     </style>
+
+    <script type="module" src="./js/result.js"></script>
   </head>
   <body>
     <header class="header">
@@ -47,13 +52,13 @@
       </div>
     </header>
     
-    <main class="result">
+    <main class="ordered">
       
-      <!-- 주문을 확인하고 있어요나, 주문 준비중 상태를 알려주는 박스 -->
       <section class="ordered-status">
-        <h3 class="ordered-status-title">주문을 확인하고 있어요 | 열심히 만들고 있어요</h3>
-        <p class="ordered-status-addtion">상태에 대한 추가 정보</p>
-        <button class="cancel">주문 취소</button>
+        <h2 class="ordered-status-title" aria-label="주문상태를 확인할 수 있는 컨텐츠">주문을 확인하고 있어요 | 열심히 만들고 있어요</h2>
+        <p class="ordered-status-addtion">주문이 확인되기 전까지 배민 앱에서 취소가 가능합니다.</p>
+
+        <button class="ordered-status-cancel">주문 취소</button>
         
         <div class="ordered-status-progress">
           진행 상황
@@ -62,48 +67,63 @@
         <img class="decoration-img" aria-hidden="true" src="./asset/imgs/test-imgae.svg" alt="" />
       </section>
 
-      <!-- 주소 및 요구사항 -->
-      <!-- 클래스명 추가 -->
-      <section>
-        <section class="key-value-box">
-          <span>Key</span>
-          <span>Value</span>
+      <section class="ordered-history">
+
+        <h2 class="a11y-hidden" aria-label="주문한 내역을 상세히 알려주는 컨텐츠">주문상세</h2>
+
+        <section class="ordered-history-title key-value-box">
+          <span><strong>SJF93297DJ</strong> 주문</span>
+          <span class="tag">주문상세</span>
         </section>
-        <address>주소 세부 사항</address>
-        <section class="requirement owner">
-          <h3 class="requirement-title">사장님께</h3>
-          <p>
-            쏼라 쏼라
+        <hr />
+        
+        <!-- 지역명 도로명 -->
+        <address class="ordered-history-addr doro" aria-label="내가 주문한 메뉴를 배달받을 주소">서울시 강남구 테헤란로 231, 6층 7층</address>
+
+        <section class="ordered-history-requirement">
+          <h3 class="title" aria-label="사장님께 전하는 메시지">사장님께</h3>
+          <p class="content">
+            ( 수저 포크 X )
           </p>
         </section>
-        <section class="requirement rider">
-          <h3 class="requirement-title">라이더님께</h3>
-          <p>
-            쌀라 쏼라
+        <section class="ordered-history-requirement">
+          <h3 class="title" aria-label="라이더님께 전하는 메시지">라이더님께</h3>
+          <p class="content">
+            문 앞에 두고 가주세요.
           </p>
         </section>
+        <hr />
+
+        <section class="ordered-history-store">
+          <h3 class="title">BBQ 어느 점</h3>
+          <p class="detail"> BBQ 소스 외 2개 <span class="price">21,400</span></p>
+        </section>
+
       </section>
       
-      <!-- 가게 정보 및 주문내역 요약 -->
-      <section class="ordered-info">
-        <h3 class="ordered-info-title">가게이름</h3>
-        <p class="ordered-info-detail">주문내역</p>
-      </section>
-
-      <section class="carousel">
-        <h2 class="carousel-title a11y-hidden">캐러셀 제목</h2>
-      <ul class="carousel-slider">
-        <li class="carousel-slide">
-          <a href="#">ir</a>
-        </li>
-        <li class="carousel-slide">
-          <a href="#"><img src="/" alt="" />2</a>
-        </li>
-        <li class="carousel-slide">
-          <a href="#"><img src="/" alt="" />3</a>
-        </li>
-      </ul>
-      <div class="offscreen"><span>오프스크린텍스트</span></div>
+      <section class="ordered-carousel carousel promotion">
+        <h2 class="carousel-title a11y-hidden">배달 프로모션</h2>
+        <ul class="carousel-slider">
+          <li class="carousel-slide is-active">
+            <a href="#"
+              ><h3>당신의 마음을 전해보세요</h3>
+              <p>배민 첫 이용시 5000원 할인</p></a
+            >
+          </li>
+          <li class="carousel-slide">
+            <a href="#"
+              ><img src="/" alt="" />
+              <h3>오늘의 차림</h3></a
+            >
+          </li>
+          <li class="carousel-slide">
+            <a href="#"
+              ><img src="/" alt="" />
+              <h3>밀키트 간편식 모두 5천원 할인!</h3></a
+            >
+          </li>
+        </ul>
+        <div class="offscreen"><span class="offscreen-text">1 / 10 모두보기</span></div>
       </section>
 
       
