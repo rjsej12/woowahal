@@ -398,6 +398,9 @@ body {
   padding-left: 16px;
   padding-bottom: 16px;
 }
+.now-address i {
+  margin-left: 8px;
+}
 
 .category-promotion {
   width: 100%;
@@ -456,10 +459,22 @@ body {
 
 .recommended {
   margin-top: 16px;
-  background: #fff;
+  background: skyblue;
+  padding: 16px;
 }
 .recommended-list {
+  margin-top: 16px;
   height: 100vh;
+}
+.recommended-list li {
+  margin-top: 24px;
+  width: 524px;
+  height: 25vh;
+  padding: 16px;
+}
+.recommended-list li img {
+  width: 480px;
+  object-fit: cover;
 }
 
 .sortbys {
@@ -473,11 +488,44 @@ body {
 }
 
 .circle-navigation {
-  background: orange;
-  height: 100px;
+  background: #fff;
+  height: fit-content;
   width: 100%;
   position: fixed;
   bottom: 0;
+  padding: 16px 24px;
+}
+.circle-navigation-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  position: relative;
+}
+.circle-navigation-list li {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+.circle-navigation-list li span {
+  margin-top: 8px;
+  display: block;
+}
+.circle-navigation-icon {
+  font-size: 32px;
+}
+.circle-navigation img {
+  position: absolute;
+  width: 120px;
+  height: 160px;
+  left: 50%;
+  top: -50px;
+  transform: translateX(-70px);
+}
+
+.homelink {
+  width: fit-content;
 }
 
 .selected-menus .selected-menu {

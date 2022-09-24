@@ -33,6 +33,9 @@
   margin-top: 55px;
   padding-left: $spacing-base;
   padding-bottom: $spacing-base;
+  i {
+    margin-left: $spacing-sm;
+  }
 }
 
 .category-promotion {
@@ -92,9 +95,21 @@
 
 .recommended {
   margin-top: $spacing-base;
-  background: $white;
+  background: skyblue;
+  padding: $spacing-base;
   &-list {
+    margin-top: $spacing-base;
     height: 100vh;
+    li {
+      margin-top: $spacing-md;
+      width: 524px;
+      height: 25vh;
+      padding: $spacing-base;
+      img {
+        width: 480px;
+        object-fit: cover;
+      }
+    }
   }
 }
 
@@ -109,9 +124,42 @@
 }
 
 .circle-navigation {
-  background: orange;
-  height: 100px;
+  background: $white;
+  height: fit-content;
   width: 100%;
   position: fixed;
   bottom: 0;
+  padding: $spacing-base $spacing-md;
+  &-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: relative;
+    li {
+      display: flex;
+      flex-flow: column;
+      text-align: center;
+      justify-content: center;
+      color: rgba($color: $black, $alpha: 0.5);
+      span {
+        margin-top: $spacing-sm;
+        display: block;
+      }
+    }
+  }
+  &-icon {
+    font-size: $font-lg;
+  }
+  img {
+    position: absolute;
+    width: 120px;
+    height: 160px;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-70px);
+  }
+}
+
+.homelink {
+  width: fit-content;
 }
