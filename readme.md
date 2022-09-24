@@ -24,7 +24,12 @@
 - 선택한 이유
 
 # 프로젝트 컨벤션
-
+## Sass 및 CSS
+|구분|내용|상세|
+|---|---|---|
+|ClassNaming|BEM 방법론|cart-|
+|Nesting Rule|ClassNaming에 맞게|
+|Variant|속성값은 변수명으로| Sass에서 활용키위해|
 
 # Git Flow
 
