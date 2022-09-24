@@ -1,0 +1,185 @@
+@use "../base" as *;
+@use "../function" as *;
+
+.store-intro {
+  position: absolute;
+  transform: translate(33%, -20%);
+  background: $white;
+  border-radius: 0.5rem;
+  border: 1px solid silver;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $spacing-base;
+  padding: $spacing-base;
+  width: 60%;
+
+  store-intro-name {
+    white-space: wrap;
+    width: 50%;
+  }
+}
+
+.order-additional {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: $white;
+  // height: 5rem;
+  /* align-items: center; */
+  // border-bottom: 0.5rem solid silver;
+  .order-button-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: $spacing-base;
+    border-bottom: 1px solid silver;
+    margin-top: 8rem;
+    // height: 20rem;
+    .order-delivery-list {
+      // border-bottom:
+      /* display: none; */
+    }
+
+    .order-togo-list {
+      border-bottom: 1px solid silver;
+
+      .order-togo-item {
+        display: flex;
+        margin: 0.5rem 0;
+
+        .order-togo-item span {
+          display: inline-block;
+          width: 8em;
+          padding: 0 $spacing-base;
+        }
+
+        .order-togo-item address {
+          display: inline-block;
+          width: 20em;
+        }
+      }
+
+      // .map-area {
+      //   margin-left: 8em;
+      //   width: 20em;
+      //   height: 12em;
+      //   background: green;
+      // }
+    }
+  }
+}
+
+// 중첩규칙
+.order-togo-map {
+  margin-left: 8em;
+  width: 20em;
+  height: 12em;
+  background: green;
+}
+
+.menu-tab-collection {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5rem $spacing-base;
+  background-color: white;
+  // border-bottom: 1px solid silver;
+
+  .menu-tab {
+    display: flex;
+    flex-direction: column;
+
+    .menu-announce {
+      padding-left: $spacing-base;
+      background: $white;
+    }
+
+    // 중첩규칙 왜 안되지
+    .menu-container {
+      height: 100vh;
+      // .menu-list {
+      //   .menu-list-item {
+      //     display: flex;
+      //     justify-content: space-between;
+      //     align-items: top;
+      //     background: skyblue;
+      //     padding: $spacing-base;
+      //     margin-top: 1px;
+      //     border-bottom: 1px solid silver;
+
+      //     .imgbox {
+      //       width: 80px;
+      //       height: 80px;
+      //       border-radius: 1.5rem;
+      //       background-color: pink;
+      //     }
+      //     img {
+      //       width: 100%;
+      //       height: 100%;
+      //     }
+      //   }
+      // }
+
+      button {
+        height: 1rem;
+      }
+    }
+  }
+}
+
+.menu-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  background: skyblue;
+  padding: $spacing-base;
+  margin-top: 1px;
+  border-bottom: 1px solid silver;
+
+  .imgbox {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1.5rem;
+    background-color: pink;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.store-notice {
+  margin: $spacing-base $spacing-base;
+
+  li {
+    margin-top: 0.3em;
+  }
+}
+
+.cartbtn-container {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $spacing-base;
+  border-top: 2px solid silver;
+
+  .btn-order.cartbtn {
+    margin: $spacing-base $spacing-base 0 $spacing-base;
+    display: flex;
+    justify-content: center;
+
+    .cartbtn-quantity {
+      position: absolute;
+      left: $spacing-xl;
+    }
+    .cartbtn-price {
+      position: absolute;
+      right: $spacing-xl;
+    }
+  }
+}
