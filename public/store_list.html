@@ -1,46 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/index.css" />
     <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
-    <title>Document</title>
+    <title>배달의민족</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header-left-area"><a class="header-icon back-icon" href="#" title="뒤로가기 버튼">back</a></div>
+    <header class="st-list-header category-header">
+      <div class="category-header-left-area">
+        <a href="./main.html"><i class="fa-regular fa-arrow-left category-header-icon"></i></a>
+        <img src="./asset/imgs/배민1_로고_모니터(RGB)_0블랙.png" class="pagename" alt="배민1" />
+      </div>
 
-      <div class="header-right-area">
-        <a class="header-icon home-icon" href="#" title="">홈</a>
-        <a class="header-icon cart-icon" href="#" title="">cart</a>
+      <div class="category-header-right-area">
+        <a href="#"><i class="fa-light fa-house category-header-icon"></i></a>
+        <a href="#"><i class="fa-light fa-cart-shopping category-header-icon"></i></a>
       </div>
     </header>
 
-    <main>
+    <main class="st-list">
       <h2 class="a11y-hidden">카테고리 선택 버튼</h2>
       <!-- 승학님 컴포넌트 -->
-      <ul class="category-tab container-row">
-        <li class="category-tab-item"><button>족발·보쌈</button></li>
-        <li class="category-tab-item"><button>PlayDATA</button></li>
-        <li class="category-tab-item"><button>돈까스·회·일식</button></li>
-        <li class="category-tab-item"><button>찜·탕·찌개</button></li>
-        <li class="category-tab-item"><button>피자</button></li>
-        <li class="category-tab-item"><button>고기·구이</button></li>
-        <li class="category-tab-item"><button>야식</button></li>
-        <li class="category-tab-item"><button>양식</button></li>
-        <li class="category-tab-item"><button>치킨</button></li>
-        <li class="category-tab-item"><button>중식</button></li>
-        <li class="category-tab-item"><button>아시안</button></li>
-        <li class="category-tab-item"><button>백반·죽·국수</button></li>
-        <li class="category-tab-item"><button>도시락</button></li>
-        <li class="category-tab-item"><button>분식</button></li>
-        <li class="category-tab-item"><button>카페·디저트</button></li>
-        <li class="category-tab-item"><button>패스트푸드</button></li>
+      <ul class="st-list-category container-row">
+        <li><button>족발·보쌈</button></li>
+        <li><button>PlayDATA</button></li>
+        <li><button>돈까스·회·일식</button></li>
+        <li><button>찜·탕·찌개</button></li>
+        <li><button>피자</button></li>
+        <li><button>고기·구이</button></li>
+        <li><button>야식</button></li>
+        <li><button>양식</button></li>
+        <li><button>치킨</button></li>
+        <li><button>중식</button></li>
+        <li><button>아시안</button></li>
+        <li><button>백반·죽·국수</button></li>
+        <li><button>도시락</button></li>
+        <li><button>분식</button></li>
+        <li><button>카페·디저트</button></li>
+        <li><button>패스트푸드</button></li>
       </ul>
+
       <h2 class="a11y-hidden">가게 리스트 정렬 기준</h2>
-      <ul class="sortbys container-row">
+      <ul class="st-list-sortbys container-row">
         <li class="sortby">
           <button>기본순</button>
 
@@ -58,176 +62,177 @@
         <li class="sortby"><button>최소주문금액</button></li>
         <li class="sortby"><button>기타</button></li>
       </ul>
+
       <h2 class="a11y-hidden">가게 리스트</h2>
       <!-- 승학님 컴포넌트가 들어올 부분 -->
-      <ul class="store-list container-col">
-        <li>
+      <ul class="st-list-scroll container-col">
+        <li class="scroll-item">
           <a href="#"
-            ><div class="store-list-imgbox"><img src="/" alt="/" /></div>
-            <div class="store-list-info">
+            ><div class="scroll-item-img"></div>
+            <div class="scroll-item-info">
               <h3>둘레보쌈</h3>
               <div><img src="/" alt="/" />보쌈 도시락 + 마약떡갈비 1p, 연탄불고기 도시락</div>
               <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="store-list-time">38~53분</span>
+              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
             </div>
           </a>
         </li>
 
-        <li>
+        <li class="scroll-item">
           <a href="#"
-            ><div class="store-list-imgbox"><img src="/" alt="/" /></div>
-            <div class="store-list-info">
+            ><div class="scroll-item-img"></div>
+            <div class="scroll-item-info">
               <h3>둘레보쌈</h3>
               <div><img src="/" alt="/" />보쌈 도시락 + 마약떡갈비 1p, 연탄불고기 도시락</div>
               <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="store-list-time">38~53분</span>
+              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
             </div>
           </a>
         </li>
 
-        <li>
+        <li class="scroll-item">
           <a href="#"
-            ><div class="store-list-imgbox"><img src="/" alt="/" /></div>
-            <div class="store-list-info">
+            ><div class="scroll-item-img"></div>
+            <div class="scroll-item-info">
               <h3>둘레보쌈</h3>
               <div><img src="/" alt="/" />보쌈 도시락 + 마약떡갈비 1p, 연탄불고기 도시락</div>
               <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="store-list-time">38~53분</span>
+              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
             </div>
           </a>
         </li>
 
-        <li>
+        <li class="scroll-item">
           <a href="#"
-            ><div class="store-list-imgbox"><img src="/" alt="/" /></div>
-            <div class="store-list-info">
+            ><div class="scroll-item-img"></div>
+            <div class="scroll-item-info">
               <h3>둘레보쌈</h3>
               <div><img src="/" alt="/" />보쌈 도시락 + 마약떡갈비 1p, 연탄불고기 도시락</div>
               <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="store-list-time">38~53분</span>
+              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
             </div>
           </a>
         </li>
 
-        <li>
+        <li class="scroll-item">
           <a href="#"
-            ><div class="store-list-imgbox"><img src="/" alt="/" /></div>
-            <div class="store-list-info">
+            ><div class="scroll-item-img"></div>
+            <div class="scroll-item-info">
               <h3>둘레보쌈</h3>
               <div><img src="/" alt="/" />보쌈 도시락 + 마약떡갈비 1p, 연탄불고기 도시락</div>
               <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="store-list-time">38~53분</span>
+              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
             </div>
           </a>
         </li>
 
-        <li>
+        <li class="scroll-item">
           <a href="#"
-            ><div class="store-list-imgbox"><img src="/" alt="/" /></div>
-            <div class="store-list-info">
+            ><div class="scroll-item-img"></div>
+            <div class="scroll-item-info">
               <h3>둘레보쌈</h3>
               <div><img src="/" alt="/" />보쌈 도시락 + 마약떡갈비 1p, 연탄불고기 도시락</div>
               <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="store-list-time">38~53분</span>
+              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
             </div>
           </a>
         </li>
-        <li>
+        <li class="scroll-item">
           <a href="#"
-            ><div class="store-list-imgbox"><img src="/" alt="/" /></div>
-            <div class="store-list-info">
+            ><div class="scroll-item-img"></div>
+            <div class="scroll-item-info">
               <h3>둘레보쌈</h3>
               <div><img src="/" alt="/" />보쌈 도시락 + 마약떡갈비 1p, 연탄불고기 도시락</div>
               <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="store-list-time">38~53분</span>
+              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
             </div>
           </a>
         </li>
-        <li>
+        <li class="scroll-item">
           <a href="#"
-            ><div class="store-list-imgbox"><img src="/" alt="/" /></div>
-            <div class="store-list-info">
+            ><div class="scroll-item-img"></div>
+            <div class="scroll-item-info">
               <h3>둘레보쌈</h3>
               <div><img src="/" alt="/" />보쌈 도시락 + 마약떡갈비 1p, 연탄불고기 도시락</div>
               <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="store-list-time">38~53분</span>
+              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
             </div>
           </a>
         </li>
-        <li>
+        <li class="scroll-item">
           <a href="#"
-            ><div class="store-list-imgbox"><img src="/" alt="/" /></div>
-            <div class="store-list-info">
+            ><div class="scroll-item-img"></div>
+            <div class="scroll-item-info">
               <h3>둘레보쌈</h3>
               <div><img src="/" alt="/" />보쌈 도시락 + 마약떡갈비 1p, 연탄불고기 도시락</div>
               <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="store-list-time">38~53분</span>
+              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
             </div>
           </a>
         </li>
-        <li>
+        <li class="scroll-item">
           <a href="#"
-            ><div class="store-list-imgbox"><img src="/" alt="/" /></div>
-            <div class="store-list-info">
+            ><div class="scroll-item-img"></div>
+            <div class="scroll-item-info">
               <h3>둘레보쌈</h3>
               <div><img src="/" alt="/" />보쌈 도시락 + 마약떡갈비 1p, 연탄불고기 도시락</div>
               <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="store-list-time">38~53분</span>
+              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
             </div>
           </a>
         </li>
-        <li>
+        <li class="scroll-item">
           <a href="#"
-            ><div class="store-list-imgbox"><img src="/" alt="/" /></div>
-            <div class="store-list-info">
+            ><div class="scroll-item-img"></div>
+            <div class="scroll-item-info">
               <h3>둘레보쌈</h3>
               <div><img src="/" alt="/" />보쌈 도시락 + 마약떡갈비 1p, 연탄불고기 도시락</div>
               <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="store-list-time">38~53분</span>
+              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
             </div>
           </a>
         </li>
-        <li>
+        <li class="scroll-item">
           <a href="#"
-            ><div class="store-list-imgbox"><img src="/" alt="/" /></div>
-            <div class="store-list-info">
+            ><div class="scroll-item-img"></div>
+            <div class="scroll-item-info">
               <h3>둘레보쌈</h3>
               <div><img src="/" alt="/" />보쌈 도시락 + 마약떡갈비 1p, 연탄불고기 도시락</div>
               <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="store-list-time">38~53분</span>
+              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
             </div>
           </a>
         </li>
-        <li>
+        <li class="scroll-item">
           <a href="#"
-            ><div class="store-list-imgbox"><img src="/" alt="/" /></div>
-            <div class="store-list-info">
+            ><div class="scroll-item-img"></div>
+            <div class="scroll-item-info">
               <h3>둘레보쌈</h3>
               <div><img src="/" alt="/" />보쌈 도시락 + 마약떡갈비 1p, 연탄불고기 도시락</div>
               <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="store-list-time">38~53분</span>
+              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
             </div>
           </a>
         </li>
-        <li>
+        <li class="scroll-item">
           <a href="#"
-            ><div class="store-list-imgbox"><img src="/" alt="/" /></div>
-            <div class="store-list-info">
+            ><div class="scroll-item-img"></div>
+            <div class="scroll-item-info">
               <h3>둘레보쌈</h3>
               <div><img src="/" alt="/" />보쌈 도시락 + 마약떡갈비 1p, 연탄불고기 도시락</div>
               <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="store-list-time">38~53분</span>
+              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
             </div>
           </a>
         </li>
-        <li>
+        <li class="scroll-item">
           <a href="#"
-            ><div class="store-list-imgbox"><img src="/" alt="/" /></div>
-            <div class="store-list-info">
+            ><div class="scroll-item-img"></div>
+            <div class="scroll-item-info">
               <h3>둘레보쌈</h3>
               <div><img src="/" alt="/" />보쌈 도시락 + 마약떡갈비 1p, 연탄불고기 도시락</div>
               <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="store-list-time">38~53분</span>
+              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
             </div>
           </a>
         </li>
