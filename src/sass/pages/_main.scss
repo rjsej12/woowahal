@@ -157,11 +157,7 @@ body {
   }
   .deliverytime {
     border: 1px solid getColor(Woowahal-green, 500);
-    border-radius: $spacing-base;
-    display: flex;
-    width: fit-content;
     padding: $spacing-xs $spacing-sm;
-    gap: $spacing-xs;
     background-color: rgba($color: getColor(Woowahal-green, 500), $alpha: 0.1);
   }
   .baeminlogo {
