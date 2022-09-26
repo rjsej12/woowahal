@@ -190,3 +190,46 @@ body {
     margin-top: $spacing-sm;
   }
 }
+
+.baemindo {
+  &-container {
+    margin-top: $spacing-base;
+    display: grid;
+    grid-template-areas:
+      "volunteer  multiuse "
+      ".   multiuse"
+      "report   multiuse"
+      "report   multiuse"
+      "report   discount"
+      "report   .";
+    gap: 0 $spacing-base;
+  }
+  &-img-wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: $spacing-base;
+    img {
+      width: 100%;
+      border-radius: $spacing-sm;
+    }
+  }
+}
+
+.voulunteer {
+  grid-area: volunteer;
+}
+
+.multiuse {
+  grid-area: multiuse;
+}
+
+.managereport {
+  grid-area: report;
+}
+
+.discount {
+  grid-area: discount;
+}
