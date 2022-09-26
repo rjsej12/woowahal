@@ -91,15 +91,9 @@ body {
   .square-50 {
     width: 248px;
     height: 200px;
-    background-image: url(/asset/imgs/배달bg.png);
-    background-size: cover;
   }
   .w-100 {
     width: 512px;
-    background-image: url(/asset/imgs/포장bg.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
   }
   .w-50 {
     width: 248px;
@@ -113,18 +107,6 @@ body {
       }
     }
   }
-  .bg-bmart {
-    background-image: url(/asset/imgs/b마트.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-  }
-  .bg-mealkit {
-    background-image: url(/asset/imgs/밀키트.jpg);
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: 90%;
-  }
   .square-25 {
     width: 116px;
     height: 116px;
@@ -136,6 +118,40 @@ body {
         margin: 0;
       }
     }
+  }
+  .bg-baemin1 {
+    background-image: url(/asset/imgs/배민1.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+  .bg-delivery {
+    background-image: url(/asset/imgs/배달bg.png);
+    background-size: cover;
+  }
+  .bg-package {
+    background-image: url(/asset/imgs/포장bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 90%;
+  }
+  .bg-bmart {
+    background-image: url(/asset/imgs/b마트.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 90%;
+  }
+  .bg-mealkit {
+    background-image: url(/asset/imgs/밀키트.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 90%;
+  }
+  .bg-baeminstore {
+    background-image: url(/asset/imgs/sale.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 90%;
   }
   .bg-shoppinglive {
     background-image: url(/asset/imgs/쇼핑라이브.jpg);
@@ -208,19 +224,35 @@ body {
   margin: $spacing-base 0;
 }
 
-.guide-list {
-  display: flex;
-  flex-flow: row nowrap;
-  gap: 8px;
-  align-items: center;
-}
-
 .main-footer {
   padding: $spacing-base;
+  color: rgba($color: $black, $alpha: 0.4);
+  .guide-list {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+    align-items: center;
+    li:last-child {
+      color: $black;
+    }
+  }
   .detailinfo {
     margin-top: $spacing-base;
+    h2 {
+      color: $black;
+      font-size: $font-base;
+      .more-info-btn {
+        cursor: pointer;
+      }
+    }
     div {
       margin-top: $spacing-sm;
+    }
+    .more-info {
+      display: none;
+    }
+    .is-visible {
+      display: block;
     }
   }
   small {
