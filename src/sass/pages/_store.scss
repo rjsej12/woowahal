@@ -1,3 +1,4 @@
+@use "../base" as *;
 
 .menu{
     &-add{
@@ -12,6 +13,65 @@
         align-items: center;
         > *{
             margin-top: 16px;
+        }
+    }
+}
+.intro-imgbox{
+    background-image: url(/asset/imgs/떡볶이.jpg);
+}
+
+.st-menu{
+    background-color: white;
+    
+ 
+    
+    &-price{
+        padding-top: 10rem;
+        margin: $spacing-sm;
+    }
+
+    &-depth{
+        border-top: solid $grey 1px;
+        padding: $spacing-sm;
+        &-list{
+            & li{
+                margin-top: $spacing-base;
+                & .price{
+                    float: right;
+                    &::before{
+                        content: "+";
+                    }
+                }
+            }
+        }
+
+        &.radio{
+        }
+        &.checkbox{            
+        }
+    }
+
+    &-amount{
+        border-top: solid $grey 1px;
+        padding: $spacing-sm;
+        padding-bottom: 10rem;
+    }
+    
+    &-add{
+        position: fixed;
+        bottom: 0;
+        align-items: center;
+        background-color: white;
+        border-top: solid $grey 1px;
+
+        & p{
+            padding: 0 $spacing-base;
+            & b{
+                color: $grey;
+            }
+        }
+        & .btn-order{
+            margin-right: $spacing-sm;
         }
     }
 }
