@@ -1,185 +1,281 @@
 @use "../base" as *;
 @use "../function" as *;
 
-.store-intro {
-  position: absolute;
-  transform: translate(33%, -20%);
-  background: $white;
-  border-radius: 0.5rem;
-  border: 1px solid silver;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: $spacing-base;
-  padding: $spacing-base;
-  width: 60%;
-
-  store-intro-name {
-    white-space: wrap;
-    width: 50%;
-  }
+.st-header.category-header {
+  background-color: transparent;
+  color: $white;
 }
 
-.order-additional {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: $white;
-  // height: 5rem;
-  /* align-items: center; */
-  // border-bottom: 0.5rem solid silver;
-  .order-button-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    padding: $spacing-base;
-    border-bottom: 1px solid silver;
-    margin-top: 8rem;
-    // height: 20rem;
-    .order-delivery-list {
-      // border-bottom:
-      /* display: none; */
+.st-detail {
+  margin-bottom: 10rem;
+  & button {
+    font-family: "BMHANNAPro";
+  }
+
+  .divider {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: $font-base;
+    margin: 0 $spacing-sm;
+    background-color: $grey;
+    // vertical-align: middle;
+  }
+
+  &-imgbox {
+    background-image: url(/asset/imgs/떡볶이.jpg);
+  }
+
+  & .st-introbox {
+    & div {
+      width: 100%;
     }
 
-    .order-togo-list {
+    &-row1 {
+      font-size: 1.2rem;
+    }
+
+    &-row2 {
+      display: flex;
+      justify-content: center;
+      font-size: 0.9rem;
+    }
+
+    &-row3 {
+      display: flex;
+      justify-content: space-around;
+      margin-top: $spacing-base;
+      font-size: 1rem;
+    }
+  }
+
+  & .additional-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $white;
+    padding-top: 10rem;
+    // height: 5rem;
+    /* align-items: center; */
+    // border-bottom: 0.5rem solid silver;
+
+    & .additional-btn {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      padding: $spacing-base;
+      padding-bottom: 0;
       border-bottom: 1px solid silver;
+      font-size: 1.1rem;
+      // height: 20rem;
+      button {
+        padding-bottom: $spacing-base;
+      }
 
-      .order-togo-item {
+      &-delivery {
+        color: $disabled;
+        font-size: 1.1rem;
+        border-bottom: 4px solid transparent;
+      }
+
+      &-togo {
+        font-size: 1.1rem;
+        border-bottom: 4px solid black;
+        // padding-bottom:;
+      }
+    }
+    & .order-togo {
+      margin: 0 $spacing-base;
+      & li {
         display: flex;
-        margin: 0.5rem 0;
-
-        .order-togo-item span {
+        margin: 1rem 0;
+        & span {
           display: inline-block;
           width: 8em;
           padding: 0 $spacing-base;
         }
-
-        .order-togo-item address {
+        & address {
           display: inline-block;
-          width: 20em;
+          width: 14em;
+
+          & iframe {
+            width: 100%;
+            height: 10em;
+            border: 1px solid $grey;
+          }
+        }
+      }
+    }
+  }
+
+  &-tab {
+    display: flex;
+    // align-items: center;
+    padding-bottom: 0;
+    background-color: white;
+    margin-top: $spacing-sm;
+
+    & li {
+      flex-grow: 1;
+      text-align: center;
+      border-bottom: 2px solid $grey;
+      & button {
+        font-size: 1rem;
+        padding: $spacing-base;
+        color: $disabled;
+        flex-grow: 1;
+      }
+    }
+    & li.is-active {
+      border-top: 2px solid black;
+      border-right: 2px solid $grey;
+      border-bottom: none;
+
+      & button {
+        color: black;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  &-announce {
+    padding: $spacing-base;
+    background: $white;
+    height: 10rem;
+    font-size: 0.9rem;
+  }
+
+  &-menus {
+    height: 100vh;
+    background: $white;
+
+    & .menu {
+      &-btn {
+        display: block;
+        width: 100%;
+        padding: $spacing-base;
+        background: $grey;
+        font-size: 1.1rem;
+        border-bottom: 1px solid grey;
+        text-align: left;
+        position: relative;
+
+        & i {
+          position: absolute;
+          right: $spacing-base;
+          color: gray;
         }
       }
 
-      // .map-area {
-      //   margin-left: 8em;
-      //   width: 20em;
-      //   height: 12em;
-      //   background: green;
-      // }
+      & li {
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+        padding: $spacing-base;
+        margin-top: 1px;
+        border-bottom: 1px solid $grey;
+        background: $white;
+
+        & .imgbox {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 1.5rem;
+          background-image: url(/asset/imgs/떡볶이.jpg);
+          background-size: cover;
+        }
+      }
+
+      &-info {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-sm;
+
+        &-detail {
+          font-size: 0.9rem;
+          color: $grey;
+        }
+      }
+    }
+
+    &-represent {
+      padding: $spacing-lg $spacing-base;
+      text-align: center;
+      font-size: $font-md;
+      color: burlywood;
+    }
+
+    & .menu-represent {
+      margin: $spacing-base;
+      border: 4px solid burlywood;
+
+      & li {
+        border-bottom: 1px solid burlywood;
+      }
     }
   }
-}
 
-// 중첩규칙
-.order-togo-map {
-  margin-left: 8em;
-  width: 20em;
-  height: 12em;
-  background: green;
-}
+  &-notice {
+    margin: $spacing-base $spacing-base;
 
-.menu-tab-collection {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0.5rem $spacing-base;
-  background-color: white;
-  // border-bottom: 1px solid silver;
+    li {
+      margin-top: 0.3em;
+    }
+  }
 
-  .menu-tab {
+  &-origin {
+    background: white;
+    margin-top: $spacing-sm;
+    padding: $spacing-lg $spacing-base;
     display: flex;
     flex-direction: column;
+    gap: $spacing-base;
 
-    .menu-announce {
-      padding-left: $spacing-base;
-      background: $white;
+    & .origin-title {
+      font-size: 1.1rem;
+    }
+  }
+
+  &-notice {
+    & .notice-title {
+      font-size: 0.9rem;
+      background: $grey;
+      margin-bottom: $spacing-sm;
     }
 
-    // 중첩규칙 왜 안되지
-    .menu-container {
-      height: 100vh;
-      // .menu-list {
-      //   .menu-list-item {
-      //     display: flex;
-      //     justify-content: space-between;
-      //     align-items: top;
-      //     background: skyblue;
-      //     padding: $spacing-base;
-      //     margin-top: 1px;
-      //     border-bottom: 1px solid silver;
+    & li {
+      font-size: 0.8rem;
+      color: grey;
+    }
+  }
 
-      //     .imgbox {
-      //       width: 80px;
-      //       height: 80px;
-      //       border-radius: 1.5rem;
-      //       background-color: pink;
-      //     }
-      //     img {
-      //       width: 100%;
-      //       height: 100%;
-      //     }
-      //   }
-      // }
+  & .st-cart {
+    width: 100%;
+    height: 9rem;
+    position: fixed;
+    bottom: 0;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $spacing-base;
+    border-top: 2px solid silver;
 
-      button {
-        height: 1rem;
+    &-btn {
+      margin: $spacing-base $spacing-base 0 $spacing-base;
+      display: flex;
+      justify-content: center;
+      font-size: 1.2em;
+
+      &-quantity {
+        position: absolute;
+        left: 10%;
+      }
+      &-price {
+        position: absolute;
+        right: 10%;
       }
     }
   }
 }
 
-.menu-list-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: top;
-  background: skyblue;
-  padding: $spacing-base;
-  margin-top: 1px;
-  border-bottom: 1px solid silver;
-
-  .imgbox {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 1.5rem;
-    background-color: pink;
-  }
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.store-notice {
-  margin: $spacing-base $spacing-base;
-
-  li {
-    margin-top: 0.3em;
-  }
-}
-
-.cartbtn-container {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  background: $white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: $spacing-base;
-  border-top: 2px solid silver;
-
-  .btn-order.cartbtn {
-    margin: $spacing-base $spacing-base 0 $spacing-base;
-    display: flex;
-    justify-content: center;
-
-    .cartbtn-quantity {
-      position: absolute;
-      left: $spacing-xl;
-    }
-    .cartbtn-price {
-      position: absolute;
-      right: $spacing-xl;
-    }
-  }
-}
+// 밑에 버튼 픽스때문에 가려진거 반응적으로 할려면 어떻게 해야할까

@@ -1,67 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>배달의민족</title>
     <link rel="stylesheet" href="style/index.css" />
     <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <!-- class추가 -->
-    <header class="header header-haveimg">
-      <div class="header-left-area"><a class="header-icon back-icon" href="#" title="뒤로가기 버튼">back</a></div>
+    <header class="st-header category-header">
+      <div class="st-header-left category-header-left-area">
+        <a href="./main.html"><i class="fa-regular fa-arrow-left category-header-icon"></i></a>
+      </div>
 
-      <div class="header-right-area">
-        <a class="header-icon home-icon" href="#" title="">홈</a>
-        <a class="header-icon cart-icon" href="#" title="">cart</a>
+      <div class="st-header-right category-header-right-area">
+        <a href="#"><i class="fa-light fa-house category-header-icon"></i></a>
+        <a href="#"><i class="fa-light fa-cart-shopping category-header-icon"></i></a>
       </div>
     </header>
-    <main class="main-instore">
+
+    <main class="st-detail">
       <!-- 가게 소개 영역 -->
-      <h2 class="sr-only">가게 소개 영역</h2>
-      <ul class="store-intro">
-        <li class="store-intro-name">떡튀</li>
-        <li><img src="/" alt="/" /> 5.0</li>
-        <li>최근리뷰 28<span class="divider">|</span>최근 사장님 댓글</li>
-        <li><a href="tel" class="store-intro-tell" aria-role="button">전화</a> <button class="store-intro-dibs">찜 234</button><button class="store-intro-share">공유</button></li>
-      </ul>
+      <div class="st-detail-imgbox intro-imgbox"></div>
+      <h2 class="a11y-hidden">가게 정보 영역</h2>
+      <div class="st-introbox introbox-info withimg">
+        <h3>제로베이스 떡볶이</h3>
+
+        <div class="st-introbox-row1">5.0</div>
+
+        <div class="st-introbox-row2">최근리뷰 28<span class="divider"></span>최근사장님댓글 121</div>
+
+        <div class="st-introbox-row3">
+          <a href="tel" class="st-introbox-row3-tel" aria-role="button"> <i class="fa-regular fa-phone"></i> 전화</a>
+
+          <span class="divider"></span>
+
+          <span class="st-introbox-row3-dibs"><i class="fa-regular fa-heart"></i> 찜 234</span>
+
+          <span class="divider"></span>
+
+          <span class="st-introbox-row3-share"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i> 공유</span>
+        </div>
+      </div>
 
       <!-- 주문 관련 정보 -->
-      <h2 class="sr-only">주문 관련 정보 안내</h2>
-      <div class="order-additional">
-        <div class="order-button-container">
-          <button class="order-button-delivery">배달 주문</button>
-          <button class="order-info-togo">포장/방문주문</button>
+      <h2 class="a11y-hidden">주문 관련 정보 안내</h2>
+      <div class="additional-info">
+        <div class="additional-btn">
+          <button class="additional-btn-delivery">배달 주문</button>
+          <button class="additional-btn-togo">포장/방문주문</button>
         </div>
 
-        <ul class="order-delivery-list" hidden>
-          <li class="order-delivery-item"><span>최소주문금액</span><span>12,000원</span></li>
-          <li class="order-delivery-item"><span>결제방법</span><span>바로결제, 만나서결제</span></li>
-          <li class="order-delivery-item"><span>배달시간</span><span>29~44분 소요 예상</span></li>
-          <li class="order-delivery-item"><span>배달 팁</span><span>3,000원</span><button>자세히</button></li>
+        <ul class="order-delivery" hidden>
+          <li><span>최소주문금액</span><span>12,000원</span></li>
+          <li><span>결제방법</span><span>바로결제, 만나서결제</span></li>
+          <li><span>배달시간</span><span>29~44분 소요 예상</span></li>
+          <li><span>배달 팁</span><span>3,000원</span><button>자세히</button></li>
         </ul>
 
-        <ul class="order-togo-list">
-          <li class="order-togo-item">
+        <ul class="order-togo">
+          <li>
             <span>최소주문금액</span>
             없음
           </li>
-          <li class="order-togo-item">
+          <li>
             <span>이용방법</span>
             포장
           </li>
-          <li class="order-togo-item">
+          <li>
             <span>픽업시간</span>
             12~22분 소요 예상
           </li>
-          <li class="order-togo-item">
+          <li>
             <span>위치안내</span>
-            <address>경기도 용인시 처인구 금령로 40번길 6 1층 일부(김량장동)</address>
+            <address>
+              경기도 용인시 처인구 금령로 40번길 6 1층 일부(김량장동)<iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5014.293002133263!2d126.9752387!3d37.5851706!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sko!2skr!4v1664075643963!5m2!1sko!2skr"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </address>
           </li>
-          <div class="order-togo-map"></div>
-          <li class="order-togo-item">
+          <li>
             <span>결제방법</span>
             바로결제
           </li>
@@ -70,173 +93,184 @@
 
       <!-- 메뉴 탭 모음 -->
 
-      <ul class="menu-tab-collection">
-        <li><button class="menu-tab-button is-active">메뉴</button></li>
-        <li><button class="info-tab-button">정보</button></li>
-        <li><button class="review-tab-button">리뷰</button></li>
+      <ul class="st-detail-tab">
+        <li class="is-active"><button>메뉴</button></li>
+        <li><button>정보</button></li>
+        <li><button>리뷰</button></li>
       </ul>
-      <div class="menu-tab">
-        <div class="menu-announce">안녕하세요. 멕시칸라이브그릴_용인역북점 입니다.<br />저희 가게의 대표메뉴는 산체스 콤보 파히타 입니다.<br /><br />타코와부리또, 샐러드보울, 라이스보울 등 다양한 메뉴와 사이드메뉴가 준비되어 있습니다</div>
-
-        <div class="menu-container container-col">
-          <div class="menu-represent-logo">대표메뉴</div>
-          <ul class="menu-list menu-represent-list">
-            <li class="menu-list-item">
-              <div class="menu-info">
-                <div class="menu-name"><h3>DATA</h3></div>
-                <div class="menu-detail">DATADATADATADATADATA</div>
-                <div>26,000원</div>
-              </div>
-              <div class="imgbox"><img src="/" alt="/" /></div>
-            </li>
-            <li class="menu-list-item">
-              <div class="menu-info">
-                <div class="menu-name"><h3>DATA</h3></div>
-                <div class="menu-detail">DATADATADATADATADATA</div>
-                <div>26,000원</div>
-              </div>
-              <div class="imgbox"><img src="/" alt="/" /></div>
-            </li>
-            <li class="menu-list-item">
-              <div class="menu-info">
-                <div class="menu-name"><h3>DATA</h3></div>
-                <div class="menu-detail">DATADATADATADATADATA</div>
-                <div>26,000원</div>
-              </div>
-              <div class="imgbox"><img src="/" alt="/" /></div>
-            </li>
-            <li class="menu-list-item">
-              <div class="menu-info">
-                <div class="menu-name"><h3>DATA</h3></div>
-                <div class="menu-detail">DATADATADATADATADATA</div>
-                <div>26,000원</div>
-              </div>
-              <div class="imgbox"><img src="/" alt="/" /></div>
-            </li>
-            <li class="menu-list-item">
-              <div class="menu-info">
-                <div class="menu-name"><h3>DATA</h3></div>
-                <div class="menu-detail">DATADATADATADATADATA</div>
-                <div>26,000원</div>
-              </div>
-              <div class="imgbox"><img src="/" alt="/" /></div>
-            </li>
-          </ul>
-          <button>족발<img src="/" alt="/" /></button>
-          <ul class="menu-list">
-            <li class="menu-list-item">
-              <div class="menu-info">
-                <div class="menu-name"><h3>DATA</h3></div>
-                <div class="menu-detail">DATADATADATADATADATA</div>
-                <div>26,000원</div>
-              </div>
-              <div class="imgbox"><img src="/" alt="/" /></div>
-            </li>
-            <li class="menu-list-item">
-              <div class="menu-info">
-                <div class="menu-name"><h3>DATA</h3></div>
-                <div class="menu-detail">DATADATADATADATADATA</div>
-                <div>26,000원</div>
-              </div>
-              <div class="imgbox"><img src="/" alt="/" /></div>
-            </li>
-            <li class="menu-list-item">
-              <div class="menu-info">
-                <div class="menu-name"><h3>DATA</h3></div>
-                <div class="menu-detail">DATADATADATADATADATA</div>
-                <div>26,000원</div>
-              </div>
-              <div class="imgbox"><img src="/" alt="/" /></div>
-            </li>
-            <li class="menu-list-item">
-              <div class="menu-info">
-                <div class="menu-name"><h3>DATA</h3></div>
-                <div class="menu-detail">DATADATADATADATADATA</div>
-                <div>26,000원</div>
-              </div>
-              <div class="imgbox"><img src="/" alt="/" /></div>
-            </li>
-            <li class="menu-list-item">
-              <div class="menu-info">
-                <div class="menu-name"><h3>DATA</h3></div>
-                <div class="menu-detail">DATADATADATADATADATA</div>
-                <div>26,000원</div>
-              </div>
-              <div class="imgbox"><img src="/" alt="/" /></div>
-            </li>
-          </ul>
-          <button>보쌈<img src="/" alt="/" /></button>
-          <ul class="menu-list">
-            <li class="menu-list-item">
-              <div class="menu-info">
-                <div class="menu-name"><h3>DATA</h3></div>
-                <div class="menu-detail">DATADATADATADATADATA</div>
-                <div>26,000원</div>
-              </div>
-              <div class="imgbox"><img src="/" alt="/" /></div>
-            </li>
-            <li class="menu-list-item">
-              <div class="menu-info">
-                <div class="menu-name"><h3>DATA</h3></div>
-                <div class="menu-detail">DATADATADATADATADATA</div>
-                <div>26,000원</div>
-              </div>
-              <div class="imgbox"><img src="/" alt="/" /></div>
-            </li>
-            <li class="menu-list-item">
-              <div class="menu-info">
-                <div class="menu-name"><h3>DATA</h3></div>
-                <div class="menu-detail">DATADATADATADATADATA</div>
-                <div>26,000원</div>
-              </div>
-              <div class="imgbox"><img src="/" alt="/" /></div>
-            </li>
-          </ul>
-          <button>음료<img src="/" alt="/" /></button>
-          <ul class="menu-list">
-            <li class="menu-list-item">
-              <div class="menu-info">
-                <div class="menu-name"><h3>DATA</h3></div>
-                <div class="menu-detail">DATADATADATADATADATA</div>
-                <div>26,000원</div>
-              </div>
-              <div class="imgbox"><img src="/" alt="/" /></div>
-            </li>
-            <li class="menu-list-item">
-              <div class="menu-info">
-                <div class="menu-name"><h3>DATA</h3></div>
-                <div class="menu-detail">DATADATADATADATADATA</div>
-                <div>26,000원</div>
-              </div>
-              <div class="imgbox"><img src="/" alt="/" /></div>
-            </li>
-            <li class="menu-list-item">
-              <div class="menu-info">
-                <div class="menu-name"><h3>DATA</h3></div>
-                <div class="menu-detail">DATADATADATADATADATA</div>
-                <div>26,000원</div>
-              </div>
-              <div class="imgbox"><img src="/" alt="/" /></div>
-            </li>
-          </ul>
-        </div>
+      <div class="st-detail-announce">
+        안녕하세요. 제로베이스 떡볶이 강남점입니다.<br /><br />저희 가게의 대표메뉴는 캐비어를 얹은 삭힌 홍어 떡볶이입니다.<br /><br />타코와부리또, 샐러드보울,
+        라이스보울 등 다양한 메뉴와 사이드메뉴가 준비되어 있습니다
       </div>
+
+      <div class="st-detail-menus container-col">
+        <ul class="menu menu-represent">
+          <div class="st-detail-menus-represent">--- 대표메뉴 ---</div>
+          <li>
+            <div class="menu-info">
+              <div class="menu-info-name"><h3>트윈 세트</h3></div>
+              <div class="menu-info-detail">DATADATADATADATADATA</div>
+              <div>16,000원</div>
+            </div>
+            <div class="imgbox"></div>
+          </li>
+          <li>
+            <div class="menu-info">
+              <div class="menu-info-name"><h3>스페셜 세트</h3></div>
+              <div class="menu-info-detail">DATADATADATADATADATA</div>
+              <div>19,300원</div>
+            </div>
+            <div class="imgbox"></div>
+          </li>
+          <li>
+            <div class="menu-info">
+              <div class="menu-info-name"><h3>패밀리 세트</h3></div>
+              <div class="menu-info-detail">DATADATADATADATADATA</div>
+              <div>22,800원</div>
+            </div>
+            <div class="imgbox"></div>
+          </li>
+          <li>
+            <div class="menu-info">
+              <div class="menu-info-name"><h3>치즈 세트</h3></div>
+              <div class="menu-info-detail">DATADATADATADATADATA</div>
+              <div>17,500원</div>
+            </div>
+            <div class="imgbox"></div>
+          </li>
+          <li>
+            <div class="menu-info">
+              <div class="menu-info-name"><h3>파티 박스</h3></div>
+              <div class="menu-info-detail">DATADATADATADATADATA</div>
+              <div>28,500원</div>
+            </div>
+            <div class="imgbox"></div>
+          </li>
+        </ul>
+
+        <ul class="menu">
+          <button class="menu-btn">족발<i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+          <li>
+            <div class="menu-info">
+              <div class="menu-info-name"><h3>DATA</h3></div>
+              <div class="menu-info-detail">DATADATADATADATADATA</div>
+              <div>26,000원</div>
+            </div>
+            <div class="imgbox"></div>
+          </li>
+          <li>
+            <div class="menu-info">
+              <div class="menu-info-name"><h3>DATA</h3></div>
+              <div class="menu-info-detail">DATADATADATADATADATA</div>
+              <div>26,000원</div>
+            </div>
+            <div class="imgbox"></div>
+          </li>
+          <li>
+            <div class="menu-info">
+              <div class="menu-info-name"><h3>DATA</h3></div>
+              <div class="menu-info-detail">DATADATADATADATADATA</div>
+              <div>26,000원</div>
+            </div>
+            <div class="imgbox"></div>
+          </li>
+          <li>
+            <div class="menu-info">
+              <div class="menu-info-name"><h3>DATA</h3></div>
+              <div class="menu-info-detail">DATADATADATADATADATA</div>
+              <div>26,000원</div>
+            </div>
+            <div class="imgbox"></div>
+          </li>
+          <li>
+            <div class="menu-info">
+              <div class="menu-info-name"><h3>DATA</h3></div>
+              <div class="menu-info-detail">DATADATADATADATADATA</div>
+              <div>26,000원</div>
+            </div>
+            <div class="imgbox"></div>
+          </li>
+        </ul>
+        <ul class="menu">
+          <button class="menu-btn">보쌈<i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+          <li>
+            <div class="menu-info">
+              <div class="menu-info-name"><h3>DATA</h3></div>
+              <div class="menu-info-detail">DATADATADATADATADATA</div>
+              <div>26,000원</div>
+            </div>
+            <div class="imgbox"></div>
+          </li>
+          <li>
+            <div class="menu-info">
+              <div class="menu-info-name"><h3>DATA</h3></div>
+              <div class="menu-info-detail">DATADATADATADATADATA</div>
+              <div>26,000원</div>
+            </div>
+            <div class="imgbox"></div>
+          </li>
+          <li>
+            <div class="menu-info">
+              <div class="menu-info-name"><h3>DATA</h3></div>
+              <div class="menu-info-detail">DATADATADATADATADATA</div>
+              <div>26,000원</div>
+            </div>
+            <div class="imgbox"></div>
+          </li>
+        </ul>
+        <ul class="menu">
+          <button class="menu-btn">음료<i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+          <li>
+            <div class="menu-info">
+              <div class="menu-info-name"><h3>DATA</h3></div>
+              <div class="menu-info-detail">DATADATADATADATADATA</div>
+              <div>26,000원</div>
+            </div>
+            <div class="imgbox"></div>
+          </li>
+          <li>
+            <div class="menu-info">
+              <div class="menu-info-name"><h3>DATA</h3></div>
+              <div class="menu-info-detail">DATADATADATADATADATA</div>
+              <div>26,000원</div>
+            </div>
+            <div class="imgbox"></div>
+          </li>
+          <li>
+            <div class="menu-info">
+              <div class="menu-info-name"><h3>DATA</h3></div>
+              <div class="menu-info-detail">DATADATADATADATADATA</div>
+              <div>26,000원</div>
+            </div>
+            <div class="imgbox"></div>
+          </li>
+        </ul>
+      </div>
+
       <div class="menu-tab-info" hidden></div>
       <div class="menu-tab-review" hidden></div>
 
-      <div class="원산지표시"></div>
+      <div class="st-detail-origin">
+        <p class="origin-title">원산지 표기</p>
+        <p>오징어(튀김) 중국산, 컵밥용쌀 미국산, 김밥용쌀 국내산, 프레스햄 돼지고기 국내산, 순대/내장 돼지고기 국내산</p>
+      </div>
 
-      <ul class="store-notice">
-        유의사항
-        <li>datadatadatadatadatadatadatadata</li>
-        <li>datadatadatadatadatadatadatadatadatadata</li>
-        <li>datadatadatadatadatadatadata</li>
+      <ul class="st-detail-notice">
+        <div class="notice-title">유의사항</div>
+        <li>메뉴 사진은 연출된 이미지로 실제 조리된 음식과 다를 수 있습니다.</li>
+        <li>상단 메뉴 및 가격은 업소에서 제공한 정보를 기준으로 작성되었으며 변동될 수 있습니다.</li>
+        <li>
+          (주)우아할형제들은 상품거래에 대한 통신판매중개자이며, 통신한매의 당사자가 아닙니다. 따라서, (주)우아한형제들은 상품 거래정보 및 거래에 대하여 책임을
+          지지 않습니다.
+        </li>
       </ul>
 
-      <div class="cartbtn-container">
+      <div class="st-cart">
         <div>10,000원 더 담으면 배달 가능!</div>
         <div>배달 최소 주문금액 15,000원</div>
-        <button type="button" class="btn-order cartbtn"><span class="cartbtn-quantity">1</span>장바구니 보기<span class="cartbtn-price">5,000원</span></button>
+        <button type="button" class="st-cart-btn btn-order">
+          <span class="st-cart-btn-quantity">1</span>장바구니 보기<span class="st-cart-btn-price">5,000원</span>
+        </button>
       </div>
     </main>
   </body>
