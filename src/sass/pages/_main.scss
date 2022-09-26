@@ -113,9 +113,47 @@ body {
       }
     }
   }
+  .bg-bmart {
+    background-image: url(/asset/imgs/b마트.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+  .bg-mealkit {
+    background-image: url(/asset/imgs/밀키트.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 90%;
+  }
   .square-25 {
     width: 116px;
     height: 116px;
+    a {
+      display: flex;
+      flex-flow: column;
+      justify-content: end;
+      h2 {
+        margin: 0;
+      }
+    }
+  }
+  .bg-shoppinglive {
+    background-image: url(/asset/imgs/쇼핑라이브.jpg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 90%;
+  }
+  .bg-gift {
+    background-image: url(/asset/imgs/선물하기.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center 20%;
+  }
+  .bg-delicious {
+    background-image: url(/asset/imgs/전국별미.jpg);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center 15%;
   }
 }
 
