@@ -7,19 +7,19 @@ ul {
     flex-flow: row nowrap;
     width: 100%;
     overflow: scroll;
-    li {
-      background-color: red;
-      // width: 30%;
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+      display: none;
     }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
 
   &-col {
     display: flex;
     flex-flow: column nowrap;
-    overflow: scroll;
-    li {
-      background-color: yellow;
-    }
   }
 
   &-img-info {
