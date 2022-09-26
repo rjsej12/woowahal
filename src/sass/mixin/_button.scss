@@ -1,4 +1,4 @@
-@use "../base/colors" as *;
+@use "../base" as *;
 @use "../function/colors" as *;
 
 @mixin button-100per($selected-color: null) {
@@ -14,7 +14,7 @@
         color: #{$disabled};
     }
     padding: 16px 0;
-    font-size: 32px;
+    font-size: $font-lg;
     border-radius: 8px;
 }
 
