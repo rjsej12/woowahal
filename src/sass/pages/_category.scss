@@ -6,7 +6,7 @@
   background: $white;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -28,6 +28,7 @@
 
 .now-address {
   font-style: normal;
+  width: 100%;
   background: $white;
   font-size: $font-base;
   margin-top: 55px;
@@ -48,7 +49,6 @@
 .aboutmenu-list {
   padding: $spacing-base $spacing-md 0 $spacing-md;
   background: $white;
-  overflow: hidden;
   li {
     background: none;
     position: relative;
@@ -95,19 +95,52 @@
 
 .recommended {
   margin-top: $spacing-base;
-  background: skyblue;
-  padding: $spacing-base;
+  margin-bottom: 80px;
+  padding: $spacing-base $spacing-md;
+  background: $white;
+
   &-list {
     margin-top: $spacing-base;
-    height: 100vh;
     li {
-      margin-top: $spacing-md;
-      width: 524px;
-      height: 25vh;
-      padding: $spacing-base;
-      img {
-        width: 480px;
-        object-fit: cover;
+      margin-top: $spacing-base;
+      height: 40vh;
+
+      a {
+        display: block;
+        width: 100%;
+        border: 1px solid $grey;
+        border-radius: $spacing-base;
+        img {
+          width: 400px;
+          height: 250px;
+        }
+      }
+    }
+  }
+  &-img-container {
+    width: 100%;
+    height: 28vh;
+    background-image: url(/asset/imgs/제육대가.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: $spacing-base $spacing-base 0 0;
+  }
+  &-text-container {
+    width: 100%;
+    height: 12vh;
+    padding: $spacing-base;
+    border-top: 1px solid $grey;
+    position: relative;
+    .recommended-store-detail {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: $spacing-sm;
+      margin-top: $spacing-sm;
+      .deliverytime {
+        background: rgba($black, 0.1);
+        top: $spacing-sm;
+        right: $spacing-sm;
       }
     }
   }
