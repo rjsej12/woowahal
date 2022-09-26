@@ -1,15 +1,22 @@
 //텍스트 오프스크린, 이미지 오프스크린과 같은 오프스크린 컴포넌트들이 들어갑니다.
 @use "../base" as *;
 
+.ellipse {
+  padding: $spacing-sm $spacing-base;
+  border-radius: $spacing-base;
+  background-color: rgba($color: $black, $alpha: 0.7);
+  font-size: $font-base;
+  display: flex;
+  width: fit-content;
+  gap: $spacing-xs;
+}
+
 .offscreen {
   position: absolute;
   right: $spacing-sm;
   bottom: $spacing-sm;
-  background-color: rgba($color: $black, $alpha: 0.7);
-  padding: $spacing-sm $spacing-base;
-  border-radius: $spacing-base;
+
   &-text {
     color: $white;
-    font-size: $font-base;
   }
 }

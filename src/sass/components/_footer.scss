@@ -1,36 +1,62 @@
 @use "../function/colors" as *;
+@use "../base/" as *;
 
-a{
-    text-decoration: none;
-    color: currentColor;
+a {
+  text-decoration: none;
+  color: currentColor;
 }
 
-.footer{
-
-    width: 100%;
-
-    &-navigation{
-
-        // 시험하기 위한 margin 값
-
-        margin-top: 100px;
-        
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 8px;
-        border: solid blue 4px;
-
-        &-main{
-            color: white;
-            border: solid 1px;
-            padding: 16px;
-            border-radius: 200px;
-            background-color: getColor();
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            transform: translate(0, -16px);
-        }
+.circle-navigation {
+  background: $white;
+  height: fit-content;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: $spacing-base $spacing-md;
+  &-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: relative;
+    li {
+      display: flex;
+      flex-flow: column;
+      text-align: center;
+      justify-content: center;
+      color: rgba($color: $black, $alpha: 0.5);
+      span {
+        margin-top: $spacing-sm;
+        display: block;
+      }
     }
+  }
+  &-icon {
+    font-size: $font-lg;
+  }
+  img {
+    position: absolute;
+    width: 120px;
+    height: 160px;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-70px);
+  }
+  &-home {
+    width: $font-lg;
+  }
+}
 
-
+.homelink {
+  background: linear-gradient(to right, getColor(Woowahal-green, 500), getColor(Woowahal-green, 300));
+  font-size: $font-lg;
+  padding: $spacing-md $spacing-base;
+  color: $white;
+  border: 2px solid $black;
+  border-radius: 50%;
+  text-shadow: -2px 0 $black, 0 1px $black, 1px 0 $black, 0 -2px $black;
+  box-shadow: -1px 0 $black, 0 0px $black, 1px 0 $black, 0 -0px $black;
+  position: absolute;
+  top: -40%;
+  left: center;
+  transform: translateX(-$spacing-base);
 }

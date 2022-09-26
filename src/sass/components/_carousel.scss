@@ -1,12 +1,12 @@
 @use "../base/" as *;
 
 .carousel {
-  width: 560px;
+  width: 100%;
   height: 100px;
   position: relative;
   &-slide {
     display: none;
-    width: 560px;
+    width: 100%;
   }
   .is-active {
     display: block;
