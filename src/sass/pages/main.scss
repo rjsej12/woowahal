@@ -21,14 +21,13 @@ body {
     flex-flow: row nowrap;
     justify-content: center;
     text-align: center;
-    gap: $spacing-base;
+    gap: $spacing-md;
   }
   a {
     display: block;
   }
   &-icon {
     color: $white;
-    margin-left: $spacing-base;
     font-size: $font-md;
   }
 }
@@ -40,6 +39,7 @@ body {
   font-size: $font-md;
   i {
     font-size: $font-base;
+    margin-left: $font-sm;
   }
 }
 
