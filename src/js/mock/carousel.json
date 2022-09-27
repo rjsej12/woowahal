@@ -1,0 +1,26 @@
+{
+  "promotion": [
+    {
+      "url": "/asset/imgs/1.png",
+      "title": "당신의 마음을 전해보세요",
+      "content": "배민 첫 이용시 5000원 할인"
+    },
+    {
+      "url": "/asset/imgs/메인광고배너.png",
+      "title": "당신의 마음을 전해보세요",
+      "content": "배민 첫 이용시 5000원 할인"
+    }
+  ],
+  "advertisement": [
+    {
+      "url": "/asset/imgs/메인광고배너.png",
+      "title": "당신의 마음을 전해보세요",
+      "content": "배민 첫 이용시 5000원 할인"
+    },
+    {
+      "url": "/asset/imgs/메인광고배너.png",
+      "title": "당신의 마음을 전해보세요",
+      "content": "배민 첫 이용시 5000원 할인"
+    }
+  ]
+}

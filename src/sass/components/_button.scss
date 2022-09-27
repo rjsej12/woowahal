@@ -1,0 +1,43 @@
+@use "../mixin/button" as *;
+@use "../base" as *;
+
+button{
+    border: none;
+    background:transparent;
+    font-family: "BMHANNAPro";
+}
+.btn{
+    &-order{
+        @include button-100per;
+        margin:16px 0;
+    }   
+
+    &-amount{
+        display: inline-block;
+        padding: $spacing-sm;
+        border: solid $grey 1px;
+        border-radius: $br-md;
+        &::before{
+            content: "-";
+            padding-right: $spacing-lg;
+            display: inline-block;
+        }
+        &::after{
+            content: "+";
+            padding-left: $spacing-lg;
+            display: inline-block;
+        }
+        & .amount{
+            &::after{
+                content: " 개";
+            }
+        }
+    }
+
+    &-option{
+        display: inline-block;
+        padding: $spacing-sm;
+        border: solid $grey 1px;
+        border-radius: $br-md;
+    }
+}

@@ -1,0 +1,58 @@
+@use "../base" as *;
+
+ul {
+  list-style-type: none;
+}
+.container {
+  &-row {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    overflow: scroll;
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  &-col {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  &-img-info {
+background-color: white;
+    display: flow-root;
+   
+    &.right img{
+      float: right;
+    }
+    &.left img{
+      float: left;
+    }
+    & img{
+      height: 10vh;
+      border: solid $grey;
+      border-radius: $br-md;
+      margin-right: $spacing-sm;
+      
+    }
+    & ul{
+      padding: $spacing-sm;
+      & .price{
+        font-weight: 700;
+      }
+    }
+  }
+
+
+}
+
+.key-value-box {
+  display: flex;
+  justify-content: space-between;
+}

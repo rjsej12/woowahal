@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .header-icon {
+        display: inline-block;
+        background: silver;
+        width: 2.5em;
+        height: 2.5em;
+      }
+
+      .header-left-area,
+      .header-right-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left-area"><a class="header-icon back-icon" href="#" title="뒤로가기 버튼">back</a></div>
+
+      <div class="header-right-area">
+        <a class="header-icon home-icon" href="#" title="">홈</a>
+        <a class="header-icon cart-icon" href="#" title="">cart</a>
+      </div>
+    </header>
+  </body>
+</html>
+<!-- 링크 버튼 어떤 것을 선택할지에 대해 생각
+재사용성 생각-
+rem -> em -->
