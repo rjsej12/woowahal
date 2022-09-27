@@ -24,7 +24,11 @@
   }
 }
 
-.introbox.withimg {
+// [본인 클래스].withimg::before {
+//     background-image: url(넣을 이미지);
+//   }
+
+.withimg {
   &::before {
     content: "";
     display: block;
