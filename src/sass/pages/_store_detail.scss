@@ -46,6 +46,10 @@
       justify-content: space-around;
       margin-top: $spacing-base;
       font-size: 1rem;
+
+      & button {
+        font-size: 1rem;
+      }
     }
   }
 
