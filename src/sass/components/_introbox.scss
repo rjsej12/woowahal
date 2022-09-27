@@ -1,0 +1,47 @@
+@use "../base" as *;
+@use "../function" as *;
+
+.introbox-info {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 3.5rem;
+  background: $white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5em 1em 0 $grey;
+  border: 1px solid silver;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: $spacing-sm;
+  padding: $spacing-base;
+  width: 80vw;
+
+  & h3 {
+    width: 70%;
+  }
+}
+
+// [본인 클래스].withimg::before {
+//     background-image: url(넣을 이미지);
+//   }
+
+.withimg {
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20rem;
+    position: relative;
+    background: yellow;
+    background-image: url(/);
+    background-position: 0 50%;
+    background-size: cover;
+  }
+  & .introbox-info {
+    transform: translate(0, -25%);
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,44 @@
+@use "../function/" as *;
+
+@mixin Hanna {
+  @font-face {
+    font-family: "BMHANNAPro";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+// 을지로체 사용 여부 판단하기.
+@mixin Eulziro {
+  @font-face {
+    font-family: "BMEULJIRO";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BMEULJIRO.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+$font-sm: rem(8px);
+$font-sub: rem(14px);
+$font-base: rem(16px);
+$font-md: rem(24px);
+$font-lg: rem(32px);
+$font-xl: rem(48px);
+
+@media (min-width: 320px) and (max-width: 479px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 560px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  html {
+    font-size: 20px;
+  }
+}

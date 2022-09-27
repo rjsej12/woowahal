@@ -1,0 +1,58 @@
+@use "../base" as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .header-left-area,
+  .header-right-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $spacing-base;
+
+    .header-icon {
+      display: inline-block;
+      background: silver;
+      width: 2.5em;
+      height: 2.5em;
+    }
+  }
+}
+
+.header-haveimg {
+  // 이미지 들어갈 자리
+  background: skyblue;
+  color: white;
+  height: 15rem;
+  .header-icon {
+    background-color: transparent;
+  }
+}
+
+.header-common {
+  padding: $spacing-base;
+  background: $white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+  &-left-area,
+  &-right-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $spacing-base;
+  }
+  &-icon {
+    font-size: $font-md;
+  }
+  .pagename {
+    width: $font-xl;
+  }
+}

@@ -1,0 +1,137 @@
+@use "../base" as *;
+@use "../function" as *;
+@use "../components/" as *;
+
+.st-list {
+  & button {
+    font-family: "BMHANNAPro";
+  }
+
+  &-category {
+    gap: $spacing-base;
+    border-bottom: 2px solid $grey;
+    height: 3.5rem;
+    position: fixed;
+    top: 3.5rem;
+    align-items: center;
+    padding: 0 $spacing-base;
+    background: $white;
+    justify-content: flex-start;
+    gap: 0;
+
+    & li {
+      flex-grow: 1;
+      // padding: 0 $spacing-base;
+    }
+    & button {
+      white-space: nowrap;
+      color: grey;
+      padding: $spacing-base 0;
+      // padding-bottom: 0.5rem;
+      border-bottom: 4px solid transparent;
+      font-size: $font-base;
+      padding-left: $spacing-base;
+      padding-right: $spacing-base;
+      height: 100%;
+      &:focus {
+        outline-offset: -$spacing-sm;
+        // background: red;
+      }
+    }
+
+    & button.is-active {
+      box-sizing: border-box;
+      border-bottom: 4px solid black;
+      color: black;
+      position: relative;
+    }
+  }
+
+  // 정렬 기준 영역
+  &-sortbys {
+    gap: $spacing-lg;
+    height: 2.5rem;
+    position: fixed;
+    top: 7rem;
+    align-items: center;
+    padding: 0 $spacing-base;
+    background: $white;
+
+    & .sortby {
+      & button {
+        white-space: nowrap;
+        color: grey;
+      }
+
+      &-standard-list {
+        display: none;
+      }
+
+      & .fa-badge-percent {
+        background: orange;
+        color: $white;
+      }
+
+      & .fa-hand-point-up {
+        color: #ecb28d;
+      }
+    }
+  }
+
+  &-scroll {
+    padding-top: 9.5rem;
+
+    & i {
+      margin-right: $spacing-xs;
+    }
+
+    & .fa-star-sharp {
+      color: #f9c60b;
+    }
+
+    & .scroll-item {
+      padding: $spacing-sm;
+      margin-bottom: 1px;
+      background: $white;
+
+      & a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      & img {
+        width: 5rem;
+        height: 5rem;
+        margin-top: $spacing-sm;
+        border: none;
+      }
+
+      & li {
+        margin-bottom: $spacing-sm;
+      }
+
+      &-name {
+        font-size: 1.2rem;
+      }
+
+      &-menu {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      &-time {
+        display: flex;
+        padding: $spacing-xs;
+        justify-content: center;
+        border-radius: 1rem;
+        background: $grey;
+        width: 6em;
+        margin-left: 5.5rem;
+        margin-top: -$spacing-sm;
+        font-size: $font-sub;
+      }
+    }
+  }
+}

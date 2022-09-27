@@ -1,0 +1,160 @@
+@use "../base" as *;
+@use "../function" as *;
+@use "../components" as *;
+
+.now-address {
+  font-style: normal;
+  width: 100%;
+  background: $white;
+  font-size: $font-base;
+  margin-top: 3.5rem;
+  padding-left: $spacing-base;
+  padding-bottom: $spacing-base;
+  i {
+    margin-left: $spacing-sm;
+  }
+}
+
+.category-promotion {
+  width: 100%;
+  li {
+    width: 100%;
+  }
+}
+
+.aboutmenu-list {
+  padding: $spacing-base $spacing-md 0 $spacing-md;
+  background: $white;
+  li {
+    background: none;
+    position: relative;
+    margin-right: $spacing-base;
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+  .aboutmenu {
+    width: rem(130px);
+    height: rem(80px);
+    border-radius: $spacing-base;
+  }
+  p {
+    display: flex;
+    flex-flow: column;
+    gap: $spacing-sm;
+    color: $white;
+    position: absolute;
+    top: $spacing-sm;
+    left: $spacing-sm;
+  }
+}
+
+.category-list {
+  padding: 0 $spacing-base $spacing-md $spacing-base;
+  background: $white;
+  display: flex;
+  flex-flow: row wrap;
+  gap: $spacing-base;
+  justify-content: space-between;
+  li {
+    width: 15%;
+    height: rem(50px);
+    margin-top: $spacing-base;
+    &:active {
+      transform: scale(1.2);
+    }
+    a {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      white-space: nowrap;
+      img {
+        width: rem(50px);
+      }
+    }
+  }
+}
+
+.recommended {
+  margin-top: $spacing-base;
+  margin-bottom: rem(80px);
+  padding: $spacing-base $spacing-md;
+  background: $white;
+  .star-icon {
+    color: $yellow;
+  }
+
+  &-list {
+    li {
+      margin-top: $spacing-base;
+      height: 25rem;
+      &:active {
+        transform: scale(0.9);
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        border: 1px solid $grey;
+        border-radius: $spacing-base;
+        img {
+          width: rem(400px);
+          height: rem(250px);
+        }
+      }
+    }
+  }
+  &-img-container {
+    width: 100%;
+    height: 20rem;
+    background-image: url(/asset/imgs/제육대가.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: $spacing-base $spacing-base 0 0;
+  }
+  &-text-container {
+    width: 100%;
+    height: 5rem;
+    padding: $spacing-base;
+    border-top: 1px solid $grey;
+    position: relative;
+    .recommended-store-detail {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: $spacing-sm;
+      margin-top: $spacing-sm;
+      .deliverytime {
+        background: rgba($black, 0.1);
+        top: $spacing-sm;
+        right: $spacing-sm;
+      }
+    }
+  }
+  &-sortbys {
+    gap: $spacing-lg;
+    align-items: center;
+    padding: 0 $spacing-base;
+    background: $white;
+
+    & .sortby {
+      & button {
+        white-space: nowrap;
+        color: grey;
+      }
+
+      &-list {
+        display: none;
+      }
+
+      & .fa-badge-percent {
+        background: orange;
+        color: $white;
+      }
+
+      & .fa-hand-point-up {
+        color: #ecb28d;
+      }
+    }
+  }
+}
