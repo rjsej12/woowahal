@@ -10,7 +10,7 @@
   &-category {
     gap: $spacing-base;
     border-bottom: 2px solid $grey;
-    height: 2.5rem;
+    height: 3.5rem;
     position: fixed;
     top: 3.5rem;
     align-items: center;
@@ -26,12 +26,13 @@
     & button {
       white-space: nowrap;
       color: grey;
-      padding-top: $spacing-base;
-      padding-bottom: 0.5rem;
+      padding: $spacing-base 0;
+      // padding-bottom: 0.5rem;
       border-bottom: 4px solid transparent;
       font-size: $font-base;
       padding-left: $spacing-base;
       padding-right: $spacing-base;
+      height: 100%;
       &:focus {
         outline-offset: -$spacing-sm;
         // background: red;
@@ -39,8 +40,10 @@
     }
 
     & button.is-active {
+      box-sizing: border-box;
       border-bottom: 4px solid black;
       color: black;
+      position: relative;
     }
   }
 
@@ -49,7 +52,7 @@
     gap: $spacing-lg;
     height: 2.5rem;
     position: fixed;
-    top: 6rem;
+    top: 7rem;
     align-items: center;
     padding: 0 $spacing-base;
     background: $white;
@@ -76,7 +79,7 @@
   }
 
   &-scroll {
-    margin-top: 8.5rem;
+    padding-top: 9.5rem;
 
     & i {
       margin-right: $spacing-xs;
