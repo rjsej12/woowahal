@@ -23,6 +23,16 @@ body *::before {
   margin: 0 auto;
 }
 
+@media (min-width: 320px) and (max-width: 559px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  html {
+    font-size: 20px;
+  }
+}
 .a11y-hidden {
   position: absolute;
   width: 1px;
@@ -31,6 +41,317 @@ body *::before {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
 }
 
 button {
@@ -44,7 +365,7 @@ button {
   background-color: #2ac1bc;
   color: #fff;
   padding: 16px 0;
-  font-size: 32px;
+  font-size: 2rem;
   border-radius: 8px;
   margin: 16px 0;
 }
@@ -58,18 +379,18 @@ button {
 }
 .btn-amount {
   display: inline-block;
-  padding: 8px;
+  padding: 0.5rem;
   border: solid #d9d9d9 1px;
-  border-radius: 24px;
+  border-radius: 1.5rem;
 }
 .btn-amount::before {
   content: "-";
-  padding-right: 32px;
+  padding-right: 2rem;
   display: inline-block;
 }
 .btn-amount::after {
   content: "+";
-  padding-left: 32px;
+  padding-left: 2rem;
   display: inline-block;
 }
 .btn-amount .amount::after {
@@ -77,9 +398,9 @@ button {
 }
 .btn-option {
   display: inline-block;
-  padding: 8px;
+  padding: 0.5rem;
   border: solid #d9d9d9 1px;
-  border-radius: 24px;
+  border-radius: 1.5rem;
 }
 
 ul {
@@ -116,11 +437,11 @@ ul {
 .container-img-info img {
   height: 10vh;
   border: solid #d9d9d9;
-  border-radius: 24px;
-  margin-right: 8px;
+  border-radius: 1.5rem;
+  margin-right: 0.5rem;
 }
 .container-img-info ul {
-  padding: 8px;
+  padding: 0.5rem;
 }
 .container-img-info ul .price {
   font-weight: 700;
@@ -142,7 +463,7 @@ a {
   width: 100vw;
   position: fixed;
   bottom: 0;
-  padding: 16px 24px;
+  padding: 1rem 1.5rem;
 }
 .circle-navigation-list {
   display: flex;
@@ -158,20 +479,20 @@ a {
   color: rgba(0, 0, 0, 0.5);
 }
 .circle-navigation-list li span {
-  margin-top: 8px;
+  margin-top: 0.5rem;
   display: block;
 }
 .circle-navigation-icon {
-  font-size: 32px;
+  font-size: 2rem;
 }
 .circle-navigation-home {
-  width: 32px;
+  width: 2rem;
 }
 
 .homelink {
   background: linear-gradient(to right, #2ac1bc, #7fdad7);
-  font-size: 32px;
-  padding: 24px 16px;
+  font-size: 2rem;
+  padding: 0.8em 0.5em;
   color: #fff;
   border: 2px solid #000;
   border-radius: 50%;
@@ -180,7 +501,7 @@ a {
   position: absolute;
   top: -40%;
   left: center;
-  transform: translateX(-16px);
+  transform: translateX(-0.5em);
 }
 
 .header {
@@ -193,7 +514,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }
 .header .header-left-area .header-icon,
 .header .header-right-area .header-icon {
@@ -213,7 +534,7 @@ a {
 }
 
 .header-common {
-  padding: 16px;
+  padding: 1rem;
   background: #fff;
   position: fixed;
   top: 0;
@@ -228,13 +549,13 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }
 .header-common-icon {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .header-common .pagename {
-  width: 48px;
+  width: 3rem;
 }
 
 .carousel {
@@ -257,27 +578,27 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
-  padding: 16px;
+  padding: 1rem;
   flex-flow: column;
   justify-content: center;
   color: #fff;
 }
 .carousel a p {
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 .carousel .offscreen {
-  bottom: 8px;
-  right: 8px;
+  bottom: 0.5rem;
+  right: 0.5rem;
 }
 
 .ellipse {
-  padding: 8px 16px;
-  border-radius: 16px;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
   background-color: rgba(0, 0, 0, 0.7);
-  font-size: 16px;
+  font-size: 1rem;
   display: flex;
   width: fit-content;
-  gap: 4px;
+  gap: 0.25rem;
 }
 
 .offscreen {
@@ -290,7 +611,7 @@ a {
 .introbox-info {
   position: relative;
   margin: 0 auto;
-  margin-bottom: -9rem;
+  margin-top: 3.5rem;
   background: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 0.5em 1em 0 #d9d9d9;
@@ -301,34 +622,28 @@ a {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  gap: 8px;
-  padding: 16px;
+  gap: 0.5rem;
+  padding: 1rem;
   width: 80vw;
-  height: 9rem;
 }
 .introbox-info h3 {
   width: 70%;
 }
 
-.withimg {
-  transform: translate(0, -25%);
-  margin-bottom: -11rem;
-}
-
-.intro-imgbox {
+.withimg::before {
+  content: "";
+  display: block;
   width: 100%;
   height: 20rem;
   position: relative;
-  background-image: url(/asset/imgs/baemin1_sns.jpg);
+  background: yellow;
+  background-image: url(/);
   background-position: 0 50%;
   background-size: cover;
 }
-
-.intro-noimgbox {
-  width: 100%;
-  height: 4rem;
-  background: #fff;
-  position: relative;
+.withimg .introbox-info {
+  transform: translate(0, -25%);
+  margin: 0 auto;
 }
 
 body {
@@ -337,77 +652,83 @@ body {
 
 .main-header {
   background: #2ac1bc;
-  padding: 16px;
-  border-radius: 0 0 16px 16px;
+  padding: 1rem;
+  border-radius: 0 0 1rem 1rem;
   display: flex;
   position: relative;
   flex-flow: column;
 }
 .main-header-list {
   position: absolute;
-  right: 16px;
-  top: 16px;
+  right: 1rem;
+  top: 1rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   text-align: center;
-  gap: 16px;
+  gap: 1.5rem;
 }
 .main-header a {
   display: block;
 }
 .main-header-icon {
   color: #fff;
-  margin-left: 16px;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .order-address {
   font-style: normal;
   color: #fff;
   display: inline-block;
-  font-size: 24px;
+  font-size: 1.5rem;
+}
+.order-address i {
+  font-size: 1rem;
+  margin-left: 0.5rem;
 }
 
 .menu-icon {
-  width: 24px;
+  width: 1.5rem;
 }
 
 .search-bar {
-  margin-top: 16px;
+  margin-top: 1rem;
   display: flex;
   flex-flow: row nowrap;
   position: relative;
 }
 .search-bar-icon {
   color: #2ac1bc;
-  font-size: 24px;
+  font-size: 1.5rem;
   position: absolute;
   top: 50%;
-  left: 16px;
+  left: 0.5rem;
   transform: translateY(-50%);
 }
 .search-bar-input {
   border: 1px solid #d9d9d9;
   border-radius: 0 0 4px 4px;
   width: 100%;
-  padding: 16px 48px;
+  padding: 1rem 3rem;
 }
 
 .sitemenu-list {
-  padding: 24px;
+  padding: 1.5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "baemin1 baemin1 delivery delivery" "baemin1 baemin1 delivery delivery" "baemin1 baemin1 delivery delivery" "package package package package " "bmart bmart mealkit mealkit" "bmart bmart mealkit mealkit" "baeminstore baeminstore baeminstore baeminstore" "shoppinglive shoppinglive gift delicious" "shoppinglive shoppinglive gift delicious";
-  gap: 16px;
+  gap: 1rem;
 }
 .sitemenu-list li {
-  border-radius: 16px;
+  border-radius: 1rem;
   background: #fff;
+}
+.sitemenu-list li:active {
+  transform: scale(0.9);
 }
 .sitemenu-list a {
   display: block;
-  padding: 16px;
+  padding: 1rem;
   width: 100%;
   height: 100%;
 }
@@ -416,23 +737,25 @@ body {
 }
 .sitemenu-list a .accent {
   display: inline;
+  background: rgba(42, 193, 188, 0.2);
+  box-shadow: 4px 0px 1px 1px rgba(42, 193, 188, 0.3);
 }
 .sitemenu-list a h2 {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .sitemenu-list .square-50 {
   width: 100%;
-  height: 200px;
+  height: 12.5rem;
 }
 .sitemenu-list .w-100 {
   width: 100%;
 }
 .sitemenu-list .w-50 {
   width: 100%;
-  height: 112px;
+  height: 7rem;
 }
 .sitemenu-list .w-50-2 {
-  height: 116px;
+  height: 7.25rem;
 }
 .sitemenu-list .w-50-2 a {
   display: flex;
@@ -441,7 +764,7 @@ body {
 }
 .sitemenu-list .square-25 {
   width: 100%;
-  height: 116px;
+  height: 7.25rem;
 }
 .sitemenu-list .square-25 a {
   display: flex;
@@ -496,29 +819,29 @@ body {
   grid-area: shoppinglive;
   background-image: url(/asset/imgs/쇼핑라이브.jpg);
   background-repeat: no-repeat;
-  background-size: 100px;
+  background-size: 6.25rem;
   background-position: 90%;
 }
 .sitemenu-list .bg-gift {
   grid-area: gift;
   background-image: url(/asset/imgs/선물하기.jpg);
   background-repeat: no-repeat;
-  background-size: 60px;
+  background-size: 3.75rem;
   background-position: center 20%;
 }
 .sitemenu-list .bg-gift h2 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 .sitemenu-list .bg-delicious {
   grid-area: delicious;
   background-image: url(/asset/imgs/전국별미.jpg);
   background-repeat: no-repeat;
-  background-size: 70px;
+  background-size: 4.375rem;
   background-position: center 15%;
 }
 .sitemenu-list .bg-delicious h2 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -533,38 +856,46 @@ body {
 .fastdelivery,
 .gift,
 .baemindo {
-  margin-top: 16px;
+  margin-top: 1rem;
   background: #fff;
   width: 100%;
-  padding: 16px;
+  padding: 1rem;
 }
 .fastdelivery h2,
 .gift h2,
 .baemindo h2 {
   font-weight: 500;
 }
+.fastdelivery li:active,
+.fastdelivery article:active,
+.gift li:active,
+.gift article:active,
+.baemindo li:active,
+.baemindo article:active {
+  transform: scale(0.9);
+}
 
 .fastdelivery .container-row {
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 .fastdelivery li {
-  margin-right: 16px;
+  margin-right: 1rem;
 }
 .fastdelivery .storeinfo {
-  width: 150px;
-  height: 150px;
-  border-radius: 8px;
+  width: 9.375rem;
+  height: 9.375rem;
+  border-radius: 0.5rem;
 }
 .fastdelivery p {
-  margin-top: 8px;
+  margin-top: 0.5rem;
 }
 .fastdelivery .deliverytime {
   border: 1px solid #2ac1bc;
-  padding: 4px 8px;
+  padding: 0.25rem 0.5rem;
   background-color: rgba(42, 193, 188, 0.1);
 }
 .fastdelivery .baeminlogo {
-  width: 32px;
+  width: 2rem;
 }
 
 .star-icon {
@@ -572,23 +903,23 @@ body {
 }
 
 .gift .container-row {
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 .gift li {
-  margin-right: 16px;
+  margin-right: 1rem;
 }
 .gift li img {
-  width: 200px;
-  height: 250px;
+  width: 12.5rem;
+  height: 15.625rem;
 }
 .gift li p {
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 .gift-more-info {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  gap: 16px;
+  gap: 1rem;
   align-items: center;
 }
 .gift-more-info .gift-more-link {
@@ -599,14 +930,14 @@ body {
 
 .advertisement {
   width: 100%;
-  margin: 16px 0;
+  margin: 1rem 0;
 }
 
 .baemindo-container {
-  margin-top: 16px;
+  margin-top: 1rem;
   display: grid;
-  grid-template-areas: "volunteer  multiuse " ".   multiuse" "report   multiuse" "report   multiuse" "report   discount" "report   .";
-  gap: 0 16px;
+  grid-template-areas: "volunteer  multiuse " ".   multiuse" "report   multiuse" "report   multiuse" "report   ." "report   discount";
+  gap: 0 1rem;
 }
 .baemindo-img-wrapper {
   display: flex;
@@ -614,11 +945,11 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 16px;
+  gap: 1rem;
 }
 .baemindo-img-wrapper img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .voulunteer {
@@ -638,30 +969,30 @@ body {
 }
 
 .main-footer {
-  padding: 16px;
+  padding: 1rem;
   color: rgba(0, 0, 0, 0.4);
 }
 .main-footer .guide-list {
   display: flex;
   flex-flow: row nowrap;
-  gap: 8px;
+  gap: 0.5rem;
   align-items: center;
 }
 .main-footer .guide-list li:last-child {
   color: #000;
 }
 .main-footer .detailinfo {
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 .main-footer .detailinfo h2 {
   color: #000;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .main-footer .detailinfo h2 .more-info-btn {
   cursor: pointer;
 }
 .main-footer .detailinfo div {
-  margin-top: 8px;
+  margin-top: 0.5rem;
 }
 .main-footer .detailinfo .company-more-info {
   display: none;
@@ -671,7 +1002,7 @@ body {
 }
 .main-footer small {
   display: block;
-  margin-top: 8px;
+  margin-top: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

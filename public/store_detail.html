@@ -4,45 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="매일매일 새로운 할인! 좋은 음식을 먹고 싶은 곳에서, 배달의 민족, 원하는 음식을 골라보세요" <link rel="stylesheet" href="style/index.css" />
+    <meta name="description" content="매일매일 새로운 할인! 좋은 음식을 먹고 싶은 곳에서, 배달의 민족, 원하는 음식을 골라보세요" />
     <title>배달의민족 - 가게 상세 페이지</title>
     <link rel="stylesheet" href="style/pages/store_detail.css" />
     <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <!-- class추가 -->
-    <header class="st-header category-header">
-      <div class="st-header-left category-header-left-area">
-        <a href="./main.html"><i class="fa-regular fa-arrow-left category-header-icon"></i></a>
+    <header class="st-header header-common">
+      <div class="st-header-left header-common-left-area">
+        <a href="./store_list.html"><i class="fa-regular fa-arrow-left header-common-icon"></i></a>
       </div>
 
-      <div class="st-header-right category-header-right-area">
-        <a href="#"><i class="fa-light fa-house category-header-icon"></i></a>
-        <a href="#"><i class="fa-light fa-cart-shopping category-header-icon"></i></a>
+      <div class="st-header-right header-common-right-area">
+        <a href="#"><i class="fa-light fa-house header-common-icon"></i></a>
+        <a href="#"><i class="fa-light fa-cart-shopping header-common-icon"></i></a>
       </div>
     </header>
 
     <main class="st-detail">
       <!-- 가게 소개 영역 -->
-      <div class="st-detail-imgbox intro-imgbox"></div>
-      <h2 class="a11y-hidden">가게 정보 영역</h2>
-      <div class="st-introbox introbox-info withimg">
-        <h3>제로베이스 떡볶이</h3>
 
-        <div class="st-introbox-row1">5.0</div>
+      <div class="st-detail-introbox introbox withimg">
+        <h2 class="a11y-hidden">가게 정보 영역</h2>
+        <div class="introbox-info">
+          <h3>STORE NAME</h3>
+          <div class="introbox-info-row1">5.0</div>
 
-        <div class="st-introbox-row2">최근리뷰 28<span class="divider"></span>최근사장님댓글 121</div>
+          <div class="introbox-info-row2">최근리뷰 28<span class="divider"></span>최근사장님댓글 121</div>
 
-        <div class="st-introbox-row3">
-          <a href="tel" class="st-introbox-row3-tel" aria-role="button"> <i class="fa-regular fa-phone"></i> 전화</a>
+          <div class="introbox-info-row3">
+            <a href="tel" class="introbox-info-row3-tel" role="button"> <i class="fa-regular fa-phone"></i> 전화</a>
 
-          <span class="divider"></span>
+            <span class="divider"></span>
 
-          <span class="st-introbox-row3-dibs"><i class="fa-regular fa-heart"></i> 찜 234</span>
+            <button type="button" class="introbox-info-row3-dibs"><i class="fa-regular fa-heart"></i> 찜 234</button>
 
-          <span class="divider"></span>
+            <span class="divider"></span>
 
-          <span class="st-introbox-row3-share"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i> 공유</span>
+            <button type="button" class="introbox-info-row3-share"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i> 공유</button>
+          </div>
         </div>
       </div>
 
@@ -103,244 +104,226 @@
       <div class="st-detail-menus container-col">
         <ul class="menu menu-represent">
           <div class="st-detail-menus-represent">--- 대표메뉴 ---</div>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>트윈 세트</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>16,000원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>스페셜 세트</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>19,300원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>패밀리 세트</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>22,800원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>치즈 세트</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>17,500원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>파티 박스</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>28,500원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
+            </a>
+          </li>
+          <li class="container-img-info right">
+            <a href="./store_order.html">
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
         </ul>
 
+        <button class="menu-btn">떡볶이<i class="fa-sharp fa-solid fa-chevron-down"></i></button>
         <ul class="menu">
-          <button class="menu-btn">족발<i class="fa-sharp fa-solid fa-chevron-down"></i></button>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>파티 박스</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>28,500원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>파티 박스</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>28,500원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>파티 박스</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>28,500원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>파티 박스</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>28,500원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>파티 박스</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>28,500원</div>
-              </div>
-              <div class="imgbox"></div>
-            </a>
-          </li>
-          <li>
-            <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>파티 박스</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>28,500원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
         </ul>
+
+        <button class="menu-btn">순대<i class="fa-sharp fa-solid fa-chevron-down"></i></button>
         <ul class="menu">
-          <button class="menu-btn">보쌈<i class="fa-sharp fa-solid fa-chevron-down"></i></button>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>파티 박스</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>28,500원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>파티 박스</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>28,500원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>파티 박스</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>28,500원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>파티 박스</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>28,500원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>파티 박스</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>28,500원</div>
-              </div>
-              <div class="imgbox"></div>
-            </a>
-          </li>
-          <li>
-            <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>파티 박스</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>28,500원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
         </ul>
+
+        <button class="menu-btn">음료<i class="fa-sharp fa-solid fa-chevron-down"></i></button>
         <ul class="menu">
-          <button class="menu-btn">음료<i class="fa-sharp fa-solid fa-chevron-down"></i></button>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>파티 박스</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>28,500원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>파티 박스</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>28,500원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>파티 박스</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>28,500원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>파티 박스</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>28,500원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
-          <li>
+          <li class="container-img-info right">
             <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>파티 박스</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>28,500원</div>
-              </div>
-              <div class="imgbox"></div>
-            </a>
-          </li>
-          <li>
-            <a href="./store_order.html">
-              <div class="menu-info">
-                <div class="menu-info-name"><h3>파티 박스</h3></div>
-                <div class="menu-info-detail">DATADATADATADATADATA</div>
-                <div>28,500원</div>
-              </div>
-              <div class="imgbox"></div>
+              <img src="/asset/imgs/떡볶이.jpg" alt="" />
+              <ul class="menu-info">
+                <li class="menu-info-name"><h3>트윈 세트</h3></li>
+                <li class="menu-info-detail">DATADATADATADATADATA</li>
+                <li class="menu-info-price">16,000원</li>
+              </ul>
             </a>
           </li>
         </ul>

@@ -8,24 +8,25 @@
     <title>배달의민족 - 가게리스트</title>
     <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="style/pages/store_list.css" />
+    <script type="module" src="./js/store_list.js"></script>
   </head>
   <body>
-    <header class="st-list-header category-header">
-      <div class="category-header-left-area">
-        <a href="./main.html"><i class="fa-regular fa-arrow-left category-header-icon"></i></a>
+    <header class="st-list-header header-common">
+      <div class="header-common-left-area">
+        <a href="./category.html"><i class="fa-regular fa-arrow-left header-common-icon"></i></a>
         <img src="./asset/imgs/배민1_로고_모니터(RGB)_0블랙.png" class="pagename" alt="배민1" />
       </div>
 
-      <div class="category-header-right-area">
-        <a href="#"><i class="fa-light fa-house category-header-icon"></i></a>
-        <a href="#"><i class="fa-light fa-cart-shopping category-header-icon"></i></a>
+      <div class="header-common-right-area">
+        <a href="#"><i class="fa-light fa-house header-common-icon"></i></a>
+        <a href="#"><i class="fa-light fa-cart-shopping header-common-icon"></i></a>
       </div>
     </header>
 
     <main class="st-list">
       <h2 class="a11y-hidden">카테고리 선택 버튼</h2>
       <!-- 승학님 컴포넌트 -->
-      <ul class="st-list-category container-row">
+      <ul class="st-list-category container-row" tabindex="0">
         <li><button class="is-active">분식</button></li>
         <li><button>족발·보쌈</button></li>
         <li><button>돈까스·회·일식</button></li>
@@ -44,16 +45,16 @@
       </ul>
 
       <h2 class="a11y-hidden">가게 리스트 정렬 기준</h2>
-      <ul class="st-list-sortbys container-row">
+      <ul class="st-list-sortbys container-row" tabindex="0">
         <li class="sortby">
-          <button>기본순 <i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+          <button class="sortby-standard">기본순 <i class="fa-sharp fa-solid fa-chevron-down"></i></button>
 
-          <ul class="sortby-list">
+          <ul class="sortby-standard-list">
             <!-- 클릭하면 클래스 줘서 가상요소 선택자로 체크 표시 -->
-            <li><button>정렬</button></li>
-            <li><button>기본순</button></li>
-            <li><button>이름순</button></li>
-            <li><button>별점 높은 순</button></li>
+            <li><button class="standard-list-standard">기본순</button></li>
+            <li><button class="standard-list-random">랜덤 정렬</button></li>
+            <li><button class="standard-list-name">이름순</button></li>
+            <li><button class="standard-list-highrating">별점 높은 순</button></li>
           </ul>
         </li>
 
@@ -73,268 +74,208 @@
 
       <h2 class="a11y-hidden">가게 리스트</h2>
 
-      <ul class="st-list-scroll container-col">
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
+      <ul class="st-list-scroll container-col" tabindex="0">
+        <li class="scroll-item container-img-info left">
+          <a href="./store_detail.html">
+            <img src="/asset/imgs/떡볶이.jpg" alt="" />
+            <ul>
+              <li class="scroll-item-name">제로베이스 떡볶이</li>
+              <li class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</li>
+              <li>최소주문 9,000원, 배달팁 4,000원</li>
+            </ul>
+            <div class="scroll-item-time" aria-label="소요 시간"><i class="fa-light fa-clock"></i>38~53분</div>
           </a>
         </li>
 
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
+        <li class="scroll-item container-img-info left">
+          <a href="./store_detail.html">
+            <img src="/asset/imgs/떡볶이.jpg" alt="" />
+            <ul>
+              <li class="scroll-item-name">제로베이스 떡볶이</li>
+              <li class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</li>
+              <li>최소주문 9,000원, 배달팁 4,000원</li>
+            </ul>
+            <div class="scroll-item-time" aria-label="소요 시간"><i class="fa-light fa-clock"></i>38~53분</div>
           </a>
         </li>
 
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
+        <li class="scroll-item container-img-info left">
+          <a href="./store_detail.html">
+            <img src="/asset/imgs/떡볶이.jpg" alt="" />
+            <ul>
+              <li class="scroll-item-name">제로베이스 떡볶이</li>
+              <li class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</li>
+              <li>최소주문 9,000원, 배달팁 4,000원</li>
+            </ul>
+            <div class="scroll-item-time" aria-label="소요 시간"><i class="fa-light fa-clock"></i>38~53분</div>
           </a>
         </li>
 
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
+        <li class="scroll-item container-img-info left">
+          <a href="./store_detail.html">
+            <img src="/asset/imgs/떡볶이.jpg" alt="" />
+            <ul>
+              <li class="scroll-item-name">제로베이스 떡볶이</li>
+              <li class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</li>
+              <li>최소주문 9,000원, 배달팁 4,000원</li>
+            </ul>
+            <div class="scroll-item-time" aria-label="소요 시간"><i class="fa-light fa-clock"></i>38~53분</div>
           </a>
         </li>
 
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
+        <li class="scroll-item container-img-info left">
+          <a href="./store_detail.html">
+            <img src="/asset/imgs/떡볶이.jpg" alt="" />
+            <ul>
+              <li class="scroll-item-name">제로베이스 떡볶이</li>
+              <li class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</li>
+              <li>최소주문 9,000원, 배달팁 4,000원</li>
+            </ul>
+            <div class="scroll-item-time" aria-label="소요 시간"><i class="fa-light fa-clock"></i>38~53분</div>
           </a>
         </li>
 
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
+        <li class="scroll-item container-img-info left">
+          <a href="./store_detail.html">
+            <img src="/asset/imgs/떡볶이.jpg" alt="" />
+            <ul>
+              <li class="scroll-item-name">제로베이스 떡볶이</li>
+              <li class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</li>
+              <li>최소주문 9,000원, 배달팁 4,000원</li>
+            </ul>
+            <div class="scroll-item-time" aria-label="소요 시간"><i class="fa-light fa-clock"></i>38~53분</div>
           </a>
         </li>
 
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
+        <li class="scroll-item container-img-info left">
+          <a href="./store_detail.html">
+            <img src="/asset/imgs/떡볶이.jpg" alt="" />
+            <ul>
+              <li class="scroll-item-name">제로베이스 떡볶이</li>
+              <li class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</li>
+              <li>최소주문 9,000원, 배달팁 4,000원</li>
+            </ul>
+            <div class="scroll-item-time" aria-label="소요 시간"><i class="fa-light fa-clock"></i>38~53분</div>
           </a>
         </li>
 
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
+        <li class="scroll-item container-img-info left">
+          <a href="./store_detail.html">
+            <img src="/asset/imgs/떡볶이.jpg" alt="" />
+            <ul>
+              <li class="scroll-item-name">제로베이스 떡볶이</li>
+              <li class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</li>
+              <li>최소주문 9,000원, 배달팁 4,000원</li>
+            </ul>
+            <div class="scroll-item-time" aria-label="소요 시간"><i class="fa-light fa-clock"></i>38~53분</div>
           </a>
         </li>
 
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
+        <li class="scroll-item container-img-info left">
+          <a href="./store_detail.html">
+            <img src="/asset/imgs/떡볶이.jpg" alt="" />
+            <ul>
+              <li class="scroll-item-name">제로베이스 떡볶이</li>
+              <li class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</li>
+              <li>최소주문 9,000원, 배달팁 4,000원</li>
+            </ul>
+            <div class="scroll-item-time" aria-label="소요 시간"><i class="fa-light fa-clock"></i>38~53분</div>
           </a>
         </li>
 
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
+        <li class="scroll-item container-img-info left">
+          <a href="./store_detail.html">
+            <img src="/asset/imgs/떡볶이.jpg" alt="" />
+            <ul>
+              <li class="scroll-item-name">제로베이스 떡볶이</li>
+              <li class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</li>
+              <li>최소주문 9,000원, 배달팁 4,000원</li>
+            </ul>
+            <div class="scroll-item-time" aria-label="소요 시간"><i class="fa-light fa-clock"></i>38~53분</div>
           </a>
         </li>
 
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
+        <li class="scroll-item container-img-info left">
+          <a href="./store_detail.html">
+            <img src="/asset/imgs/떡볶이.jpg" alt="" />
+            <ul>
+              <li class="scroll-item-name">제로베이스 떡볶이</li>
+              <li class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</li>
+              <li>최소주문 9,000원, 배달팁 4,000원</li>
+            </ul>
+            <div class="scroll-item-time" aria-label="소요 시간"><i class="fa-light fa-clock"></i>38~53분</div>
           </a>
         </li>
 
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
+        <li class="scroll-item container-img-info left">
+          <a href="./store_detail.html">
+            <img src="/asset/imgs/떡볶이.jpg" alt="" />
+            <ul>
+              <li class="scroll-item-name">제로베이스 떡볶이</li>
+              <li class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</li>
+              <li>최소주문 9,000원, 배달팁 4,000원</li>
+            </ul>
+            <div class="scroll-item-time" aria-label="소요 시간"><i class="fa-light fa-clock"></i>38~53분</div>
           </a>
         </li>
 
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
+        <li class="scroll-item container-img-info left">
+          <a href="./store_detail.html">
+            <img src="/asset/imgs/떡볶이.jpg" alt="" />
+            <ul>
+              <li class="scroll-item-name">제로베이스 떡볶이</li>
+              <li class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</li>
+              <li>최소주문 9,000원, 배달팁 4,000원</li>
+            </ul>
+            <div class="scroll-item-time" aria-label="소요 시간"><i class="fa-light fa-clock"></i>38~53분</div>
           </a>
         </li>
 
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
+        <li class="scroll-item container-img-info left">
+          <a href="./store_detail.html">
+            <img src="/asset/imgs/떡볶이.jpg" alt="" />
+            <ul>
+              <li class="scroll-item-name">제로베이스 떡볶이</li>
+              <li class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</li>
+              <li>최소주문 9,000원, 배달팁 4,000원</li>
+            </ul>
+            <div class="scroll-item-time" aria-label="소요 시간"><i class="fa-light fa-clock"></i>38~53분</div>
           </a>
         </li>
 
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
+        <li class="scroll-item container-img-info left">
+          <a href="./store_detail.html">
+            <img src="/asset/imgs/떡볶이.jpg" alt="" />
+            <ul>
+              <li class="scroll-item-name">제로베이스 떡볶이</li>
+              <li class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</li>
+              <li>최소주문 9,000원, 배달팁 4,000원</li>
+            </ul>
+            <div class="scroll-item-time" aria-label="소요 시간"><i class="fa-light fa-clock"></i>38~53분</div>
           </a>
         </li>
 
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
+        <li class="scroll-item container-img-info left">
+          <a href="./store_detail.html">
+            <img src="/asset/imgs/떡볶이.jpg" alt="" />
+            <ul>
+              <li class="scroll-item-name">제로베이스 떡볶이</li>
+              <li class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</li>
+              <li>최소주문 9,000원, 배달팁 4,000원</li>
+            </ul>
+            <div class="scroll-item-time" aria-label="소요 시간"><i class="fa-light fa-clock"></i>38~53분</div>
           </a>
         </li>
 
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
-          </a>
-        </li>
-
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
-          </a>
-        </li>
-
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
-          </a>
-        </li>
-
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
-          </a>
-        </li>
-
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
-          </a>
-        </li>
-
-        <li class="scroll-item">
-          <a href="./store_detail.html"
-            ><div class="scroll-item-img"></div>
-            <div class="scroll-item-info">
-              <h3>제로베이스 떡볶이</h3>
-              <div class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</div>
-              <div>최소주문 9,000원, 배달팁 4,000원</div>
-              <span class="scroll-item-time" aria-label="소요 시간">38~53분</span>
-            </div>
+        <li class="scroll-item container-img-info left">
+          <a href="./store_detail.html">
+            <img src="/asset/imgs/떡볶이.jpg" alt="" />
+            <ul>
+              <li class="scroll-item-name">제로베이스 떡볶이</li>
+              <li class="scroll-item-menu"><i class="fa-solid fa-star-sharp"></i>5.0(100+) 대부 가래떡 떡볶이, 부산꼬지어묵, 치즈세트</li>
+              <li>최소주문 9,000원, 배달팁 4,000원</li>
+            </ul>
+            <div class="scroll-item-time" aria-label="소요 시간"><i class="fa-light fa-clock"></i>38~53분</div>
           </a>
         </li>
       </ul>
