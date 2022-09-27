@@ -1,7 +1,7 @@
 {
   "scripts": {
     "server": "live-server public --port-3000",
-    "compile": "sass src/sass/index.scss:public/style/index.css",
+    "compile": "sass src/sass/:public/style/",
     "clear": "rimraf public/style",
     "watch": "npm run compile -- --watch",
     "wp": "webpack",

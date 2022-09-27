@@ -1,5 +1,7 @@
 @use "../base" as *;
 @use "../function" as *;
+@use "../components" as *;
+
 body {
   background: $grey;
 }
