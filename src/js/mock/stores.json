@@ -1,0 +1,29 @@
+{
+  "stores": [
+    { "title": "제로베이스 떡볶이", "id": 1, "url": "/asset/imgs/stores-img/떡볶이.jpg", "rating": 70 },
+
+    { "title": "덩기덕쿵떡국", "id": 2, "url": "/asset/imgs/stores-img/덩기덕쿵떡국.png", "rating": 73 },
+
+    { "title": "뱃살삼겹살", "id": 3, "url": "/asset/imgs/stores-img/뱃살삼겹살.png", "rating": 72 },
+
+    { "title": "비둘기치킨", "id": 4, "url": "/asset/imgs/stores-img/비둘기치킨.png", "rating": 88 },
+
+    { "title": "알라딘피자", "id": 5, "url": "/asset/imgs/stores-img/알라딘피자.png", "rating": 91 },
+
+    { "title": "어머니도좋아하는짜장면", "id": 6, "url": "/asset/imgs/stores-img/어머니도좋아하는짜장면.png", "rating": 83 },
+
+    { "title": "오늘밤힘내장어", "id": 7, "url": "/asset/imgs/stores-img/오늘밤힘내장어.png", "rating": 79 },
+
+    { "title": "울라비빔밥", "id": 8, "url": "/asset/imgs/stores-img/울라비빔밥.png", "rating": 77 },
+
+    { "title": "전주콩나물국밥", "id": 9, "url": "/asset/imgs/stores-img/전주콩나물국밥.png", "rating": 94 },
+
+    { "title": "제육대가", "id": 10, "url": "/asset/imgs/stores-img/제육대가.png", "rating": 89 },
+
+    { "title": "평양냉면", "id": 11, "url": "/asset/imgs/stores-img/평양냉면.png", "rating": 87 },
+
+    { "title": "홀라닭백숙", "id": 12, "url": "/asset/imgs/stores-img/홀라닭백숙.png", "rating": 76 },
+
+    { "title": "홍콩라면", "id": 13, "url": "/asset/imgs/stores-img/홍콩라면.png", "rating": 81 }
+  ]
+}

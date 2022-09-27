@@ -4,4 +4,4 @@
 *.scss.map
 
 /node_modules
-*.json
+package-lock.json
