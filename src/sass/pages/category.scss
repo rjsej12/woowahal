@@ -7,7 +7,7 @@
   width: 100%;
   background: $white;
   font-size: $font-base;
-  margin-top: 55px;
+  margin-top: em(55px);
   padding-left: $spacing-base;
   padding-bottom: $spacing-base;
   i {
@@ -31,8 +31,8 @@
     margin-right: $spacing-base;
   }
   .aboutmenu {
-    width: 130px;
-    height: 80px;
+    width: em(130px);
+    height: em(80px);
     border-radius: $spacing-base;
   }
   p {
@@ -55,7 +55,7 @@
   justify-content: space-between;
   li {
     width: 15%;
-    height: 50px;
+    height: em(50px);
     margin-top: $spacing-base;
     a {
       display: flex;
@@ -63,7 +63,7 @@
       align-items: center;
       white-space: nowrap;
       img {
-        width: 50px;
+        width: em(50px);
       }
     }
   }
@@ -71,7 +71,7 @@
 
 .recommended {
   margin-top: $spacing-base;
-  margin-bottom: 80px;
+  margin-bottom: em(80px);
   padding: $spacing-base $spacing-md;
   background: $white;
 
@@ -86,8 +86,8 @@
         border: 1px solid $grey;
         border-radius: $spacing-base;
         img {
-          width: 400px;
-          height: 250px;
+          width: em(400px);
+          height: em(250px);
         }
       }
     }

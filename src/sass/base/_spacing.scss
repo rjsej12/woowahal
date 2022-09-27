@@ -1,13 +1,15 @@
-$spacing-xs: 4px;
-$spacing-sm: 8px;
-$spacing-base: 16px;
-$spacing-md: 24px;
-$spacing-lg: 32px;
-$spacing-xl: 48px;
+@use "../function/" as *;
 
-$br-xs: 4px;
-$br-sm: 8px;
-$br-base: 16px;
-$br-md: 24px;
-$br-lg: 32px;
-$br-xl: 48px;
+$spacing-xs: em(4px);
+$spacing-sm: em(8px);
+$spacing-base: em(16px);
+$spacing-md: em(24px);
+$spacing-lg: em(32px);
+$spacing-xl: em(48px);
+
+$br-xs: em(4px);
+$br-sm: em(8px);
+$br-base: em(16px);
+$br-md: em(24px);
+$br-lg: em(32px);
+$br-xl: em(48px);
