@@ -80,6 +80,9 @@
   margin-bottom: rem(80px);
   padding: $spacing-base $spacing-md;
   background: $white;
+  .star-icon {
+    color: $yellow;
+  }
 
   &-list {
     li {
