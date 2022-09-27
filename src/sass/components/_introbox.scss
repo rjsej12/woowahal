@@ -1,13 +1,10 @@
 @use "../base" as *;
 @use "../function" as *;
 
-// 사용 시 주의사항
-// 다음 요소 시작점 = padding-top: 10rem;
-
 .introbox-info {
   position: relative;
   margin: 0 auto;
-  margin-bottom: -9rem;
+  margin-top: 3.5rem;
   background: $white;
   border-radius: 0.5rem;
   box-shadow: 0 0.5em 1em 0 $grey;
@@ -21,30 +18,26 @@
   gap: $spacing-sm;
   padding: $spacing-base;
   width: 80vw;
-  height: 9rem;
 
   & h3 {
     width: 70%;
   }
 }
 
-.withimg {
-  transform: translate(0, -25%);
-  margin-bottom: -11rem;
-}
-
-.intro-imgbox {
-  width: 100%;
-  height: 20rem;
-  position: relative;
-  background-image: url(/asset/imgs/baemin1_sns.jpg);
-  background-position: 0 50%;
-  background-size: cover;
-}
-
-.intro-noimgbox {
-  width: 100%;
-  height: 4rem;
-  background: $white;
-  position: relative;
+.introbox.withimg {
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20rem;
+    position: relative;
+    background: yellow;
+    background-image: url(/);
+    background-position: 0 50%;
+    background-size: cover;
+  }
+  & .introbox-info {
+    transform: translate(0, -25%);
+    margin: 0 auto;
+  }
 }
