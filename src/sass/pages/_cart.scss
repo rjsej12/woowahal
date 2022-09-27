@@ -1,72 +1,7 @@
 @use "../base" as *;
 
 .selected-menus{
-    &-title{
-        align-items: center;
-        &>img{
-            width: 1.5rem;
-        }
-        &>figcaption{
-            text-indent: 1em;
-        }
-    }
-    .selected-menu{
-        background-color: #fff;
-        position: relative;
-        border-top: solid #ccc 2px;
-        border-bottom: solid #ccc 2px;
-        padding: #{$spacing-base};
 
-        img.left{
-            border: solid gray 1px;
-            border-radius: 8px;
-        }
-        &-info{
-            color: gray;
-            margin-left: #{$spacing-base};
-            font-size: 12px;
-            
-            li{
-                margin-top: 8px;
-            }
-            &-price{
-                color: black;
-                font-weight: 700;
-            }
-        }
-    
-        &-button-wrapper{
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            .option{
-                margin-right: 16px;
-                padding: 8px;
-                border: solid gray 1px;
-                border-radius: 8px;
-            }
-            .amount{
-                margin: 0 8px;
-                &-reduce{
-                    padding: 8px;
-                    border: solid gray 1px;
-                    border-radius: 8px;
-
-                }
-                &-add{
-                    padding: 8px;
-                    border: solid gray 1px;
-                    border-radius: 8px;
-                }
-            }
-        }    
-
-        &-remove{
-            position: absolute;
-            top: 16px;
-            right: 16px;
-        }
-    }
     &-add{
         width: 100%;
         text-align: center;
@@ -78,37 +13,92 @@
         }
     }
 }
+.cart{
+    padding-top: 3rem;
+    &-menus{
+        background-color: white;
+        &-title{
+            align-items: center;
+            padding: $spacing-base;
+            &>img{
+                width: 1.5rem;
+            }
+            &>figcaption{
+                text-indent: 1em;
+            }
+        }
+        &-menu{
+            border-top: solid $grey 1px;
+            position: relative;
+            padding-bottom: $spacing-base;
 
-.delivery{
-    margin-top: 8px;
-    background-color: #fff;
-    text-indent: 16px;
-    padding: 16px 0;
-    strong{
-        font-weight: 900;
+            &-title{
+                padding: $spacing-base;
+            }
+            &-info{
+                padding: 0 $spacing-base;
+            }
+            & .btn-wrapper{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: $spacing-base;
+            }
+            &-remove{
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: $spacing-base;
+            }
+        }   
+        &-add{
+            width: 100%;
+            text-align: center;
+            padding: 8px 0;
+            border-top: solid $grey 1px;
+            &::before{
+                content: "+ ";
+                font-weight: 900;
+            }
+        }
     }
-}
-.selected-price{
-    padding: 16px;
-    margin-top: 8px;
-    background-color: white;
-    &-info{
+
+    &-delivery{
+        margin-top: 8px;
+        background-color: $white;
+        text-indent: 16px;
+        padding: 16px 0;
+        strong{
+            font-weight: 900;
+        }
+    }
+
+    &-price{
+        background-color: $white;
+        padding: $spacing-base;
+        margin-top: $spacing-sm;
+        &-info{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: $spacing-sm;
+        }
+        & .sum{
+            padding-top: $spacing-base;
+            border-top: solid $grey 1px;
+        }
+    }
+    
+    &-order{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        align-items: center;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        span{
+            font-size: $font-base;
+        }
     }
 }
 
-.menus-order{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 
-    position: fixed;
-    bottom: 0;
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-     
-    span{
-        font-size: 16px;
-    }
-}

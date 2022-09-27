@@ -1,3 +1,5 @@
+@use "../base" as *;
+
 ul {
   list-style-type: none;
 }
@@ -23,23 +25,31 @@ ul {
   }
 
   &-img-info {
+background-color: white;
     display: flow-root;
-    width: 100%;
-    .left {
-      float: left;
-      height: 10vh;
-      & + ul {
-        float: left;
-      }
-    }
-    .right {
+   
+    &.right img{
       float: right;
+    }
+    &.left img{
+      float: left;
+    }
+    & img{
       height: 10vh;
-      & + ul {
-        float: left;
+      border: solid $grey;
+      border-radius: $br-md;
+      margin-right: $spacing-sm;
+      
+    }
+    & ul{
+      padding: $spacing-sm;
+      & .price{
+        font-weight: 700;
       }
     }
   }
+
+
 }
 
 .key-value-box {
