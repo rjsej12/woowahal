@@ -30,3 +30,28 @@
     background-color: transparent;
   }
 }
+
+.header-common {
+  padding: $spacing-base;
+  background: $white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-left-area,
+  &-right-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $spacing-base;
+  }
+  &-icon {
+    font-size: $font-md;
+  }
+  .pagename {
+    width: $font-xl;
+  }
+}
