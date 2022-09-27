@@ -1,63 +1,106 @@
 @use "../base" as *;
 @use "../function" as *;
 
-// 마진 탑 값 마찬가지
 .st-list {
-  margin-top: 57px;
+  & button {
+    font-family: "BMHANNAPro";
+  }
 
   &-category {
     gap: $spacing-base;
-    border-bottom: 1px solid silver;
+    border-bottom: 2px solid $grey;
+    height: 2.5rem;
+    position: fixed;
+    top: 3.5rem;
+    align-items: center;
+    padding: 0 $spacing-base;
+    background: $white;
 
     & button {
       white-space: nowrap;
+      color: grey;
+      padding-top: $spacing-base;
+      padding-bottom: 0.5rem;
+      border-bottom: 4px solid transparent;
+      font-size: $font-base;
+    }
+
+    & button.is-active {
+      border-bottom: 4px solid black;
+      color: black;
     }
   }
 
   // 정렬 기준 영역
   &-sortbys {
-    gap: $spacing-base;
+    gap: $spacing-lg;
+    height: 2.5rem;
+    position: fixed;
+    top: 6rem;
+    align-items: center;
+    padding: 0 $spacing-base;
+    background: $white;
 
     & .sortby {
       & button {
         white-space: nowrap;
+        color: grey;
       }
 
       &-list {
         display: none;
       }
+
+      & .fa-badge-percent {
+        background: orange;
+        color: $white;
+      }
+
+      & .fa-hand-point-up {
+        color: #ecb28d;
+      }
     }
   }
 
   &-scroll {
-    height: 100vh;
+    margin-top: 8.5rem;
+
+    & i {
+      color: #f9c60b;
+    }
 
     & .scroll-item {
       display: flex;
       flex-direction: column;
-      background: skyblue;
+      background: $white;
       padding: $spacing-base;
-      margin-top: 1px;
+      margin-bottom: 1px;
+
+      &-menu {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
 
       & a {
         display: flex;
       }
 
       &-img {
-        width: 5em;
-        height: 5em;
+        width: 5rem;
+        height: 5rem;
         border-radius: 1.5rem;
-        background-image: url(/public/asset/imgs/떡볶이.jpg);
+        background-image: url(/asset/imgs/떡볶이.jpg);
         background-size: cover;
+        margin-right: $spacing-base;
       }
 
       &-info {
+        width: 15rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 0.5em;
-        // 스페이싱보다는 이미지 커지고 글자크기도 커지면서 조정 되게 em? 잘모르겠으니 물어보기
-        margin-left: $spacing-base;
       }
 
       &-time {
