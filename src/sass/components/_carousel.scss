@@ -28,4 +28,8 @@
       margin-top: $spacing-base;
     }
   }
+  .offscreen {
+    bottom: $spacing-sm;
+    right: $spacing-sm;
+  }
 }

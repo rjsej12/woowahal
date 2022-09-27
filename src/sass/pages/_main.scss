@@ -183,8 +183,12 @@ body {
     grid-area: gift;
     background-image: url(/asset/imgs/선물하기.jpg);
     background-repeat: no-repeat;
-    background-size: 70px;
+    background-size: 60px;
     background-position: center 20%;
+    h2 {
+      font-size: $font-base;
+      font-weight: 500;
+    }
   }
   .bg-delicious {
     grid-area: delicious;
@@ -192,11 +196,15 @@ body {
     background-repeat: no-repeat;
     background-size: 70px;
     background-position: center 15%;
+    h2 {
+      font-size: $font-base;
+      font-weight: 500;
+    }
   }
 }
 
 .promotion {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   li {
     width: 100%;
@@ -217,11 +225,10 @@ body {
 
 .fastdelivery {
   .container-row {
-    padding: 0;
     margin-top: $spacing-base;
   }
   li {
-    background: $white;
+    margin-right: $spacing-base;
   }
   .storeinfo {
     width: 150px;
@@ -241,46 +248,41 @@ body {
   }
 }
 
+.star-icon {
+  color: $yellow;
+}
+
+.gift {
+  .container-row {
+    margin-top: $spacing-base;
+  }
+  li {
+    margin-right: $spacing-base;
+    img {
+      width: 200px;
+      height: 250px;
+    }
+    p {
+      margin-top: $spacing-base;
+    }
+  }
+  &-more-info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: $spacing-base;
+    align-items: center;
+    .gift-more-link {
+      padding: 1rem 1.2rem;
+      background: rgba($color: $black, $alpha: 0.1);
+      border-radius: 50%;
+    }
+  }
+}
+
 .advertisement {
   width: 100%;
   margin: $spacing-base 0;
-}
-
-.main-footer {
-  padding: $spacing-base;
-  color: rgba($color: $black, $alpha: 0.4);
-  .guide-list {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 8px;
-    align-items: center;
-    li:last-child {
-      color: $black;
-    }
-  }
-  .detailinfo {
-    margin-top: $spacing-base;
-    h2 {
-      color: $black;
-      font-size: $font-base;
-      .more-info-btn {
-        cursor: pointer;
-      }
-    }
-    div {
-      margin-top: $spacing-sm;
-    }
-    .more-info {
-      display: none;
-    }
-    .is-visible {
-      display: block;
-    }
-  }
-  small {
-    display: block;
-    margin-top: $spacing-sm;
-  }
 }
 
 .baemindo {
@@ -324,4 +326,41 @@ body {
 
 .discount {
   grid-area: discount;
+}
+
+.main-footer {
+  padding: $spacing-base;
+  color: rgba($color: $black, $alpha: 0.4);
+  .guide-list {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+    align-items: center;
+    li:last-child {
+      color: $black;
+    }
+  }
+  .detailinfo {
+    margin-top: $spacing-base;
+    h2 {
+      color: $black;
+      font-size: $font-base;
+      .more-info-btn {
+        cursor: pointer;
+      }
+    }
+    div {
+      margin-top: $spacing-sm;
+    }
+    .company-more-info {
+      display: none;
+    }
+    .is-visible {
+      display: block;
+    }
+  }
+  small {
+    display: block;
+    margin-top: $spacing-sm;
+  }
 }
