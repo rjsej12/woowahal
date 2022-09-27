@@ -23,7 +23,12 @@ body *::before {
   margin: 0 auto;
 }
 
-@media (min-width: 320px) and (max-width: 559px) {
+@media (min-width: 320px) and (max-width: 479px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (min-width: 480px) and (max-width: 560px) {
   html {
     font-size: 14px;
   }
