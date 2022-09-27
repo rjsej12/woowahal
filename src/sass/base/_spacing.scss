@@ -1,15 +1,15 @@
 @use "../function/" as *;
 
-$spacing-xs: em(4px);
-$spacing-sm: em(8px);
-$spacing-base: em(16px);
-$spacing-md: em(24px);
-$spacing-lg: em(32px);
-$spacing-xl: em(48px);
+$spacing-xs: rem(4px);
+$spacing-sm: rem(8px);
+$spacing-base: rem(16px);
+$spacing-md: rem(24px);
+$spacing-lg: rem(32px);
+$spacing-xl: rem(48px);
 
-$br-xs: em(4px);
-$br-sm: em(8px);
-$br-base: em(16px);
-$br-md: em(24px);
-$br-lg: em(32px);
-$br-xl: em(48px);
+$br-xs: rem(4px);
+$br-sm: rem(8px);
+$br-base: rem(16px);
+$br-md: rem(24px);
+$br-lg: rem(32px);
+$br-xl: rem(48px);

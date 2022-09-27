@@ -18,9 +18,21 @@
   }
 }
 
-$font-sm: em(8px);
-$font-sub: em(14px);
-$font-base: em(16px);
-$font-md: em(24px);
-$font-lg: em(32px);
-$font-xl: em(48px);
+$font-sm: rem(8px);
+$font-sub: rem(14px);
+$font-base: rem(16px);
+$font-md: rem(24px);
+$font-lg: rem(32px);
+$font-xl: rem(48px);
+
+@media (min-width: 320px) and (max-width: 559px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  html {
+    font-size: 20px;
+  }
+}

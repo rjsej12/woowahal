@@ -57,7 +57,7 @@ body {
     font-size: $font-md;
     position: absolute;
     top: 50%;
-    left: 0.5em;
+    left: 0.5rem;
     transform: translateY(-50%);
   }
   &-input {
@@ -88,6 +88,9 @@ body {
   li {
     border-radius: $spacing-base;
     background: $white;
+    &:active {
+      transform: scale(0.9);
+    }
   }
   a {
     display: block;
@@ -99,6 +102,8 @@ body {
     }
     .accent {
       display: inline;
+      background: rgba($color: getColor(Woowahal-green, 500), $alpha: 0.2);
+      box-shadow: 4px 0px 1px 1px rgba($color: getColor(Woowahal-green, 500), $alpha: 0.3);
     }
     h2 {
       margin-bottom: $spacing-base;
@@ -107,16 +112,16 @@ body {
 
   .square-50 {
     width: 100%;
-    height: em(200px);
+    height: rem(200px);
   }
   .w-100 {
     width: 100%;
   }
   .w-50 {
     width: 100%;
-    height: em(112px);
+    height: rem(112px);
     &-2 {
-      height: em(116px);
+      height: rem(116px);
       a {
         display: flex;
         flex-flow: column;
@@ -126,7 +131,7 @@ body {
   }
   .square-25 {
     width: 100%;
-    height: em(116px);
+    height: rem(116px);
     a {
       display: flex;
       flex-flow: column;
@@ -181,14 +186,14 @@ body {
     grid-area: shoppinglive;
     background-image: url(/asset/imgs/쇼핑라이브.jpg);
     background-repeat: no-repeat;
-    background-size: 100px;
+    background-size: rem(100px);
     background-position: 90%;
   }
   .bg-gift {
     grid-area: gift;
     background-image: url(/asset/imgs/선물하기.jpg);
     background-repeat: no-repeat;
-    background-size: 60px;
+    background-size: rem(60px);
     background-position: center 20%;
     h2 {
       font-size: $font-base;
@@ -199,7 +204,7 @@ body {
     grid-area: delicious;
     background-image: url(/asset/imgs/전국별미.jpg);
     background-repeat: no-repeat;
-    background-size: 70px;
+    background-size: rem(70px);
     background-position: center 15%;
     h2 {
       font-size: $font-base;
@@ -226,6 +231,10 @@ body {
   h2 {
     font-weight: 500;
   }
+  & li:active,
+  article:active {
+    transform: scale(0.9);
+  }
 }
 
 .fastdelivery {
@@ -236,8 +245,8 @@ body {
     margin-right: $spacing-base;
   }
   .storeinfo {
-    width: em(150px);
-    height: em(150px);
+    width: rem(150px);
+    height: rem(150px);
     border-radius: $spacing-sm;
   }
   p {
@@ -264,8 +273,8 @@ body {
   li {
     margin-right: $spacing-base;
     img {
-      width: em(200px);
-      height: em(250px);
+      width: rem(200px);
+      height: rem(250px);
     }
     p {
       margin-top: $spacing-base;
@@ -299,8 +308,8 @@ body {
       ".   multiuse"
       "report   multiuse"
       "report   multiuse"
-      "report   discount"
-      "report   .";
+      "report   ."
+      "report   discount";
     gap: 0 $spacing-base;
   }
   &-img-wrapper {
@@ -339,7 +348,7 @@ body {
   .guide-list {
     display: flex;
     flex-flow: row nowrap;
-    gap: em(8px);
+    gap: rem(8px);
     align-items: center;
     li:last-child {
       color: $black;

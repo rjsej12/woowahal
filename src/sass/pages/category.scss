@@ -7,7 +7,7 @@
   width: 100%;
   background: $white;
   font-size: $font-base;
-  margin-top: em(55px);
+  margin-top: rem(55px);
   padding-left: $spacing-base;
   padding-bottom: $spacing-base;
   i {
@@ -29,10 +29,13 @@
     background: none;
     position: relative;
     margin-right: $spacing-base;
+    &:active {
+      transform: scale(0.9);
+    }
   }
   .aboutmenu {
-    width: em(130px);
-    height: em(80px);
+    width: rem(130px);
+    height: rem(80px);
     border-radius: $spacing-base;
   }
   p {
@@ -55,15 +58,18 @@
   justify-content: space-between;
   li {
     width: 15%;
-    height: em(50px);
+    height: rem(50px);
     margin-top: $spacing-base;
+    &:active {
+      transform: scale(1.2);
+    }
     a {
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
       white-space: nowrap;
       img {
-        width: em(50px);
+        width: rem(50px);
       }
     }
   }
@@ -71,14 +77,17 @@
 
 .recommended {
   margin-top: $spacing-base;
-  margin-bottom: em(80px);
+  margin-bottom: rem(80px);
   padding: $spacing-base $spacing-md;
   background: $white;
 
   &-list {
     li {
       margin-top: $spacing-base;
-      height: 40vh;
+      height: 25rem;
+      &:active {
+        transform: scale(0.9);
+      }
 
       a {
         display: block;
@@ -86,15 +95,15 @@
         border: 1px solid $grey;
         border-radius: $spacing-base;
         img {
-          width: em(400px);
-          height: em(250px);
+          width: rem(400px);
+          height: rem(250px);
         }
       }
     }
   }
   &-img-container {
     width: 100%;
-    height: 28vh;
+    height: 20rem;
     background-image: url(/asset/imgs/제육대가.png);
     background-size: 100% 100%;
     background-position: center;
@@ -103,7 +112,7 @@
   }
   &-text-container {
     width: 100%;
-    height: 12vh;
+    height: 5rem;
     padding: $spacing-base;
     border-top: 1px solid $grey;
     position: relative;
