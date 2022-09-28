@@ -7,7 +7,8 @@
       "rating": 70,
       "minprice": 12000,
       "deliverytip": 3000,
-      "distance": 3.2
+      "distance": 3.2,
+      "alt": "제로베이스 떡볶이 가게의 썸네일 이미지"
     },
 
     {
@@ -17,7 +18,8 @@
       "rating": 73,
       "minprice": 10000,
       "deliverytip": 1500,
-      "distance": 1.1
+      "distance": 1.1,
+      "alt": "덩기덕쿵떡국 가게의 썸네일 이미지"
     },
 
     {
@@ -27,7 +29,8 @@
       "rating": 72,
       "minprice": 18000,
       "deliverytip": 2500,
-      "distance": 1.9
+      "distance": 1.9,
+      "alt": "뱃살삼결살 가게의 썸네일 이미지"
     },
 
     {
@@ -37,7 +40,8 @@
       "rating": 88,
       "minprice": 21000,
       "deliverytip": 2300,
-      "distance": 2.5
+      "distance": 2.5,
+      "alt": "비둘기치킨 가게의 썸네일 이미지"
     },
 
     {
@@ -47,7 +51,8 @@
       "rating": 91,
       "minprice": 19900,
       "deliverytip": 3000,
-      "distance": 1.9
+      "distance": 1.9,
+      "alt": "알라딘피자 가게의 썸네일 이미지"
     },
 
     {
@@ -57,17 +62,19 @@
       "rating": 83,
       "minprice": 11000,
       "deliverytip": 1000,
-      "distance": 0.4
+      "distance": 0.4,
+      "alt": "어머니도좋아하는짜장면 가게의 썸네일 이미지"
     },
 
     {
-      "title": "오늘밤힘내장어",
+      "title": "힘쎈장어",
       "id": 7,
       "url": "/asset/imgs/store/오늘밤힘내장어.png",
       "rating": 79,
       "minprice": 30000,
       "deliverytip": 4000,
-      "distance": 3.7
+      "distance": 3.7,
+      "alt": "힘쎈장어 가게의 썸네일 이미지"
     },
 
     {
@@ -77,7 +84,8 @@
       "rating": 77,
       "minprice": 15000,
       "deliverytip": 2900,
-      "distance": 2.2
+      "distance": 2.2,
+      "alt": "울라비빔밥 가게의 썸네일 이미지"
     },
 
     {
@@ -87,7 +95,8 @@
       "rating": 94,
       "minprice": 12000,
       "deliverytip": 1500,
-      "distance": 1.2
+      "distance": 1.2,
+      "alt": "전주콩나물국밥 가게의 썸네일 이미지"
     },
 
     {
@@ -97,7 +106,8 @@
       "rating": 89,
       "minprice": 10000,
       "deliverytip": 2000,
-      "distance": 1.5
+      "distance": 1.5,
+      "alt": "제육대가 가게의 썸네일 이미지"
     },
 
     {
@@ -107,7 +117,8 @@
       "rating": 87,
       "minprice": 20000,
       "deliverytip": 2500,
-      "distance": 2.3
+      "distance": 2.3,
+      "alt": "평양냉면 가게의 썸네일 이미지"
     },
 
     {
@@ -117,7 +128,8 @@
       "rating": 76,
       "minprice": 30000,
       "deliverytip": 3000,
-      "distance": 2.4
+      "distance": 2.4,
+      "alt": "훌라닭백숙 가게의 썸네일 이미지"
     },
 
     {
@@ -127,7 +139,8 @@
       "rating": 81,
       "minprice": 10000,
       "deliverytip": 2000,
-      "distance": 1.7
+      "distance": 1.7,
+      "alt": "홍콩라면 가게의 썸네일 이미지"
     }
   ]
 }
