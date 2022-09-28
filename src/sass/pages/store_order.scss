@@ -9,11 +9,12 @@
 
 .st-menu {
   background-color: white;
-  & .withimg{
-    --info-img: "";
+  
+  &-introbox.withimg {
+    --intro-img: url(/);
   }
-  & .withimg{
-    background-image: var(--info-img);
+  &-introbox.withimg::before {
+    background-image: var(--intro-img);
   }
   &-price {
     margin: $spacing-sm;
