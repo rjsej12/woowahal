@@ -158,3 +158,15 @@
     }
   }
 }
+
+@media (min-width: 832px) {
+  .category-list {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1039px) {
+  .category-list {
+    justify-content: space-between;
+  }
+}
