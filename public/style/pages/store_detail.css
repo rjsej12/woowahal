@@ -413,6 +413,20 @@ ul {
   list-style-type: none;
 }
 
+.container-rating {
+  width: 100%;
+}
+.container-rating .colorBox {
+  padding: 0.5rem 0;
+  display: inline-flex;
+  clip-path: polygon(0 0, 65% 0, 65% 100%, 0% 100%);
+}
+.container-rating .colorBox li {
+  background-color: #f9c60b;
+  width: 2rem;
+  height: 2rem;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
 .container-row {
   display: flex;
   flex-flow: row nowrap;
@@ -689,12 +703,12 @@ a {
   width: 100%;
 }
 .st-detail-introbox .introbox-info-row1 {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .st-detail-introbox .introbox-info-row2 {
   display: flex;
   justify-content: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .st-detail-introbox .introbox-info-row3 {
   display: flex;
@@ -718,7 +732,6 @@ a {
   align-items: flex-end;
   padding: 0 1rem;
   border-bottom: 1px solid silver;
-  font-size: 1.1rem;
   position: relative;
   top: -1rem;
   background: #fff;
@@ -728,11 +741,10 @@ a {
 }
 .st-detail .additional-info .additional-btn-delivery {
   color: #ccc;
-  font-size: 1.1rem;
   border-bottom: 4px solid transparent;
 }
 .st-detail .additional-info .additional-btn-togo {
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-bottom: 4px solid black;
 }
 .st-detail .additional-info .order-togo {
@@ -778,13 +790,13 @@ a {
 }
 .st-detail-tab li.is-active button {
   color: black;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .st-detail-announce {
   padding: 1rem;
   background: #fff;
   height: 10rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .st-detail-menus {
   background: #fff;
@@ -803,7 +815,7 @@ a {
   width: 100%;
   padding: 1rem;
   background: #d9d9d9;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: left;
   position: relative;
 }
@@ -827,10 +839,10 @@ a {
   padding: 0.25rem 0.5rem;
 }
 .st-detail-menus .menu-info-name {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .st-detail-menus .menu-info-detail {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #595959;
 }
 .st-detail-menus-represent {
@@ -863,7 +875,7 @@ a {
   gap: 1rem;
 }
 .st-detail-origin .origin-title {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .st-detail-notice {
   padding: 1rem 1rem;
@@ -877,7 +889,7 @@ a {
   margin-bottom: 0.5rem;
 }
 .st-detail-notice li {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #595959;
 }
 .st-detail .st-cart {
@@ -899,7 +911,7 @@ a {
   margin: 1rem 1rem 0 1rem;
   display: flex;
   justify-content: center;
-  font-size: 1.2em;
+  font-size: 1rem;
 }
 .st-detail .st-cart-btn-quantity {
   position: absolute;

@@ -56,7 +56,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***********************************/
 /***/ ((module) => {
 
-eval("module.exports = JSON.parse('{\"promotion\":[{\"url\":\"/asset/imgs/1.png\",\"title\":\"당신의 마음을 전해보세요\",\"content\":\"배민 첫 이용시 5000원 할인\"},{\"url\":\"/asset/imgs/메인광고배너.png\",\"title\":\"당신의 마음을 전해보세요\",\"content\":\"배민 첫 이용시 5000원 할인\"}],\"advertisement\":[{\"url\":\"/asset/imgs/메인광고배너.png\",\"title\":\"당신의 마음을 전해보세요\",\"content\":\"배민 첫 이용시 5000원 할인\"},{\"url\":\"/asset/imgs/메인광고배너.png\",\"title\":\"당신의 마음을 전해보세요\",\"content\":\"배민 첫 이용시 5000원 할인\"}]}');\n\n//# sourceURL=webpack:///./src/js/mock/carousel.json?");
+eval("module.exports = JSON.parse('{\"promotion\":[{\"url\":\"/asset/webp/배너1.webp\",\"title\":\"당신의 마음을 전해보세요\",\"content\":\"배민 첫 이용시 5000원 할인\"},{\"url\":\"/asset/webp/메인광고배너.webp\",\"title\":\"당신의 마음을 전해보세요\",\"content\":\"배민 첫 이용시 5000원 할인\"}],\"advertisement\":[{\"url\":\"/asset/webp/메인광고배너.webp\",\"title\":\"당신의 마음을 전해보세요\",\"content\":\"배민 첫 이용시 5000원 할인\"},{\"url\":\"/asset/webp/배너1.webp\",\"title\":\"당신의 마음을 전해보세요\",\"content\":\"배민 첫 이용시 5000원 할인\"}]}');\n\n//# sourceURL=webpack:///./src/js/mock/carousel.json?");
 
 /***/ })
 
