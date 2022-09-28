@@ -8,9 +8,9 @@
       "minprice": 12000,
       "deliverytip": 3000,
       "distance": 3.2,
-      "alt": "제로베이스 떡볶이 가게의 썸네일 이미지"
+      "alt": "제로베이스 떡볶이 가게의 썸네일 이미지",
+      "category": "분식"
     },
-
     {
       "title": "덩기덕쿵떡국",
       "id": 2,
@@ -19,9 +19,9 @@
       "minprice": 10000,
       "deliverytip": 1500,
       "distance": 1.1,
-      "alt": "덩기덕쿵떡국 가게의 썸네일 이미지"
+      "alt": "덩기덕쿵떡국 가게의 썸네일 이미지",
+      "category": "백반 죽 국수"
     },
-
     {
       "title": "뱃살삼겹살",
       "id": 3,
@@ -30,9 +30,9 @@
       "minprice": 18000,
       "deliverytip": 2500,
       "distance": 1.9,
-      "alt": "뱃살삼결살 가게의 썸네일 이미지"
+      "alt": "뱃살삼결살 가게의 썸네일 이미지",
+      "category": "고기 구이"
     },
-
     {
       "title": "비둘기치킨",
       "id": 4,
@@ -41,9 +41,9 @@
       "minprice": 21000,
       "deliverytip": 2300,
       "distance": 2.5,
-      "alt": "비둘기치킨 가게의 썸네일 이미지"
+      "alt": "비둘기치킨 가게의 썸네일 이미지",
+      "category": "치킨"
     },
-
     {
       "title": "알라딘피자",
       "id": 5,
@@ -52,9 +52,9 @@
       "minprice": 19900,
       "deliverytip": 3000,
       "distance": 1.9,
-      "alt": "알라딘피자 가게의 썸네일 이미지"
+      "alt": "알라딘피자 가게의 썸네일 이미지",
+      "category": "피자"
     },
-
     {
       "title": "어머니도좋아하는짜장면",
       "id": 6,
@@ -63,9 +63,9 @@
       "minprice": 11000,
       "deliverytip": 1000,
       "distance": 0.4,
-      "alt": "어머니도좋아하는짜장면 가게의 썸네일 이미지"
+      "alt": "어머니도좋아하는짜장면 가게의 썸네일 이미지",
+      "category": "중식"
     },
-
     {
       "title": "힘쎈장어",
       "id": 7,
@@ -74,9 +74,9 @@
       "minprice": 30000,
       "deliverytip": 4000,
       "distance": 3.7,
-      "alt": "힘쎈장어 가게의 썸네일 이미지"
+      "alt": "힘쎈장어 가게의 썸네일 이미지",
+      "category": "돈까스 회 일식"
     },
-
     {
       "title": "울라비빔밥",
       "id": 8,
@@ -85,9 +85,9 @@
       "minprice": 15000,
       "deliverytip": 2900,
       "distance": 2.2,
-      "alt": "울라비빔밥 가게의 썸네일 이미지"
+      "alt": "울라비빔밥 가게의 썸네일 이미지",
+      "category": "아시안"
     },
-
     {
       "title": "전주콩나물국밥",
       "id": 9,
@@ -96,9 +96,9 @@
       "minprice": 12000,
       "deliverytip": 1500,
       "distance": 1.2,
-      "alt": "전주콩나물국밥 가게의 썸네일 이미지"
+      "alt": "전주콩나물국밥 가게의 썸네일 이미지",
+      "category": "아시안"
     },
-
     {
       "title": "제육대가",
       "id": 10,
@@ -107,9 +107,9 @@
       "minprice": 10000,
       "deliverytip": 2000,
       "distance": 1.5,
-      "alt": "제육대가 가게의 썸네일 이미지"
+      "alt": "제육대가 가게의 썸네일 이미지",
+      "category": "백반 죽 국수"
     },
-
     {
       "title": "평양냉면",
       "id": 11,
@@ -118,9 +118,9 @@
       "minprice": 20000,
       "deliverytip": 2500,
       "distance": 2.3,
-      "alt": "평양냉면 가게의 썸네일 이미지"
+      "alt": "평양냉면 가게의 썸네일 이미지",
+      "category": "아시안"
     },
-
     {
       "title": "홀라닭백숙",
       "id": 12,
@@ -129,9 +129,9 @@
       "minprice": 30000,
       "deliverytip": 3000,
       "distance": 2.4,
-      "alt": "훌라닭백숙 가게의 썸네일 이미지"
+      "alt": "훌라닭백숙 가게의 썸네일 이미지",
+      "category": "아시안"
     },
-
     {
       "title": "홍콩라면",
       "id": 13,
@@ -140,7 +140,8 @@
       "minprice": 10000,
       "deliverytip": 2000,
       "distance": 1.7,
-      "alt": "홍콩라면 가게의 썸네일 이미지"
+      "alt": "홍콩라면 가게의 썸네일 이미지",
+      "category": "중식"
     }
   ]
 }
