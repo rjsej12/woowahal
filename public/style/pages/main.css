@@ -575,6 +575,8 @@ a {
 }
 .carousel .is-active {
   display: block;
+  animation-name: moveeffect;
+  animation-duration: 1000ms;
 }
 .carousel a {
   display: flex;
@@ -597,6 +599,14 @@ a {
   right: 0.5rem;
 }
 
+@keyframes moveeffect {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .ellipse {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
@@ -642,8 +652,6 @@ a {
   width: 100%;
   height: 20rem;
   position: relative;
-  background: yellow;
-  background-image: url(/);
   background-position: 0 50%;
   background-size: cover;
 }
@@ -878,6 +886,10 @@ body {
 }
 .fastdelivery li {
   margin-right: 1rem;
+  padding: 1rem;
+}
+.fastdelivery li a {
+  outline-offset: 0.5rem;
 }
 .fastdelivery .storeinfo {
   width: 9.375rem;
@@ -908,6 +920,10 @@ body {
 }
 .gift li {
   margin-right: 1rem;
+  padding: 1rem;
+}
+.gift li a {
+  outline-offset: 0.5rem;
 }
 .gift li img {
   width: 12.5rem;
@@ -953,6 +969,9 @@ body {
   align-items: center;
   width: 100%;
   gap: 1rem;
+}
+.baemindo-img-wrapper a {
+  outline-offset: 0.5rem;
 }
 .baemindo-img-wrapper img {
   width: 100%;

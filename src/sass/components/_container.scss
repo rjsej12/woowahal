@@ -15,8 +15,8 @@ ul {
     }
 
     /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 
   &-col {
@@ -25,31 +25,28 @@ ul {
   }
 
   &-img-info {
-background-color: white;
+    background-color: white;
     display: flow-root;
-   
-    &.right img{
+
+    &.right img {
       float: right;
     }
-    &.left img{
+    &.left img {
       float: left;
     }
-    & img{
+    & img {
       height: 10vh;
       border: solid $grey;
       border-radius: $br-md;
       margin-right: $spacing-sm;
-      
     }
-    & ul{
+    & ul {
       padding: $spacing-sm;
-      & .price{
+      & .price {
         font-weight: 700;
       }
     }
   }
-
-
 }
 
 .key-value-box {
