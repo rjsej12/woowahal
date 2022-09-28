@@ -6,6 +6,9 @@
   & button {
     font-family: "BMHANNAPro";
   }
+  & img {
+    object-fit: cover;
+  }
 
   &-category {
     gap: $spacing-base;
