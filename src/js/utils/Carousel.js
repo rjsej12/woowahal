@@ -1,4 +1,5 @@
 import {addClassList, toggleClassList} from "./ClassListHandler.js";
+import {setSlideEffect} from "./Slide.js";
 import carouselUrl from "../mock/carousel.json";
 
 const makeSlide = (slider, item, idx) => {
@@ -72,7 +73,10 @@ const Carousel = (carousels) => {
 
            
         });
+
+        setSlideEffect(carousel, toggleActive);
     }
+
 }
 
 export default Carousel
