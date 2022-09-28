@@ -2,32 +2,22 @@
 @use "../function" as *;
 @use "../components" as *;
 
-.menu {
-  &-add {
-    background-color: lime;
-    align-items: center;
-  }
 
-  .info-box {
-    background-color: tan;
-    padding: 16px 0;
-    margin: 16px 0;
-    align-items: center;
-    > * {
-      margin-top: 16px;
-    }
-  }
-}
 .intro-imgbox {
   background-image: url(/asset/imgs/떡볶이.jpg);
 }
 
 .st-menu {
   background-color: white;
-
+  & .withimg{
+    --info-img: "";
+  }
+  & .withimg{
+    background-image: var(--info-img);
+  }
   &-price {
-    padding-top: 10rem;
     margin: $spacing-sm;
+    margin-top: $spacing-lg;
   }
 
   &-depth {

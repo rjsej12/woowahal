@@ -17,6 +17,7 @@ body *::before {
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 .components-container {
   width: 560px;

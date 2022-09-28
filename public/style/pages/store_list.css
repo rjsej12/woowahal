@@ -17,6 +17,7 @@ body *::before {
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 .components-container {
   width: 560px;
@@ -654,10 +655,13 @@ a {
 .st-list button {
   font-family: "BMHANNAPro";
 }
+.st-list img {
+  object-fit: cover;
+}
 .st-list-category {
   gap: 1rem;
   border-bottom: 2px solid #d9d9d9;
-  height: 2.5rem;
+  height: 3.5rem;
   position: fixed;
   top: 3.5rem;
   align-items: center;
@@ -672,25 +676,27 @@ a {
 .st-list-category button {
   white-space: nowrap;
   color: grey;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
+  padding: 1rem 0;
   border-bottom: 4px solid transparent;
   font-size: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  height: 100%;
 }
 .st-list-category button:focus {
   outline-offset: -0.5rem;
 }
 .st-list-category button.is-active {
+  box-sizing: border-box;
   border-bottom: 4px solid black;
   color: black;
+  position: relative;
 }
 .st-list-sortbys {
   gap: 2rem;
   height: 2.5rem;
   position: fixed;
-  top: 6rem;
+  top: 7rem;
   align-items: center;
   padding: 0 1rem;
   background: #fff;
@@ -710,7 +716,7 @@ a {
   color: #ecb28d;
 }
 .st-list-scroll {
-  margin-top: 8.5rem;
+  padding-top: 9.5rem;
 }
 .st-list-scroll i {
   margin-right: 0.25rem;
