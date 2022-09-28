@@ -37,23 +37,23 @@
       }
 
       &-row1 {
-        font-size: 1.2rem;
+        font-size: $font-base;
       }
 
       &-row2 {
         display: flex;
         justify-content: center;
-        font-size: 0.9rem;
+        font-size: $font-base;
       }
 
       &-row3 {
         display: flex;
         justify-content: space-around;
         margin-top: $spacing-base;
-        font-size: 1rem;
+        font-size: $font-base;
 
         & button {
-          font-size: 1rem;
+          font-size: $font-base;
         }
       }
     }
@@ -74,7 +74,6 @@
       align-items: flex-end;
       padding: 0 $spacing-base;
       border-bottom: 1px solid silver;
-      font-size: 1.1rem;
       position: relative;
       top: -$spacing-base;
       background: $white;
@@ -84,12 +83,11 @@
 
       &-delivery {
         color: $disabled;
-        font-size: 1.1rem;
         border-bottom: 4px solid transparent;
       }
 
       &-togo {
-        font-size: 1.1rem;
+        font-size: $font-base;
         border-bottom: 4px solid black;
         // padding-bottom:;
       }
@@ -124,7 +122,7 @@
     margin-top: $spacing-sm;
 
     & button {
-      font-size: 1rem;
+      font-size: $font-base;
       padding: $spacing-base;
       color: $disabled;
       flex-grow: 1;
@@ -141,7 +139,7 @@
 
       & button {
         color: black;
-        font-size: 1.1rem;
+        font-size: $font-base;
       }
     }
   }
@@ -150,7 +148,7 @@
     padding: $spacing-base;
     background: $white;
     height: 10rem;
-    font-size: 0.9rem;
+    font-size: $font-base;
   }
 
   &-menus {
@@ -171,7 +169,7 @@
         width: 100%;
         padding: $spacing-base;
         background: $grey;
-        font-size: 1.1rem;
+        font-size: $font-base;
         // border-bottom: 1px solid $grey;
         text-align: left;
         position: relative;
@@ -200,11 +198,11 @@
         }
 
         &-name {
-          font-size: 1.1rem;
+          font-size: $font-base;
         }
 
         &-detail {
-          font-size: 0.9rem;
+          font-size: $font-base;
           color: $ac-grey;
         }
       }
@@ -243,7 +241,7 @@
     gap: $spacing-base;
 
     & .origin-title {
-      font-size: 1.1rem;
+      font-size: $font-base;
     }
   }
 
@@ -260,7 +258,7 @@
     }
 
     & li {
-      font-size: 0.8rem;
+      font-size: $font-base;
       color: $ac-grey;
     }
   }
@@ -285,7 +283,7 @@
       margin: $spacing-base $spacing-base 0 $spacing-base;
       display: flex;
       justify-content: center;
-      font-size: 1.2em;
+      font-size: $font-base;
 
       &-quantity {
         position: absolute;
