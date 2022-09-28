@@ -1,4 +1,3 @@
-import {toggleActive} from "./ClassListHandler.js";
 
 const slideEffect = (con)=>{
     let downX, upX;
@@ -21,10 +20,14 @@ const slideEffect = (con)=>{
 
 const setSlideEffect=(carousel, toggleActive)=>{
     let start;
+   
     carousel.addEventListener("dragstart",(e)=>{
         start = e.x;
     });
-    carousel.addEventListener("dragend",(e)=>{
+    carousel.addEventListener("touchstart",(e)=>{
+        start = e.x;
+    });
+    function process(e){
         const currentActive = carousel.querySelector(".is-active");
         if(start + 120 < e.x ){
             const nextActive = currentActive.nextSibling;
@@ -35,6 +38,12 @@ const setSlideEffect=(carousel, toggleActive)=>{
             const prevActive = currentActive.previousSibling;
             toggleActive(currentActive,prevActive,"is-active");
         }
+    }
+    carousel.addEventListener("dragend",(e)=>{
+        process(e);
+    });
+    carousel.addEventListener("touchend",(e)=>{
+        process(e);
     });
 }
 
