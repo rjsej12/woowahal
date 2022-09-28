@@ -2,31 +2,31 @@
 @use "../function" as *;
 @use "../components" as *;
 
-
-.intro-imgbox {
-  background-image: url(/asset/imgs/떡볶이.jpg);
-}
-
 .st-menu {
   background-color: white;
   
   &-introbox.withimg {
-    --intro-img: url(/);
+    --order-img: url(/);
   }
   &-introbox.withimg::before {
-    background-image: var(--intro-img);
+    background-image: var(--order-img);
   }
   &-price {
     margin: $spacing-sm;
     margin-top: $spacing-lg;
+    font-size: $font-lg;
   }
 
   &-depth {
     border-top: solid $grey 1px;
     padding: $spacing-sm;
+    &-title{
+      font-size: $font-lg;
+    }
     &-list {
       & li {
         margin-top: $spacing-base;
+        font-size: $font-md;
         & .price {
           float: right;
           &::before {

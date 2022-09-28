@@ -24,8 +24,16 @@ const getStore = (id) => {
 const getMenus = (id) => {
     return(store[id]);
 }
+
+const getMenu = (id, name) => {
+    const menus = getMenus(id);
+    const res = menus.find((menu)=> menu.name === name);
+    return res;
+};
+
 export {
     getParam,
     getStore,
-    getMenus
+    getMenus,
+    getMenu
 }
