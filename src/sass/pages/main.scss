@@ -239,6 +239,10 @@ body {
   }
   li {
     margin-right: $spacing-base;
+    padding: 1rem;
+    a {
+      outline-offset: 0.5rem;
+    }
   }
   .storeinfo {
     width: rem(150px);
@@ -271,6 +275,10 @@ body {
   }
   li {
     margin-right: $spacing-base;
+    padding: 1rem;
+    a {
+      outline-offset: 0.5rem;
+    }
     img {
       width: rem(200px);
       height: rem(250px);
@@ -324,6 +332,9 @@ body {
     align-items: center;
     width: 100%;
     gap: $spacing-base;
+    a {
+      outline-offset: 0.5rem;
+    }
     img {
       width: 100%;
       border-radius: $spacing-sm;

@@ -10,6 +10,8 @@
   }
   .is-active {
     display: block;
+    animation-name: moveeffect;
+    animation-duration: 1000ms;
   }
   a {
     display: flex;
@@ -23,7 +25,6 @@
     flex-flow: column;
     justify-content: center;
     color: $white;
-
     p {
       margin-top: $spacing-base;
     }
@@ -31,5 +32,14 @@
   .offscreen {
     bottom: $spacing-sm;
     right: $spacing-sm;
+  }
+}
+
+@keyframes moveeffect {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
