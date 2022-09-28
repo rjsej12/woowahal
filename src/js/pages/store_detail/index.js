@@ -11,7 +11,22 @@ const store = getStore(params.id);
 const setDetail = () => {
     document.querySelector(".introbox-info > h3").innerText = store.title;
     document.querySelector(".withimg").style.setProperty("--intro-img", `url(${store.url})`);
+    const rating = document.querySelector(".introbox-info-row1");
     
+        rating.classList.add("container-rating");
+        rating.innerHTML =`
+        <ul class="colorBox">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        ${parseFloat(store.rating / 10)}
+        `;
+        rating.querySelector(".colorBox").style.setProperty("clip-path",`polygon(0 0, ${store.rating}% 0, ${store.rating}% 100%, 0% 100%)`);
+        
+        console.log(`polygon(0 0, ${store.rating}% 0, ${store.rating}% 100%, 0% 100%);`);
 }
 
 
