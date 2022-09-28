@@ -1,15 +1,17 @@
 import {toggleClassList} from "../../utils/ClassListHandler.js";
 import { getParam, getStore, getMenus } from "../../utils/Param.js";
 import { convertPrices, convertPrice } from "../../utils/Wrapping.js";
+import {setCartStorage} from "../../utils/Storage.js";
 
 const menus_list = document.querySelector(".st-detail-menus");
 const cart = document.querySelector(".st-cart");
-toggleClassList(cart, "is-active")
 
 const params = getParam(location.search);
+console.log(params);
 const store = getStore(params.id);
 
-if(params.cartprice){
+if(params.cartprice !== undefined){
+    toggleClassList(cart, "is-active")
     cart.querySelector(".st-cart-btn-price").innerText = params.cartprice;
     let tmp = store.minprice - parseInt(params.cartprice);
     if(tmp > 0){
@@ -19,6 +21,7 @@ if(params.cartprice){
     }
     cart.firstElementChild.nextElementSibling.innerText = `배달 최소 주문금액 ${convertPrice(store.minprice)}`; 
 
+    setCartStorage(params);
 }
 
 const setDetail = () => {
@@ -95,6 +98,10 @@ const setMenus = () => {
         }); 
         
     }
+
+    document.querySelector(".btn-order").addEventListener("click",(e)=>{
+        location.href = "/cart.html";
+    });
              
 
 })();

@@ -3,19 +3,20 @@
 @use "../components" as *;
 
 .ordered {
+  font-size: $font-md;
   & > section {
-    border: 2px solid blue;
     padding: #{$spacing-base};
     margin-bottom: 16px;
     background-color: white;
   }
 
   & > * > * {
-    margin-top: 8px;
+    margin-top: $spacing-base;
   }
 
   &-status {
     display: flow-root;
+    margin-top: $spacing-lg;
 
     &-addtion {
       color: #{$grey};

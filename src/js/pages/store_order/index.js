@@ -122,6 +122,7 @@ const setDepthCB = () => {
 };
 const setBtn = () => {
     document.querySelector(".min").innerText=store.minprice;
+    document.querySelector(".btn-order .price").setAttribute("data-price", menu.price);
     document.querySelector(".btn-order .price").innerText = menu.price;
 }   
 

@@ -26,8 +26,10 @@ const getMenus = (id) => {
 }
 
 const getMenu = (id, name) => {
+    
     const menus = getMenus(id);
-    const res = menus.find((menu)=> menu.name === name);
+    const res = menus.find((menu)=> menu.name === name.trim());
+    
     return res;
 };
 
