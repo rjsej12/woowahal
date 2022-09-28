@@ -1,4 +1,5 @@
 import {stores} from "../mock/stores.json";
+import store from "../mock/store.json";
 
 const getParam = (search) => {
     if(search){
@@ -19,7 +20,12 @@ const getStore = (id) => {
     const res = stores.find((store)=> store.id === parseInt(id));
     return res;
 }
+
+const getMenus = (id) => {
+    return(store[id]);
+}
 export {
     getParam,
-    getStore
+    getStore,
+    getMenus
 }

@@ -1,26 +1,444 @@
 {
   "1": [
     {
-      "category": "set",
-      "url": "/asset/imgs/store/떡볶이.jpg",
-      "name": "set 메뉴 1",
+      "category": "세트메뉴",
+      "url": "/asset/imgs/store/세트메뉴A.jpg",
+      "name": "세트메뉴 A",
       "radio": {
         "필수": ["필수1", "필수2 + 1000"]
       },
       "checkbox": {
         "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
-      }
+      },
+      "content": "국물떡볶이 2인 + 모듬튀김 + 쿨피스550ml",
+      "price": 16000,
+      "represent": true
     },
+
     {
-      "category": "set",
-      "url": "/asset/imgs/store/알라딘피자.png",
-      "name": "set 메뉴 2",
+      "category": "세트메뉴",
+      "url": "/asset/imgs/store/세트메뉴B.jpg",
+      "name": "세트메뉴 B",
       "radio": {
         "필수": ["필수1", "필수2 + 1000"]
       },
       "checkbox": {
         "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
-      }
+      },
+      "content": "국물떡볶이 2인 + 모듬튀김 + 날치알주먹밥 + 쿨피스550ml",
+      "price": 18500,
+      "represent": false
+    },
+
+    {
+      "category": "세트메뉴",
+      "url": "/asset/imgs/store/세트메뉴C.jpg",
+      "name": "세트메뉴 C",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "국물떡볶이 2인 + 모듬튀김 + 날치알주먹밥 + 찰순대 + 쿨피스550ml",
+      "price": 22000,
+      "represent": true
+    },
+
+    {
+      "category": "세트메뉴",
+      "url": "/asset/imgs/store/세트메뉴D.jpg",
+      "name": "세트메뉴 D",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "국물떡볶이 3인 + 모듬튀김 + 날치알주먹밥 + 탕수육 + 찰순대 + 쿨피스 550ml",
+      "price": 26000,
+      "represent": false
+    },
+
+    {
+      "category": "세트메뉴",
+      "url": "/asset/imgs/store/1인세트.jpg",
+      "name": "1인 세트",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "국물떡볶이 + 찰순대 + 모듬튀김",
+      "price": 12500,
+      "represent": true
+    },
+
+    {
+      "category": "세트메뉴",
+      "url": "/asset/imgs/store/알찬세트.jpg",
+      "name": "알찬세트",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "국물떡볶이 1인 + 어묵 + 모듬김밥",
+      "price": 10000,
+      "represent": false
+    },
+
+    {
+      "category": "세트메뉴",
+      "url": "/asset/imgs/store/우동세트.jpg",
+      "name": "우동세트",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "국물떡볶이 1인 + 모듬튀김 + 감탄우동",
+      "price": 16000,
+      "represent": false
+    },
+
+    {
+      "category": "세트메뉴",
+      "url": "/asset/imgs/store/순살치킨세트.jpg",
+      "name": "순살치킨세트",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "국물덕볶이 2인 + 모듬튀김 + 순대 + 순살치킨",
+      "price": 24000,
+      "represent": false
+    },
+
+    {
+      "category": "세트메뉴",
+      "url": "/asset/imgs/store/탕수육세트.jpg",
+      "name": "탕수육세트",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "국물떡볶이 2인 + 모듬튀김 + 순대 + 탕수육",
+      "price": 24000,
+      "represent": false
+    },
+
+    {
+      "category": "메인메뉴",
+      "url": "/asset/imgs/store/감탄떡볶이(쌀).jpg",
+      "name": "감탄떡볶이(쌀)",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 6000,
+      "represent": false
+    },
+
+    {
+      "category": "메인메뉴",
+      "url": "/asset/imgs/store/감탄떡볶이(밀).jpg",
+      "name": "감탄떡볶이(밀)",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 6000,
+      "represent": false
+    },
+
+    {
+      "category": "메인메뉴",
+      "url": "/asset/imgs/store/감탄우동.jpg",
+      "name": "감탄우동",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 5500,
+      "represent": false
+    },
+
+    {
+      "category": "메인메뉴",
+      "url": "/asset/imgs/store/국물떡볶이.jpg",
+      "name": "국물떡볶이",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 7000,
+      "represent": false
+    },
+
+    {
+      "category": "메인메뉴",
+      "url": "/asset/imgs/store/더블치즈떡볶이.jpg",
+      "name": "더블치즈떡볶이",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 10000,
+      "represent": false
+    },
+
+    {
+      "category": "메인메뉴",
+      "url": "/asset/imgs/store/로제떡볶이.jpg",
+      "name": "로제떡볶이",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 9000,
+      "represent": true
+    },
+
+    {
+      "category": "메인메뉴",
+      "url": "/asset/imgs/store/순살치킨.jpg",
+      "name": "순살치킨",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 12000,
+      "represent": true
+    },
+
+    {
+      "category": "메인메뉴",
+      "url": "/asset/imgs/store/찰순대.jpg",
+      "name": "찰순대",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 7000,
+      "represent": true
+    },
+
+    {
+      "category": "사이드메뉴",
+      "url": "/asset/imgs/store/곡물핫도그.jpg",
+      "name": "곡물핫도그",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 4000,
+      "represent": false
+    },
+
+    {
+      "category": "사이드메뉴",
+      "url": "/asset/imgs/store/날치알주먹밥.jpg",
+      "name": "날치알주먹밥",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 3500,
+      "represent": false
+    },
+
+    {
+      "category": "사이드메뉴",
+      "url": "/asset/imgs/store/모듬튀김.jpg",
+      "name": "모듬튀김",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 5000,
+      "represent": false
+    },
+
+    {
+      "category": "사이드메뉴",
+      "url": "/asset/imgs/store/치즈핫도그.jpg",
+      "name": "치즈핫도그",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 5000,
+      "represent": false
+    },
+
+    {
+      "category": "음료",
+      "url": "/asset/imgs/store/사이다.jpg",
+      "name": "사이다",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 2000,
+      "represent": false
+    },
+
+    {
+      "category": "음료",
+      "url": "/asset/imgs/store/콜라.jpg",
+      "name": "콜라",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 2000,
+      "represent": false
+    },
+
+    {
+      "category": "음료",
+      "url": "/asset/imgs/store/제로콜라.jpg",
+      "name": "제로콜라",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 2500,
+      "represent": false
+    },
+
+    {
+      "category": "음료",
+      "url": "/asset/imgs/store/미린다.jpg",
+      "name": "미린다",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 2000,
+      "represent": false
+    },
+
+    {
+      "category": "음료",
+      "url": "/asset/imgs/store/쿨피스.jpg",
+      "name": "쿨피스",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 3500,
+      "represent": false
+    }
+  ],
+
+  "2": [
+    {
+      "category": "메인메뉴",
+      "url": "/asset/imgs/store/감탄떡볶이(쌀).jpg",
+      "name": "감탄떡볶이(쌀)",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 6000,
+      "represent": false
+    }
+  ],
+
+  "3": [
+    {
+      "category": "사이드메뉴",
+      "url": "/asset/imgs/store/곡물핫도그.jpg",
+      "name": "곡물핫도그",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 4000,
+      "represent": false
+    }
+  ],
+
+  "4": [
+    {
+      "category": "음료",
+      "url": "/asset/imgs/store/사이다.jpg",
+      "name": "사이다",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      },
+      "content": "",
+      "price": 2000,
+      "represent": false
     }
   ]
 }
