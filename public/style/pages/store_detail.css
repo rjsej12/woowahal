@@ -575,6 +575,8 @@ a {
 }
 .carousel .is-active {
   display: block;
+  animation-name: moveeffect;
+  animation-duration: 1000ms;
 }
 .carousel a {
   display: flex;
@@ -597,6 +599,14 @@ a {
   right: 0.5rem;
 }
 
+@keyframes moveeffect {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .ellipse {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
@@ -642,8 +652,6 @@ a {
   width: 100%;
   height: 20rem;
   position: relative;
-  background: yellow;
-  background-image: url(/);
   background-position: 0 50%;
   background-size: cover;
 }
@@ -668,8 +676,11 @@ a {
   margin: 0 0.5rem;
   background-color: #d9d9d9;
 }
+.st-detail-introbox.withimg {
+  --intro-img: url(/);
+}
 .st-detail-introbox.withimg::before {
-  background-image: url(/asset/imgs/떡볶이.jpg);
+  background-image: var(--intro-img);
 }
 .st-detail-introbox {
   background: #fff;
@@ -781,6 +792,9 @@ a {
 .st-detail-menus .menu.hidden {
   display: none;
 }
+.st-detail-menus .menu > li {
+  border-bottom: 2px solid #d9d9d9;
+}
 .st-detail-menus .menu img {
   object-fit: cover;
 }
@@ -790,7 +804,6 @@ a {
   padding: 1rem;
   background: #d9d9d9;
   font-size: 1.1rem;
-  border-bottom: 1px solid grey;
   text-align: left;
   position: relative;
 }
@@ -805,19 +818,20 @@ a {
   height: 5rem;
   border-radius: 1.5rem;
   float: right;
+  margin-right: 0.5rem;
 }
 .st-detail-menus .menu-info {
-  border-bottom: 2px solid #d9d9d9;
+  min-height: 6.2rem;
 }
 .st-detail-menus .menu-info li {
-  padding: 0.25rem 0;
+  padding: 0.25rem 0.5rem;
 }
 .st-detail-menus .menu-info-name {
   font-size: 1.1rem;
 }
 .st-detail-menus .menu-info-detail {
   font-size: 0.9rem;
-  color: #d9d9d9;
+  color: #595959;
 }
 .st-detail-menus-represent {
   padding: 2rem 1rem;
@@ -827,14 +841,18 @@ a {
 }
 .st-detail-menus .menu-represent {
   margin: 0.5rem;
+  padding: 0.25rem 0;
   border: 4px solid burlywood;
   clip-path: polygon(5% 0, 95% 0, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0 95%, 0 5%);
 }
 .st-detail-menus .menu-represent img {
   border-color: burlywood;
 }
-.st-detail-menus .menu-represent ul {
+.st-detail-menus .menu-represent > li {
   border-bottom: 2px solid burlywood;
+}
+.st-detail-menus .menu-represent > li:last-child {
+  border-bottom: none;
 }
 .st-detail-origin {
   background: white;
@@ -860,7 +878,7 @@ a {
 }
 .st-detail-notice li {
   font-size: 0.8rem;
-  color: grey;
+  color: #595959;
 }
 .st-detail .st-cart {
   display: none;
