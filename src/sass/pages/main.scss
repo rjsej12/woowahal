@@ -379,7 +379,7 @@ body {
     margin-top: $spacing-base;
     h2 {
       color: $black;
-      font-size: $font-base;
+      font-size: 1.2rem;
       .more-info-btn {
         cursor: pointer;
       }
@@ -392,10 +392,23 @@ body {
     }
     .is-visible {
       display: block;
+      animation-name: movedown;
+      animation-duration: 1000ms;
     }
   }
   small {
     display: block;
     margin-top: $spacing-sm;
+    font-size: $font-base;
+  }
+}
+
+@keyframes movedown {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
   }
 }
