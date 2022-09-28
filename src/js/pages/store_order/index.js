@@ -1,17 +1,20 @@
+import { getParam, getStore } from "../../utils/Param";
+import { convertPrices } from "../../utils/Wrapping";
 
-const handleRadios = () => {
-    
-}
 const form = document.querySelector("form");
 
-const radios = document.querySelectorAll(".radio");
-const checkBoxes = document.querySelectorAll(".checkbox");
-
 const order = document.querySelector(".st-menu-add button");
+const bg = document.querySelector(".withimg");
+
+const prices = document.querySelectorAll(".price");
+
+
+convertPrices(prices);
+
 
 (()=>{
 
-    console.log(location);
+    bg.style.setProperty("--info-img", `url(/asset/imgs/떡볶이.jpg)`)
     order.addEventListener("click",(e)=>{
         form.submit();
     });
