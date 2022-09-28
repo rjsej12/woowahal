@@ -1,3 +1,5 @@
+import {stores} from "../mock/stores.json";
+
 const getParam = (search) => {
     if(search){
         const tmp = search.substring(1).split("&");
@@ -13,6 +15,11 @@ const getParam = (search) => {
     }
 }
 
+const getStore = (id) => {
+    const res = stores.find((store)=> store.id === parseInt(id));
+    return res;
+}
 export {
-    getParam
+    getParam,
+    getStore
 }
