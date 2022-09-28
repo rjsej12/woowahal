@@ -151,47 +151,47 @@ body {
   }
   .bg-delivery {
     grid-area: delivery;
-    background-image: url(/asset/imgs/배달bg.png);
+    background-image: url(/asset/webp/배달bg.webp);
     background-size: cover;
   }
   .bg-package {
     grid-area: package;
-    background-image: url(/asset/imgs/포장bg.png);
+    background-image: url(/asset/webp/포장bg.webp);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 90%;
   }
   .bg-bmart {
     grid-area: bmart;
-    background-image: url(/asset/imgs/b마트.jpg);
+    background-image: url(/asset/webp/b마트.webp);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 90%;
   }
   .bg-mealkit {
     grid-area: mealkit;
-    background-image: url(/asset/imgs/밀키트.jpg);
+    background-image: url(/asset/webp/밀키트.webp);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 90%;
   }
   .bg-baeminstore {
     grid-area: baeminstore;
-    background-image: url(/asset/imgs/sale.jpg);
+    background-image: url(/asset/webp/sale.webp);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 90%;
   }
   .bg-shoppinglive {
     grid-area: shoppinglive;
-    background-image: url(/asset/imgs/쇼핑라이브.jpg);
+    background-image: url(/asset/webp/쇼핑라이브.webp);
     background-repeat: no-repeat;
     background-size: rem(100px);
     background-position: 90%;
   }
   .bg-gift {
     grid-area: gift;
-    background-image: url(/asset/imgs/선물하기.jpg);
+    background-image: url(/asset/webp/선물하기.webp);
     background-repeat: no-repeat;
     background-size: rem(60px);
     background-position: center 20%;
@@ -202,7 +202,7 @@ body {
   }
   .bg-delicious {
     grid-area: delicious;
-    background-image: url(/asset/imgs/전국별미.jpg);
+    background-image: url(/asset/webp/전국별미.webp);
     background-repeat: no-repeat;
     background-size: rem(70px);
     background-position: center 15%;
@@ -239,6 +239,10 @@ body {
   }
   li {
     margin-right: $spacing-base;
+    padding: 1rem;
+    a {
+      outline-offset: 0.5rem;
+    }
   }
   .storeinfo {
     width: rem(150px);
@@ -271,6 +275,10 @@ body {
   }
   li {
     margin-right: $spacing-base;
+    padding: 1rem;
+    a {
+      outline-offset: 0.5rem;
+    }
     img {
       width: rem(200px);
       height: rem(250px);
@@ -324,6 +332,9 @@ body {
     align-items: center;
     width: 100%;
     gap: $spacing-base;
+    a {
+      outline-offset: 0.5rem;
+    }
     img {
       width: 100%;
       border-radius: $spacing-sm;
