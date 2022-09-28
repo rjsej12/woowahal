@@ -18,22 +18,22 @@
     <script type="module" src="./js/store_order.js" defer></script>
   </head>
   <body>
-    <header class="st-list-header header-common">
+    <header class="st-menu-header header-common">
       <div class="header-common-left-area">
         <a href="./main.html"><i class="fa-regular fa-arrow-left category-header-icon"></i></a>
-        <img src="./asset/imgs/배민1_로고_모니터(RGB)_0블랙.png" class="pagename" alt="배민1" />
+        <img src="./asset/webp/배민1_로고_모니터(RGB)_0블랙.webp" class="pagename" alt="배민1" />
       </div>
 
       <div class="header-common-right-area">
-        <a href="#"><i class="fa-light fa-house header-common-icon"></i></a>
-        <a href="#"><i class="fa-light fa-cart-shopping header-common-icon"></i></a>
+        <a href="./main.html" aria-label="메인 페이지로 이동"><i class="fa-light fa-house header-common-icon"></i></a>
+        <a href="./cart.html" aria-label="장바구니 페이지로 이동"><i class="fa-light fa-cart-shopping header-common-icon"></i></a>
       </div>
     </header>
 
     <main class="st-menu">
       <!-- form으로 처리? -->
       <form action="/store_detail.html">
-        <div class="introbox withimg">
+        <div class="st-menu-introbox introbox withimg">
           <h2 class="a11y-hidden">메뉴 정보 영역</h2>
           <div class="introbox-info">
             <h3>STORE NAME</h3>
@@ -41,53 +41,39 @@
         </div>
   
 
-        <!-- info section -->
-        <section class="st-menu-price tmp key-value-box">
-          <h3 class="st-menu-price-title">가격 (뎁스 종류)</h3>
-          <span class="price">17000</span>
-        </section>
+        <!-- info section --> 
+        
+        <article class="infos">
 
-        <section class="st-menu-depth radio">
-          <h3 class="st-menu-depth-title">리뷰 서비스 (뎁스 종류)</h3>
-          <ul class="st-menu-depth-list">
-            <li>
-              <input type="radio" id="depth_review_lb1" name="depth_review" value="리뷰 서비스 11" />
-              <label for="depth_review_lb1">리뷰 서비스 1</label>
-              <span class="price">0</span>
-            </li>
+          
+          <section class="st-menu-depth checkbox">
+            <h3 class="st-menu-depth-title">추가 메뉴</h3>
+            <ul class="st-menu-depth-list">
+              <li>
+                <input type="checkbox" id="depth_more_lb1" name="depth_review" value="추가 메뉴 11" />
+                <label for="depth_more_lb1">추가 메뉴 1</label>
+                <span class="price">0</span>
+              </li>
 
-            <li>
-              <input type="radio" id="depth_review_lb2" name="depth_review" value="리뷰 서비스 22" />
-              <label for="depth_review_lb2">리뷰 서비스 2</label>
-              <span class="price">0</span>
-            </li>
-          </ul>
-        </section>
-
-        <section class="st-menu-depth checkbox">
-          <h3 class="st-menu-depth-title">추가 메뉴</h3>
-          <ul class="st-menu-depth-list">
-            <li>
-              <input type="checkbox" id="depth_more_lb1" name="depth_review" value="추가 메뉴 11" />
-              <label for="depth_more_lb1">추가 메뉴 1</label>
-              <span class="price">0</span>
-            </li>
-
-            <li>
-              <input type="checkbox" id="depth_more_lb2" name="depth_review" value="추가 메뉴 22" />
-              <label for="depth_more_lb2">추가 메뉴 2</label>
-              <span class="price">0</span>
-            </li>
-          </ul>
-        </section>
+              <li>
+                <input type="checkbox" id="depth_more_lb2" name="depth_review" value="추가 메뉴 22" />
+                <label for="depth_more_lb2">추가 메뉴 2</label>
+                <span class="price">0</span>
+              </li>
+            </ul>
+          </section>
+        </article>
 
         <!-- 수량 -->
         <section class="st-menu-amount key-value-box">
           <h3 class="menu-amount-title">수량</h3>
-          <div class="selected-menu-button-wrapper btn-amount">
-            <span class="amount">1</span>
+          <div class="selected-menu-button-wrapper btn-amount" tabindex="0" role="button" aria-label="메뉴의 수량을 정할 수 있는 버튼">
+            <button type="button" class="reduce">-</button>
+              <span class="amount">1</span>
+            <button type="button" class="more">+</button>
           </div>
         </section>
+    
       </form>
 
       <!-- 태그나 aria-role 생각 -->
@@ -95,10 +81,12 @@
       <section class="st-menu-add container-row">
         <p>
           <b>배달 최소주문 금액</b>
-          <span class="price">17000</span>
+          <span class="price min">17000</span>
         </p>
 
-        <button class="btn-order"><span class="price">0000</span> 담기</button>
+        <button class="btn-order">
+          <span class="price">0000</span> 담기
+        </button>
       </section>
     </main>
   </body>

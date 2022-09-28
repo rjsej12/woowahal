@@ -14,5 +14,6 @@ const convertPrices = (prices) => {
 
 
 export {
-    convertPrices
+    convertPrices,
+    convertPrice
 };

@@ -1,12 +1,28 @@
 import {toggleClassList} from "../../utils/ClassListHandler.js";
 import { getParam, getStore, getMenus } from "../../utils/Param.js";
-import { convertPrices } from "../../utils/Wrapping.js";
+import { convertPrices, convertPrice } from "../../utils/Wrapping.js";
+import {setCartStorage} from "../../utils/Storage.js";
 
 const menus_list = document.querySelector(".st-detail-menus");
-
+const cart = document.querySelector(".st-cart");
 
 const params = getParam(location.search);
+console.log(params);
 const store = getStore(params.id);
+
+if(params.cartprice !== undefined){
+    toggleClassList(cart, "is-active")
+    cart.querySelector(".st-cart-btn-price").innerText = params.cartprice;
+    let tmp = store.minprice - parseInt(params.cartprice);
+    if(tmp > 0){
+        cart.firstElementChild.innerText = `${convertPrice(tmp)} 더 다음면 배달 가능!`;
+    }else{
+        cart.firstElementChild.innerText = ``;
+    }
+    cart.firstElementChild.nextElementSibling.innerText = `배달 최소 주문금액 ${convertPrice(store.minprice)}`; 
+
+    setCartStorage(params);
+}
 
 const setDetail = () => {
     document.querySelector(".introbox-info > h3").innerText = store.title;
@@ -22,7 +38,7 @@ const setDetail = () => {
           <li></li>
           <li></li>
         </ul>
-        ${parseFloat(store.rating / 10)}
+        <span>${parseFloat(store.rating / 10)}</span>
         `;
         rating.querySelector(".colorBox").style.setProperty("clip-path",`polygon(0 0, ${store.rating}% 0, ${store.rating}% 100%, 0% 100%)`);
         
@@ -82,6 +98,10 @@ const setMenus = () => {
         }); 
         
     }
+
+    document.querySelector(".btn-order").addEventListener("click",(e)=>{
+        location.href = "/cart.html";
+    });
              
 
 })();

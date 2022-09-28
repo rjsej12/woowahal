@@ -17,13 +17,11 @@ button{
         padding: $spacing-sm;
         border: solid $grey 1px;
         border-radius: $br-md;
-        &::before{
-            content: "-";
+        & .reduce{
             padding-right: $spacing-lg;
             display: inline-block;
         }
-        &::after{
-            content: "+";
+        & .more{
             padding-left: $spacing-lg;
             display: inline-block;
         }
