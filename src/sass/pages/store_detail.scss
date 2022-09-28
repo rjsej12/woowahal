@@ -21,8 +21,11 @@
     // vertical-align: middle;
   }
 
+  &-introbox.withimg {
+    --intro-img: url(/);
+  }
   &-introbox.withimg::before {
-    background-image: url(/asset/imgs/떡볶이.jpg);
+    background-image: var(--intro-img);
   }
 
   &-introbox {
@@ -157,6 +160,9 @@
       &.hidden {
         display: none;
       }
+      & > li {
+        border-bottom: 2px solid $grey;
+      }
       & img {
         object-fit: cover;
       }
@@ -166,7 +172,7 @@
         padding: $spacing-base;
         background: $grey;
         font-size: 1.1rem;
-        border-bottom: 1px solid grey;
+        // border-bottom: 1px solid $grey;
         text-align: left;
         position: relative;
 
@@ -183,12 +189,14 @@
         height: 5rem;
         border-radius: 1.5rem;
         float: right;
+        margin-right: $spacing-sm;
       }
 
       &-info {
-        border-bottom: 2px solid $grey;
+        // border-bottom: 2px solid $grey;
+        min-height: 6.2rem;
         & li {
-          padding: $spacing-xs 0;
+          padding: $spacing-xs $spacing-sm;
         }
 
         &-name {
@@ -197,7 +205,7 @@
 
         &-detail {
           font-size: 0.9rem;
-          color: $grey;
+          color: $ac-grey;
         }
       }
     }
@@ -211,14 +219,17 @@
 
     & .menu-represent {
       margin: $spacing-sm;
+      padding: $spacing-xs 0;
       border: 4px solid burlywood;
       clip-path: polygon(5% 0, 95% 0, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0 95%, 0 5%);
-
       & img {
         border-color: burlywood;
       }
-      & ul {
+      & > li {
         border-bottom: 2px solid burlywood;
+        &:last-child {
+          border-bottom: none;
+        }
       }
     }
   }
@@ -250,7 +261,7 @@
 
     & li {
       font-size: 0.8rem;
-      color: grey;
+      color: $ac-grey;
     }
   }
 

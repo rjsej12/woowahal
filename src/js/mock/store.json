@@ -1,0 +1,26 @@
+{
+  "1": [
+    {
+      "category": "set",
+      "url": "/asset/imgs/store/떡볶이.jpg",
+      "name": "set 메뉴 1",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      }
+    },
+    {
+      "category": "set",
+      "url": "/asset/imgs/store/알라딘피자.png",
+      "name": "set 메뉴 2",
+      "radio": {
+        "필수": ["필수1", "필수2 + 1000"]
+      },
+      "checkbox": {
+        "리뷰": ["리뷰1 + 0", "리뷰2 + 2000"]
+      }
+    }
+  ]
+}
