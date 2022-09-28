@@ -1,5 +1,5 @@
-import { addClassList } from "../../utils/ClassListHandler.js";
 import {stores} from "../../mock/stores.json";
+import { slideEffect } from "../../utils/Slide";
 
 const categorys = document.querySelector(".st-list-category");
 const scrolList = document.querySelector(".st-list-scroll");
@@ -21,7 +21,6 @@ const makeList = (store) =>{
         <div class="scroll-item-time" aria-label="소요 시간"><i class="fa-light fa-clock"></i>38~53분</div>
     `;
     res.appendChild(anchor);
-    console.log(res);
     return res;
 }
 
@@ -29,12 +28,16 @@ const makeList = (store) =>{
     categorys.addEventListener("wheel",(e)=>{
         const direction = e.deltaY;
         if(direction > 0){
-            categorys.scrollLeft += 10;
+            console.log(categorys.scrollLeft);
+            categorys.scrollTo({left: 50, behavior:smooth});
             
         }else{
             categorys.scrollLeft -= 10;
         }
     });
+
+
+    slideEffect(categorys);
 
     categorys.addEventListener("keydown",(e)=>{
        const keyCode = e.keyCode;
