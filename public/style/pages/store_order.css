@@ -389,13 +389,11 @@ button {
   border: solid #d9d9d9 1px;
   border-radius: 1.5rem;
 }
-.btn-amount::before {
-  content: "-";
+.btn-amount .reduce {
   padding-right: 2rem;
   display: inline-block;
 }
-.btn-amount::after {
-  content: "+";
+.btn-amount .more {
   padding-left: 2rem;
   display: inline-block;
 }
@@ -416,10 +414,14 @@ ul {
 .container-rating {
   width: 100%;
 }
+.container-rating span {
+  vertical-align: text-bottom;
+  font-size: 2rem;
+}
 .container-rating .colorBox {
   padding: 0.5rem 0;
   display: inline-flex;
-  clip-path: polygon(0 0, 65% 0, 65% 100%, 0% 100%);
+  clip-path: polygon(0 0, 70% 0, 70% 100%, 0% 100%);
 }
 .container-rating .colorBox li {
   background-color: #f9c60b;
@@ -674,29 +676,30 @@ a {
   margin: 0 auto;
 }
 
-.intro-imgbox {
-  background-image: url(/asset/imgs/떡볶이.jpg);
-}
-
 .st-menu {
   background-color: white;
 }
 .st-menu-introbox.withimg {
-  --intro-img: url(/);
+  --order-img: url(/);
 }
 .st-menu-introbox.withimg::before {
-  background-image: var(--intro-img);
+  background-image: var(--order-img);
 }
 .st-menu-price {
   margin: 0.5rem;
   margin-top: 2rem;
+  font-size: 2rem;
 }
 .st-menu-depth {
   border-top: solid #d9d9d9 1px;
   padding: 0.5rem;
 }
+.st-menu-depth-title {
+  font-size: 2rem;
+}
 .st-menu-depth-list li {
   margin-top: 1rem;
+  font-size: 1.5rem;
 }
 .st-menu-depth-list li .price {
   float: right;
