@@ -3,8 +3,25 @@ import {toggleClassList} from "../../utils/ClassListHandler.js";
 const menu_btns = document.querySelectorAll(".menu-btn");
 const cart = document.querySelector(".st-cart");
 
+const getParam = (search) => {
+    if(search){
+        const tmp = search.substring(1).split("&");
+        const data = {};
+        tmp.map((i)=>{
+            const sp = i.split("=");
+            data[sp[0]] = sp[1];
+        });
+
+        return data;
+    }else{
+        return false;
+    }
+}
 (()=>{
-    console.log(location);
+    
+    const params = getParam(location.search);
+    console.log(params);
+    
     for(let btn of menu_btns){
 
         btn.addEventListener("click",(e)=>{
