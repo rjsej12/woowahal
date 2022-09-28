@@ -8,10 +8,9 @@ const recommands = document.querySelector(".recommended-list");
 
 const makeRecomandCon = (store) => {
     const res = document.createElement("li");
-    res.id = store.id;
     // 가게페이지 넘어가기
     res.innerHTML = `
-    <a href="#">
+    <a href="/store_detail.html?id=${store.id}">
         <div class="recommended-img-container" title="${store.title}"></div>
         <div class="recommended-text-container">
         <p class="recommended-store">${store.title} <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
