@@ -133,13 +133,13 @@
   &-sortbys {
     gap: $spacing-lg;
     align-items: center;
-    padding: 0 $spacing-base;
     background: $white;
 
     & .sortby {
       & button {
         white-space: nowrap;
         color: grey;
+        padding: 1rem;
       }
 
       &-list {
