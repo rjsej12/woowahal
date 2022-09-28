@@ -17,6 +17,7 @@ body *::before {
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 .components-container {
   width: 560px;
@@ -657,7 +658,7 @@ a {
 }
 
 .st-detail {
-  margin-bottom: 10rem;
+  background: #d9d9d9;
 }
 .st-detail .divider {
   content: "";
@@ -777,6 +778,12 @@ a {
 .st-detail-menus {
   background: #fff;
 }
+.st-detail-menus .menu.hidden {
+  display: none;
+}
+.st-detail-menus .menu img {
+  object-fit: cover;
+}
 .st-detail-menus .menu-btn {
   display: block;
   width: 100%;
@@ -800,7 +807,7 @@ a {
   float: right;
 }
 .st-detail-menus .menu-info {
-  margin-bottom: 0.25rem;
+  border-bottom: 2px solid #d9d9d9;
 }
 .st-detail-menus .menu-info li {
   padding: 0.25rem 0;
@@ -823,11 +830,11 @@ a {
   border: 4px solid burlywood;
   clip-path: polygon(5% 0, 95% 0, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0 95%, 0 5%);
 }
-.st-detail-notice {
-  margin: 1rem 1rem;
+.st-detail-menus .menu-represent img {
+  border-color: burlywood;
 }
-.st-detail-notice li {
-  margin-top: 0.3em;
+.st-detail-menus .menu-represent ul {
+  border-bottom: 2px solid burlywood;
 }
 .st-detail-origin {
   background: white;
@@ -840,8 +847,14 @@ a {
 .st-detail-origin .origin-title {
   font-size: 1.1rem;
 }
+.st-detail-notice {
+  padding: 1rem 1rem;
+}
+.st-detail-notice li {
+  margin-top: 0.3em;
+}
 .st-detail-notice .notice-title {
-  font-size: 0.9rem;
+  font-size: 1rem;
   background: #d9d9d9;
   margin-bottom: 0.5rem;
 }
@@ -850,16 +863,19 @@ a {
   color: grey;
 }
 .st-detail .st-cart {
-  width: 100%;
-  height: 9rem;
-  position: fixed;
-  bottom: 0;
-  background: #fff;
+  display: none;
+}
+.st-detail .st-cart.is-active {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
   border-top: 2px solid silver;
+  position: sticky;
+  width: 100%;
+  height: 9rem;
+  bottom: 0;
+  background: #fff;
 }
 .st-detail .st-cart-btn {
   margin: 1rem 1rem 0 1rem;

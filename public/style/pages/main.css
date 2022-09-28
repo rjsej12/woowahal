@@ -17,6 +17,7 @@ body *::before {
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 .components-container {
   width: 560px;
@@ -789,47 +790,47 @@ body {
 }
 .sitemenu-list .bg-delivery {
   grid-area: delivery;
-  background-image: url(/asset/imgs/배달bg.png);
+  background-image: url(/asset/webp/배달bg.webp);
   background-size: cover;
 }
 .sitemenu-list .bg-package {
   grid-area: package;
-  background-image: url(/asset/imgs/포장bg.png);
+  background-image: url(/asset/webp/포장bg.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 90%;
 }
 .sitemenu-list .bg-bmart {
   grid-area: bmart;
-  background-image: url(/asset/imgs/b마트.jpg);
+  background-image: url(/asset/webp/b마트.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 90%;
 }
 .sitemenu-list .bg-mealkit {
   grid-area: mealkit;
-  background-image: url(/asset/imgs/밀키트.jpg);
+  background-image: url(/asset/webp/밀키트.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 90%;
 }
 .sitemenu-list .bg-baeminstore {
   grid-area: baeminstore;
-  background-image: url(/asset/imgs/sale.jpg);
+  background-image: url(/asset/webp/sale.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 90%;
 }
 .sitemenu-list .bg-shoppinglive {
   grid-area: shoppinglive;
-  background-image: url(/asset/imgs/쇼핑라이브.jpg);
+  background-image: url(/asset/webp/쇼핑라이브.webp);
   background-repeat: no-repeat;
   background-size: 6.25rem;
   background-position: 90%;
 }
 .sitemenu-list .bg-gift {
   grid-area: gift;
-  background-image: url(/asset/imgs/선물하기.jpg);
+  background-image: url(/asset/webp/선물하기.webp);
   background-repeat: no-repeat;
   background-size: 3.75rem;
   background-position: center 20%;
@@ -840,7 +841,7 @@ body {
 }
 .sitemenu-list .bg-delicious {
   grid-area: delicious;
-  background-image: url(/asset/imgs/전국별미.jpg);
+  background-image: url(/asset/webp/전국별미.webp);
   background-repeat: no-repeat;
   background-size: 4.375rem;
   background-position: center 15%;
@@ -871,14 +872,6 @@ body {
 .baemindo h2 {
   font-weight: 500;
 }
-.fastdelivery li:active,
-.fastdelivery article:active,
-.gift li:active,
-.gift article:active,
-.baemindo li:active,
-.baemindo article:active {
-  transform: scale(0.9);
-}
 
 .fastdelivery .container-row {
   margin-top: 1rem;
@@ -901,6 +894,9 @@ body {
 }
 .fastdelivery .baeminlogo {
   width: 2rem;
+}
+.fastdelivery li:active {
+  transform: scale(0.9);
 }
 
 .star-icon {
@@ -932,6 +928,12 @@ body {
   background: rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
+.gift a:active {
+  transform: scale(0.9);
+}
+.gift a:active img {
+  transform: scale(0.9);
+}
 
 .advertisement {
   width: 100%;
@@ -955,6 +957,9 @@ body {
 .baemindo-img-wrapper img {
   width: 100%;
   border-radius: 0.5rem;
+}
+.baemindo a:active img {
+  transform: scale(0.9);
 }
 
 .voulunteer {
