@@ -231,10 +231,6 @@ body {
   h2 {
     font-weight: 500;
   }
-  & li:active,
-  article:active {
-    transform: scale(0.9);
-  }
 }
 
 .fastdelivery {
@@ -259,6 +255,9 @@ body {
   }
   .baeminlogo {
     width: $font-lg;
+  }
+  & li:active {
+    transform: scale(0.9);
   }
 }
 
@@ -292,6 +291,12 @@ body {
       border-radius: 50%;
     }
   }
+  & a:active {
+    transform: scale(0.9);
+    img {
+      transform: scale(0.9);
+    }
+  }
 }
 
 .advertisement {
@@ -322,6 +327,11 @@ body {
     img {
       width: 100%;
       border-radius: $spacing-sm;
+    }
+  }
+  & a:active {
+    img {
+      transform: scale(0.9);
     }
   }
 }
