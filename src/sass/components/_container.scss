@@ -4,13 +4,12 @@ ul {
   list-style-type: none;
 }
 .container {
-
-  &-rating{
+  &-rating {
     width: 100%;
-    & .colorBox{
+    & .colorBox {
       padding: $spacing-sm 0;
       display: inline-flex;
-      & li{
+      & li {
         background-color: $yellow;
         width: $font-lg;
         height: $font-lg;
