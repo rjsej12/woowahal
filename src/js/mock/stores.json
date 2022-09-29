@@ -9,7 +9,18 @@
       "deliverytip": 3000,
       "distance": 3.2,
       "alt": "제로베이스 떡볶이 가게의 썸네일 이미지",
-      "category": "분식"
+      "category": "np분식"
+    },
+    {
+      "title": "피자헛",
+      "id": 100,
+      "url": "/asset/webp/store/pizzahut/logo.webp",
+      "rating": 65,
+      "minprice": 20000,
+      "deliverytip": 3500,
+      "distance": 1.7,
+      "alt": "피자헛 가게의 로고 이미지",
+      "category": "피자"
     },
     {
       "title": "덩기덕쿵떡국",

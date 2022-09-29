@@ -1,4 +1,65 @@
 {
+  "100":[
+    {
+      "category": "피자",
+      "url": "/asset/webp/store/pizzahut/돈마호크.webp",
+      "name": "돈마호크 피자",
+      "radio": {
+        "도우": ["일반 도우", "씬 도우 + 1000"]
+      },
+      "checkbox": {
+        "사이드": ["피클 + 0", "크러스트 + 3000"]
+      },
+      "content": "돼지가 올라간 미친 피자",
+      "price": 39000,
+      "represent": true
+    },
+    {
+      "category": "피자",
+      "url": "/asset/webp/store/pizzahut/레몬크림쉬림프.webp",
+      "name": "레몬크림쉬림프 피자",
+      "radio": {
+        "도우": ["일반 도우", "씬 도우 + 1000", "쌀 도우 + 2000"]
+      },
+      "checkbox": {
+        "사이드": ["피클 + 0","핫소스 + 0", "크러스트 + 3000"]
+      },
+      "content": "레몬과 크림 그리고 쉬림의 만남",
+      "price": 27000,
+      "represent": true
+    },
+    {
+      "category": "피자",
+      "url": "/asset/webp/store/pizzahut/케이준 더블쉬림프.webp",
+      "name": "케이준 더블 쉬림프 피자",
+      "radio": {
+        "도우": ["일반 도우", "씬 도우 + 1000"]
+      },
+      "checkbox": {
+        "사이드": ["피클 + 0", "크러스트 + 3000"]
+      },
+      "content": "새우가 2배 피자",
+      "price": 28000,
+      "represent": true
+    },
+    {
+      "category": "음료",
+      "url": "/asset/imgs/store/사이다.jpg",
+      "name": "사이다",
+      "content": "",
+      "price": 2000,
+      "represent": false
+    },
+
+    {
+      "category": "음료",
+      "url": "/asset/imgs/store/콜라.jpg",
+      "name": "콜라",
+      "content": "",
+      "price": 2000,
+      "represent": false
+    }
+  ],
   "1": [
     {
       "category": "세트메뉴",
@@ -391,6 +452,7 @@
       "represent": false
     }
   ],
+
 
   "2": [
     {
