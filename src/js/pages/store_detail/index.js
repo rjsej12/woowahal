@@ -58,7 +58,7 @@ const setRepresent = () => {
     for(let menu of menus){
         if(menu.represent){
             represent.innerHTML += `
-            <a href="./store_order.html">
+            <a href="./store_order.html?id=${params.id}&name=${menu.name}">
                 <img src="${menu.url}" alt="" />
                 <ul class="menu-info">
                 <li class="menu-info-name"><h3>${menu.name}</h3></li>
