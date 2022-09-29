@@ -31,13 +31,17 @@
 |Nesting Rule|ClassNaming에 맞게|
 |Variant|속성값은 변수명으로| Sass에서 활용키위해|
 
-# Git Flow
+![ng](/documentation/imgs/readme/ng.png)
+![sh](/documentation/imgs/readme/sshnaming.png)
 
-## 수현님 레포지토리를 메인브랜치로
-## develop, release, sub, main
+# Git
+[GitFlow ](https://github.com/rjsej12/woowahal/blob/develop/documentation/git.md)
 
-## 팀원들 각자의 레포지토리로 fork
-## 개인 로컬환경에서 각자 pull후 merge
-## 각각의 맡은 페이지나, 컴포넌트 단위로 개발
+# Trobules
+
+## develop 브랜치가 push 후 pull할 때 Error가 뜨는 경우
+    branch -c 명령어와 관련이 있는 듯하나 아직 파악못함.
+    전 브랜치삭제와 연결된 브랜치를 삭제하여 다시 pull해와서
+    해결함
 
 
