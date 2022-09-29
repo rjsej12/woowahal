@@ -1,5 +1,6 @@
 import { getCartStorage } from "../../utils/Storage.js";
 import {getMenu, getStore} from "../../utils/Param.js";
+import { getAddr } from "../../utils/Storage.js";
 import Carousel from "../../utils/Carousel.js";
 
 const carousels = document.querySelectorAll(".carousel");
@@ -9,6 +10,7 @@ const n = decodeURIComponent(cart.name).split("+").join(" ");
 const menu = getMenu(parseInt(cart.id), n);
 
 const setHistory = () => {
+    document.querySelector(".ordered-history-addr").innerText = getAddr();
     const major =document.querySelector(".ordered-history-store");
     major.querySelector("h3").innerText = store.title;
     major.querySelector("p").innerText = `${menu.name}외 1개`;
