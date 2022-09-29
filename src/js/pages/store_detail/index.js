@@ -12,7 +12,7 @@ const store = getStore(params.id);
 
 if(params.cartprice !== undefined){
     toggleClassList(cart, "is-active")
-    cart.querySelector(".st-cart-btn-price").innerText = params.cartprice;
+    cart.querySelector(".st-cart-btn-price").innerText = convertPrice(params.cartprice);
     let tmp = store.minprice - parseInt(params.cartprice);
     if(tmp > 0){
         cart.firstElementChild.innerText = `${convertPrice(tmp)} 더 다음면 배달 가능!`;
