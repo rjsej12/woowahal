@@ -2,3 +2,10 @@
 *.css.map
 *.sass.map
 *.scss.map
+/node_modules
+/documentation
+/src
+log.md
+package.json
+webpack.config.js
+package-lock.json
