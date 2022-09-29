@@ -1,15 +1,23 @@
 {
   "scripts": {
     "server": "live-server public --port-3000",
-    "compile": "sass src/sass/:public/style/",
-    "clear": "rimraf public/style",
+    "compile": "sass --no-source-map src/sass/:public/style/",
+    "clear": "rimraf public/style public/js",
     "watch": "npm run compile -- --watch",
-    "wp": "webpack",
-    "dev": "run-p server watch wp"
+    "wpbuild": "webpack --watch --mode=production",
+    "wp": "webpack --watch --mode=development",
+    "dev": "run-p server watch wp",
+    "pc": "postcss public/style/pages/*.css -d public/style/pages",
+    "build": "run-s clear compile pc wpbuild"
   },
   "devDependencies": {
+    "cssnano": "^5.1.13",
     "live-server": "^1.2.2",
     "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
+    "postcss-combine-media-query": "^1.0.1",
+    "postcss-preset-env": "^7.7.2",
     "rimraf": "^3.0.2",
     "sass": "^1.54.9",
     "webpack": "^5.74.0",
