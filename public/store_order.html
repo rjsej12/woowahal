@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>우아할 형제들 메뉴 상세</title>
+    <meta
+      rel="description"
+      content="
+        우아할형제들에 등록된 가게에서 제공하는 메뉴의 상세를 보여주는 메뉴 상세페이지입니다.
+    "
+    />
+
+    <link rel="stylesheet" href="style/pages/store_order.css" />
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" 
+    rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" />
+
+    <script type="module" src="./js/store_order.js" defer></script>
+  </head>
+  <body>
+    <header class="st-menu-header header-common">
+      <div class="header-common-left-area">
+        <a href="./main.html"><i class="fa-regular fa-arrow-left category-header-icon"></i></a>
+        <img src="./asset/webp/배민1_로고_모니터(RGB)_0블랙.webp" class="pagename" alt="배민1" />
+      </div>
+
+      <div class="header-common-right-area">
+        <a href="./main.html" aria-label="메인 페이지로 이동"><i class="fa-light fa-house header-common-icon"></i></a>
+        <a href="./cart.html" aria-label="장바구니 페이지로 이동"><i class="fa-light fa-cart-shopping header-common-icon"></i></a>
+      </div>
+    </header>
+
+    <main class="st-menu">
+      <!-- form으로 처리? -->
+      <form action="/store_detail.html">
+        <div class="st-menu-introbox introbox withimg">
+          <h2 class="a11y-hidden">메뉴 정보 영역</h2>
+          <div class="introbox-info">
+            <h3>STORE NAME</h3>
+          </div>
+        </div>
+  
+
+        <!-- info section --> 
+        
+        <article class="infos">
+
+          
+          <section class="st-menu-depth checkbox">
+            <h3 class="st-menu-depth-title">추가 메뉴</h3>
+            <ul class="st-menu-depth-list">
+              <li>
+                <input type="checkbox" id="depth_more_lb1" name="depth_review" value="추가 메뉴 11" />
+                <label for="depth_more_lb1">추가 메뉴 1</label>
+                <span class="price">0</span>
+              </li>
+
+              <li>
+                <input type="checkbox" id="depth_more_lb2" name="depth_review" value="추가 메뉴 22" />
+                <label for="depth_more_lb2">추가 메뉴 2</label>
+                <span class="price">0</span>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- 수량 -->
+        <section class="st-menu-amount key-value-box">
+          <h3 class="menu-amount-title">수량</h3>
+          <div class="selected-menu-button-wrapper btn-amount" tabindex="0" role="button" aria-label="메뉴의 수량을 정할 수 있는 버튼">
+            <button type="button" class="reduce">-</button>
+              <span class="amount">1</span>
+            <button type="button" class="more">+</button>
+          </div>
+        </section>
+    
+      </form>
+
+      <!-- 태그나 aria-role 생각 -->
+
+      <section class="st-menu-add container-row">
+        <p>
+          <b>배달 최소주문 금액</b>
+          <span class="price min">17000</span>
+        </p>
+
+        <button class="btn-order">
+          <span class="price">0000</span> 담기
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
