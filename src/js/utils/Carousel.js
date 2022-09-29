@@ -24,8 +24,14 @@ const makeSlide = (slider, item, idx) => {
     slider.appendChild(slide);
 }
 const makeOffscreen = (carousel, urls) => {
-    const offscreen = carousel.querySelector(".offscreen-text");
-    offscreen.innerText = `1 / ${urls.length}`;
+    try{
+        
+        const offscreen = carousel.querySelector(".offscreen-text");
+        offscreen.innerText = `1 / ${urls.length}`;
+    }catch (e){
+        console.error("ss");
+    }finally{
+    }
 }
 const toggleActive = (curr, comp, str) => {
     if(comp.tagName === 'LI'){

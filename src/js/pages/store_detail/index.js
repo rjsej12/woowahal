@@ -7,12 +7,11 @@ const menus_list = document.querySelector(".st-detail-menus");
 const cart = document.querySelector(".st-cart");
 
 const params = getParam(location.search);
-console.log(params);
 const store = getStore(params.id);
 
 if(params.cartprice !== undefined){
     toggleClassList(cart, "is-active")
-    cart.querySelector(".st-cart-btn-price").innerText = params.cartprice;
+    cart.querySelector(".st-cart-btn-price").innerText = convertPrice(params.cartprice);
     let tmp = store.minprice - parseInt(params.cartprice);
     if(tmp > 0){
         cart.firstElementChild.innerText = `${convertPrice(tmp)} 더 다음면 배달 가능!`;
@@ -44,8 +43,38 @@ const setDetail = () => {
         
 }
 
+const menus = getMenus(params.id);
+const setRepresent = () => {
+
+
+    const represent = document.createElement("ul");
+    represent.classList.add("menu");
+    represent.classList.add("menu-represent");
+
+    represent.innerHTML = `
+        <li class="st-detail-menus-represent">--- 대표메뉴 ---</li>
+    `;
+
+    for(let menu of menus){
+        if(menu.represent){
+            represent.innerHTML += `
+            <a href="./store_order.html?id=${params.id}&name=${menu.name}">
+                <img src="${menu.url}" alt="" />
+                <ul class="menu-info">
+                <li class="menu-info-name"><h3>${menu.name}</h3></li>
+                <li class="menu-info-detail">${menu.content}</li>
+                <li class="menu-info-price">${convertPrice(menu.price)}</li>
+                </ul>
+            </a>
+            `;
+        }
+    }
+
+    menus_list.innerHTML = "";
+    menus_list.appendChild(represent);
+}
+
 const setMenus = () => {
-    const menus = getMenus(params.id);
     const categorys = [];
     let el = ``;
     menus.map((menu)=>{
@@ -73,14 +102,15 @@ const setMenus = () => {
             </a>
         </li>
         `;
-        menus_list.innerHTML = el;
     });
+
+    menus_list.innerHTML += el;
 };
 
 (()=>{
 
     setDetail();
-
+    setRepresent();
     setMenus();
 
     const prices = document.querySelectorAll(".price");

@@ -34,14 +34,33 @@ const setMenu = () => {
     
 };
 
+const setInfo = () => {
+    
+    const major = document.querySelector(".cart-price");
+
+    console.log(cart);
+        const info = document.createElement("section");
+        info.classList.add("cart-price-info");
+        info.innerHTML = `
+          <h3>${n}</h3>
+          <span class="price">${cart.cartprice}</span>
+        `;
+
+    major.prepend(info);
+    
+};
+
 const setPrice = () => {
+
     document.querySelector(".cart-order").querySelector(".price").innerText = cart.cartprice;
+    document.querySelector(".sum").querySelector(".price").innerText = cart.cartprice;
 }
 
 (()=>{
 
     setMenusTitle();
     setMenu();
+    setInfo();
     setPrice();
 
 
