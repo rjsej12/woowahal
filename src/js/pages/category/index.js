@@ -1,5 +1,6 @@
 import {stores} from "../../mock/stores.json";
 import Carousel from "../../utils/Carousel.js";
+import { getAddr } from "../../utils/Storage";
 
 const sortbys = document.querySelector(".recommended-sortbys");
 const carousels = document.querySelectorAll(".carousel");
@@ -29,8 +30,10 @@ const makeRecomandCon = (store) => {
 };
 
 (()=>{
-
+    
     Carousel(carousels);
+
+    document.querySelector(".now-address").innerText = getAddr();
 
     sortbys.addEventListener("click",(e)=>{
         sortbys.querySelector(".sortby-list");

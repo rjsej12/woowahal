@@ -12,7 +12,7 @@ const getCartStorage = () => {
 }
 
 const setAddr = () => {
-    localStorage.setItem("addr", "서울시 동대문구 XX동 어디어디 땡땡호");
+    localStorage.setItem("addr", "서울시 동대문구 XX동");
 
 }
 const getAddr = () => {

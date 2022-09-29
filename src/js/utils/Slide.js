@@ -24,9 +24,9 @@ const setSlideEffect=(carousel, toggleActive)=>{
     carousel.addEventListener("dragstart",(e)=>{
         start = e.x;
     });
-    carousel.addEventListener("touchstart",(e)=>{
-        start = e.x;
-    });
+    // carousel.addEventListener("touchstart",(e)=>{
+    //     start = e.x;
+    // });
     function process(e){
         const currentActive = carousel.querySelector(".is-active");
         if(start + 120 < e.x ){
@@ -42,9 +42,9 @@ const setSlideEffect=(carousel, toggleActive)=>{
     carousel.addEventListener("dragend",(e)=>{
         process(e);
     });
-    carousel.addEventListener("touchend",(e)=>{
-        process(e);
-    });
+    // carousel.addEventListener("touchend",(e)=>{
+    //     process(e);
+    // });
 }
 
 export {
