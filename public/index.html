@@ -1,295 +1,407 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="매일매일 새로운 할인! 좋은 음식을 먹고 싶은 곳에서, 배달의민족" />
-    <title>배달의민족</title>
-    <link rel="shortcut icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="style/pages/main.css" />
-    <link rel="preload" as="image" href="./asset/webp/배달bg.webp" />
-    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" />
-    <script defer type="module" src="./js/main.js"></script>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="매일매일 새로운 할인! 좋은 음식을 먹고 싶은 곳에서, 배달의민족" />
+		<title>배달의민족</title>
+		<link rel="shortcut icon" href="./favicon.ico" />
+		<link rel="stylesheet" href="style/pages/main.css" />
+		<link rel="preload" as="image" href="./asset/webp/배달bg.webp" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			rel="preload"
+			as="style"
+			onload="this.onload=null;this.rel='stylesheet'"
+			type="text/css"
+		/>
+		<script defer type="module" src="./js/main.js"></script>
+	</head>
 
-  <body>
-    <header class="main-header">
-      <address class="order-address">동대문구 제기동 272-18<i class="fa-solid fa-caret-down main-header-icon"></i></address>
+	<body>
+		<header class="main-header">
+			<address class="order-address">
+				동대문구 제기동 272-18<i class="fa-solid fa-caret-down main-header-icon"></i>
+			</address>
 
-      <ul class="main-header-list">
-        <li>
-          <a href="#" aria-label="메뉴페이지로 이동"><img src="./asset/imgs/menu-icon.svg" class="menu-icon" alt="" /></a>
-        </li>
-        <li>
-          <a href="#" aria-label="알림페이지로 이동"><i class="fa-light fa-bell main-header-icon"></i></a>
-        </li>
-        <li>
-          <a href="#" aria-label="찜페이지로 이동"><i class="fa-light fa-face-smile-tongue main-header-icon"></i></a>
-        </li>
-      </ul>
+			<ul class="main-header-list">
+				<li>
+					<a href="#" aria-label="메뉴페이지로 이동"
+						><img src="./asset/imgs/menu-icon.svg" class="menu-icon" alt=""
+					/></a>
+				</li>
+				<li>
+					<a href="#" aria-label="알림페이지로 이동"><i class="fa-regular fa-bell main-header-icon"></i></a>
+				</li>
+				<li>
+					<a href="#" aria-label="찜페이지로 이동"
+						><i class="fa-regular fa-face-smile main-header-icon"></i
+					></a>
+				</li>
+			</ul>
 
-      <div class="search-bar">
-        <label for="input-search"><i class="fa-regular fa-magnifying-glass search-bar-icon"></i></label>
-        <input id="input-search" class="search-bar-input" type="search" placeholder="막국수? 꼬막무침? 갈비탕?" />
-      </div>
-    </header>
-    <main>
-      <nav aria-label="site menu">
-        <ul class="sitemenu-list">
-          <li class="square-50 bg-baemin1">
-            <a href="./category.html"
-              ><h2>배민1</h2>
-              <p><span>한 번에 한 집만</span> <span>빠르게 배달해요!</span></p></a
-            >
-          </li>
-          <li class="square-50 bg-delivery">
-            <a href="./category.html"
-              ><h2>배달</h2>
-              <span>세상은 넓고</span><span>맛집은 많다</span></a
-            >
-          </li>
-          <li class="w-100 bg-package">
-            <a href="./category.html"
-              ><h2>포장</h2>
-              <span>가까운 가게는 직접 가지러 가지요</span></a
-            >
-          </li>
-          <li class="w-50 bg-bmart">
-            <a href="./category.html"
-              ><h2>B마트</h2>
-              <span>지금 주문하면</span><span class="accent">21분 후 도착!</span></a
-            >
-          </li>
-          <li class="w-50 bg-mealkit">
-            <a href="./category.html"
-              ><h2>밀키트/간편식</h2>
-              <span>뚝딱 만드는</span><span>근사한 한끼</span></a
-            >
-          </li>
-          <li class="w-100 bg-baeminstore">
-            <a href="./category.html"
-              ><h2>배민스토어</h2>
-              <span>기간 한정 슈퍼 세일! 누구나 <span class="accent">7천원</span> 할인!</span></a
-            >
-          </li>
-          <li class="w-50 w-50-2 bg-shoppinglive">
-            <a href="./category.html"
-              ><h2>쇼핑라이브</h2>
-              <span>베베숲 물티슈</span></a
-            >
-          </li>
-          <li class="square-25 bg-gift">
-            <a href="./category.html"> <h2>선물하기</h2></a>
-          </li>
-          <li class="square-25 bg-delicious">
-            <a href="./category.html"> <h2>전국별미</h2></a>
-          </li>
-        </ul>
-      </nav>
-      <section class="carousel promotion">
-        <h2 class="carousel-title a11y-hidden">배달 프로모션</h2>
-        <ul class="carousel-slider"></ul>
-        <div class="ellipse offscreen"><span class="offscreen-text">1 / 10 모두보기</span></div>
-      </section>
-      <section class="fastdelivery">
-        <h2>우리 동네 빠른 배달</h2>
-        <ul class="container-row">
-          <li>
-            <a href="#">
-              <img class="storeinfo" src="/asset/webp/store/main-resize/덩기덕쿵떡국.webp" alt="" />
-              <p>덩기덕쿵떡국 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
-              <p>배달팁 2,000원</p>
-              <p class="ellipse deliverytime"><img class="baeminlogo" src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp" alt="배민1" />13~23분</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="storeinfo" src="/asset/webp/store/main-resize/떡볶이.webp" alt="" />
-              <p>제로떡볶이 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
-              <p>배달팁 2,000원</p>
-              <p class="ellipse deliverytime"><img class="baeminlogo" src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp" alt="배민1" />13~23분</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="storeinfo" src="/asset/webp/store/main-resize/뱃살삼겹살.webp" alt="" />
-              <p>뱃살삼겹살 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
-              <p>배달팁 2,000원</p>
-              <p class="ellipse deliverytime"><img class="baeminlogo" src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp" alt="배민1" />13~23분</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="storeinfo" src="/asset/webp/store/main-resize/비둘기치킨.webp" alt="" />
-              <p>비둘기치킨 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
-              <p>배달팁 2,000원</p>
-              <p class="ellipse deliverytime"><img class="baeminlogo" src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp" alt="배민1" />13~23분</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="storeinfo" src="/asset/webp/store/main-resize/알라딘피자.webp" alt="" />
-              <p>알라딘피자 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
-              <p>배달팁 2,000원</p>
-              <p class="ellipse deliverytime"><img class="baeminlogo" src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp" alt="배민1" />13~23분</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="storeinfo" src="/asset/webp/store/main-resize/어머니도좋아하는짜장면.webp" alt="" />
-              <p>어머니짜장면 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
-              <p>배달팁 2,000원</p>
-              <p class="ellipse deliverytime"><img class="baeminlogo" src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp" alt="배민1" />13~23분</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="storeinfo" src="/asset/webp/store/main-resize/오늘밤힘내장어.webp" alt="" />
-              <p>오늘밤힘내장어 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
-              <p>배달팁 2,000원</p>
-              <p class="ellipse deliverytime"><img class="baeminlogo" src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp" alt="배민1" />13~23분</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="storeinfo" src="/asset/webp/store/main-resize/울라비빔밥.webp" alt="" />
-              <p>울라비빔밥 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
-              <p>배달팁 2,000원</p>
-              <p class="ellipse deliverytime"><img class="baeminlogo" src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp" alt="배민1" />13~23분</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="storeinfo" src="/asset/webp/store/main-resize/전주콩나물국밥.webp" alt="" />
-              <p>전주콩나물국밥 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
-              <p>배달팁 2,000원</p>
-              <p class="ellipse deliverytime"><img class="baeminlogo" src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp" alt="배민1" />13~23분</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="storeinfo" src="/asset/webp/store/main-resize/제육대가.webp" alt="" />
-              <p>제육대가 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
-              <p>배달팁 2,000원</p>
-              <p class="ellipse deliverytime"><img class="baeminlogo" src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp" alt="배민1" />13~23분</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="storeinfo" src="/asset/webp/store/main-resize/평양냉면.webp" alt="" />
-              <p>평양냉면 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
-              <p>배달팁 2,000원</p>
-              <p class="ellipse deliverytime"><img class="baeminlogo" src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp" alt="배민1" />13~23분</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="storeinfo" src="/asset/webp/store/main-resize/홀라닭백숙.webp" alt="" />
-              <p>홀라닭백숙 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
-              <p>배달팁 2,000원</p>
-              <p class="ellipse deliverytime"><img class="baeminlogo" src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp" alt="배민1" />13~23분</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="storeinfo" src="/asset/webp/store/main-resize/홍콩라면.webp" alt="" />
-              <p>홍콩라면 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
-              <p>배달팁 2,000원</p>
-              <p class="ellipse deliverytime"><img class="baeminlogo" src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp" alt="배민1" />13~23분</p>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="gift">
-        <h2>마음을 선물해보세요</h2>
-        <ul class="container-row">
-          <li>
-            <a href="#" aria-label="생일축하 철가방"><img src="./asset/webp/gift1.webp" alt="" /></a>
-            <p>생일축하 철가방</p>
-          </li>
-          <li>
-            <a href="#" aria-label="생일축하해 만화경"><img src="./asset/webp/gift2.webp" alt="" /></a>
-            <p>생일축하해 만화경</p>
-          </li>
-          <li>
-            <a href="#" aria-label="생일축하"><img src="./asset/webp/gift3.webp" alt="" /></a>
-            <p>생일축하</p>
-          </li>
-          <li>
-            <a href="#" aria-label="생일 축하해"><img src="./asset/webp/gift4.webp" alt="" /></a>
-            <p>생일 축하해</p>
-          </li>
-          <li class="gift-more-info">
-            <a href="#" class="gift-more-link" aria-label="더 많은 선물을 골라보세요"><i class="fa-solid fa-chevron-right"></i></a>
-            <p>더보기</p>
-          </li>
-        </ul>
-      </section>
-      <section class="baemindo">
-        <h2>이런 일도 한답니다</h2>
-        <div class="baemindo-container">
-          <article class="volunteer">
-            <h3 class="a11y-hidden">배민-자원봉사</h3>
-            <div class="baemindo-img-wrapper">
-              <a href="#" aria-label="배민방학도시락"><img src="./asset/webp/baemindo1.webp" alt="" /></a>올 여름에도, 배민방학도시락으로 행복했어요!
-            </div>
-          </article>
-          <article class="multiuse">
-            <h3 class="a11y-hidden">다회용기 배달</h3>
-            <div class="baemindo-img-wrapper">
-              <a href="#" aria-label="다회용기 배달"><img src="./asset/webp/baemindo2.webp" alt="" /></a>배달의민족이 다회용기 배달을 시작합니다!
-            </div>
-          </article>
-          <article class="managereport">
-            <h3 class="a11y-hidden">우아한 형제들 가치경영리포트</h3>
-            <div class="baemindo-img-wrapper">
-              <a href="#" aria-label="가치경영리포트 2022"><img src="./asset/webp/baemindo3.webp" alt="" /></a>우아한형제들 가치경영리포트 2022를 소개해요
-            </div>
-          </article>
-          <article class="discount">
-            <h3 class="a11y-hidden">할인과 쿠폰</h3>
-            <div class="baemindo-img-wrapper">
-              <a href="#" aria-label="할인과 쿠폰"><img src="./asset/webp/baemindo4.webp" alt="" /></a>할인과 쿠폰에 대한 여러분의 생각은?
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
-    <section class="carousel advertisement">
-      <h2 class="carousel-title a11y-hidden">광고</h2>
-      <ul class="carousel-slider"></ul>
-      <div class="ellipse offscreen"><span class="offscreen-text">1 / 2</span></div>
-    </section>
-    <footer class="main-footer">
-      <ul class="guide-list">
-        <li><a href="#">사업자정보확인</a> <span aria-hidden="true" class="divider">|</span></li>
-        <li><a href="#">이용약관</a> <span aria-hidden="true" class="divider">|</span></li>
-        <li><a href="#">전자금융거래이용약관</a> <span aria-hidden="true" class="divider">|</span></li>
-        <li><a href="#">개인정보처리방침</a></li>
-      </ul>
+			<div class="search-bar">
+				<label for="input-search"><i class="fa-solid fa-magnifying-glass search-bar-icon"></i></label>
+				<input
+					id="input-search"
+					class="search-bar-input"
+					type="search"
+					placeholder="막국수? 꼬막무침? 갈비탕?"
+				/>
+			</div>
+		</header>
+		<main>
+			<nav aria-label="site menu">
+				<ul class="sitemenu-list">
+					<li class="square-50 bg-baemin1">
+						<a href="./category.html"
+							><h2>배민1</h2>
+							<p><span>한 번에 한 집만</span> <span>빠르게 배달해요!</span></p></a
+						>
+					</li>
+					<li class="square-50 bg-delivery">
+						<a href="./category.html"
+							><h2>배달</h2>
+							<span>세상은 넓고</span><span>맛집은 많다</span></a
+						>
+					</li>
+					<li class="w-100 bg-package">
+						<a href="./category.html"
+							><h2>포장</h2>
+							<span>가까운 가게는 직접 가지러 가지요</span></a
+						>
+					</li>
+					<li class="w-50 bg-bmart">
+						<a href="./category.html"
+							><h2>B마트</h2>
+							<span>지금 주문하면</span><span class="accent">21분 후 도착!</span></a
+						>
+					</li>
+					<li class="w-50 bg-mealkit">
+						<a href="./category.html"
+							><h2>밀키트/간편식</h2>
+							<span>뚝딱 만드는</span><span>근사한 한끼</span></a
+						>
+					</li>
+					<li class="w-100 bg-baeminstore">
+						<a href="./category.html"
+							><h2>배민스토어</h2>
+							<span>기간 한정 슈퍼 세일! 누구나 <span class="accent">7천원</span> 할인!</span></a
+						>
+					</li>
+					<li class="w-50 w-50-2 bg-shoppinglive">
+						<a href="./category.html"
+							><h2>쇼핑라이브</h2>
+							<span>베베숲 물티슈</span></a
+						>
+					</li>
+					<li class="square-25 bg-gift">
+						<a href="./category.html"> <h2>선물하기</h2></a>
+					</li>
+					<li class="square-25 bg-delicious">
+						<a href="./category.html"> <h2>전국별미</h2></a>
+					</li>
+				</ul>
+			</nav>
+			<section class="carousel promotion">
+				<h2 class="carousel-title a11y-hidden">배달 프로모션</h2>
+				<ul class="carousel-slider"></ul>
+				<div class="ellipse offscreen"><span class="offscreen-text">1 / 10 모두보기</span></div>
+			</section>
+			<section class="fastdelivery">
+				<h2>우리 동네 빠른 배달</h2>
+				<ul class="container-row">
+					<li>
+						<a href="#">
+							<img class="storeinfo" src="/asset/webp/store/main-resize/덩기덕쿵떡국.webp" alt="" />
+							<p>덩기덕쿵떡국 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
+							<p>배달팁 2,000원</p>
+							<p class="ellipse deliverytime">
+								<img
+									class="baeminlogo"
+									src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp"
+									alt="배민1"
+								/>13~23분
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img class="storeinfo" src="/asset/webp/store/main-resize/떡볶이.webp" alt="" />
+							<p>제로떡볶이 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
+							<p>배달팁 2,000원</p>
+							<p class="ellipse deliverytime">
+								<img
+									class="baeminlogo"
+									src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp"
+									alt="배민1"
+								/>13~23분
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img class="storeinfo" src="/asset/webp/store/main-resize/뱃살삼겹살.webp" alt="" />
+							<p>뱃살삼겹살 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
+							<p>배달팁 2,000원</p>
+							<p class="ellipse deliverytime">
+								<img
+									class="baeminlogo"
+									src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp"
+									alt="배민1"
+								/>13~23분
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img class="storeinfo" src="/asset/webp/store/main-resize/비둘기치킨.webp" alt="" />
+							<p>비둘기치킨 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
+							<p>배달팁 2,000원</p>
+							<p class="ellipse deliverytime">
+								<img
+									class="baeminlogo"
+									src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp"
+									alt="배민1"
+								/>13~23분
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img class="storeinfo" src="/asset/webp/store/main-resize/알라딘피자.webp" alt="" />
+							<p>알라딘피자 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
+							<p>배달팁 2,000원</p>
+							<p class="ellipse deliverytime">
+								<img
+									class="baeminlogo"
+									src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp"
+									alt="배민1"
+								/>13~23분
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img
+								class="storeinfo"
+								src="/asset/webp/store/main-resize/어머니도좋아하는짜장면.webp"
+								alt=""
+							/>
+							<p>어머니짜장면 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
+							<p>배달팁 2,000원</p>
+							<p class="ellipse deliverytime">
+								<img
+									class="baeminlogo"
+									src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp"
+									alt="배민1"
+								/>13~23분
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img class="storeinfo" src="/asset/webp/store/main-resize/오늘밤힘내장어.webp" alt="" />
+							<p>오늘밤힘내장어 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
+							<p>배달팁 2,000원</p>
+							<p class="ellipse deliverytime">
+								<img
+									class="baeminlogo"
+									src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp"
+									alt="배민1"
+								/>13~23분
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img class="storeinfo" src="/asset/webp/store/main-resize/울라비빔밥.webp" alt="" />
+							<p>울라비빔밥 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
+							<p>배달팁 2,000원</p>
+							<p class="ellipse deliverytime">
+								<img
+									class="baeminlogo"
+									src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp"
+									alt="배민1"
+								/>13~23분
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img class="storeinfo" src="/asset/webp/store/main-resize/전주콩나물국밥.webp" alt="" />
+							<p>전주콩나물국밥 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
+							<p>배달팁 2,000원</p>
+							<p class="ellipse deliverytime">
+								<img
+									class="baeminlogo"
+									src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp"
+									alt="배민1"
+								/>13~23분
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img class="storeinfo" src="/asset/webp/store/main-resize/제육대가.webp" alt="" />
+							<p>제육대가 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
+							<p>배달팁 2,000원</p>
+							<p class="ellipse deliverytime">
+								<img
+									class="baeminlogo"
+									src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp"
+									alt="배민1"
+								/>13~23분
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img class="storeinfo" src="/asset/webp/store/main-resize/평양냉면.webp" alt="" />
+							<p>평양냉면 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
+							<p>배달팁 2,000원</p>
+							<p class="ellipse deliverytime">
+								<img
+									class="baeminlogo"
+									src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp"
+									alt="배민1"
+								/>13~23분
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img class="storeinfo" src="/asset/webp/store/main-resize/홀라닭백숙.webp" alt="" />
+							<p>홀라닭백숙 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
+							<p>배달팁 2,000원</p>
+							<p class="ellipse deliverytime">
+								<img
+									class="baeminlogo"
+									src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp"
+									alt="배민1"
+								/>13~23분
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img class="storeinfo" src="/asset/webp/store/main-resize/홍콩라면.webp" alt="" />
+							<p>홍콩라면 <i class="fa-sharp fa-solid fa-star star-icon"></i> 4.9</p>
+							<p>배달팁 2,000원</p>
+							<p class="ellipse deliverytime">
+								<img
+									class="baeminlogo"
+									src="./asset/webp/배민1_로고_모니터(RGB)_1민트.webp"
+									alt="배민1"
+								/>13~23분
+							</p>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section class="gift">
+				<h2>마음을 선물해보세요</h2>
+				<ul class="container-row">
+					<li>
+						<a href="#" aria-label="생일축하 철가방"><img src="./asset/webp/gift1.webp" alt="" /></a>
+						<p>생일축하 철가방</p>
+					</li>
+					<li>
+						<a href="#" aria-label="생일축하해 만화경"><img src="./asset/webp/gift2.webp" alt="" /></a>
+						<p>생일축하해 만화경</p>
+					</li>
+					<li>
+						<a href="#" aria-label="생일축하"><img src="./asset/webp/gift3.webp" alt="" /></a>
+						<p>생일축하</p>
+					</li>
+					<li>
+						<a href="#" aria-label="생일 축하해"><img src="./asset/webp/gift4.webp" alt="" /></a>
+						<p>생일 축하해</p>
+					</li>
+					<li class="gift-more-info">
+						<a href="#" class="gift-more-link" aria-label="더 많은 선물을 골라보세요"
+							><i class="fa-solid fa-chevron-right"></i
+						></a>
+						<p>더보기</p>
+					</li>
+				</ul>
+			</section>
+			<section class="baemindo">
+				<h2>이런 일도 한답니다</h2>
+				<div class="baemindo-container">
+					<article class="volunteer">
+						<h3 class="a11y-hidden">배민-자원봉사</h3>
+						<div class="baemindo-img-wrapper">
+							<a href="#" aria-label="배민방학도시락"><img src="./asset/webp/baemindo1.webp" alt="" /></a
+							>올 여름에도, 배민방학도시락으로 행복했어요!
+						</div>
+					</article>
+					<article class="multiuse">
+						<h3 class="a11y-hidden">다회용기 배달</h3>
+						<div class="baemindo-img-wrapper">
+							<a href="#" aria-label="다회용기 배달"><img src="./asset/webp/baemindo2.webp" alt="" /></a
+							>배달의민족이 다회용기 배달을 시작합니다!
+						</div>
+					</article>
+					<article class="managereport">
+						<h3 class="a11y-hidden">우아한 형제들 가치경영리포트</h3>
+						<div class="baemindo-img-wrapper">
+							<a href="#" aria-label="가치경영리포트 2022"
+								><img src="./asset/webp/baemindo3.webp" alt="" /></a
+							>우아한형제들 가치경영리포트 2022를 소개해요
+						</div>
+					</article>
+					<article class="discount">
+						<h3 class="a11y-hidden">할인과 쿠폰</h3>
+						<div class="baemindo-img-wrapper">
+							<a href="#" aria-label="할인과 쿠폰"><img src="./asset/webp/baemindo4.webp" alt="" /></a
+							>할인과 쿠폰에 대한 여러분의 생각은?
+						</div>
+					</article>
+				</div>
+			</section>
+		</main>
+		<section class="carousel advertisement">
+			<h2 class="carousel-title a11y-hidden">광고</h2>
+			<ul class="carousel-slider"></ul>
+			<div class="ellipse offscreen"><span class="offscreen-text">1 / 2</span></div>
+		</section>
+		<footer class="main-footer">
+			<ul class="guide-list">
+				<li><a href="#">사업자정보확인</a> <span aria-hidden="true" class="divider">|</span></li>
+				<li><a href="#">이용약관</a> <span aria-hidden="true" class="divider">|</span></li>
+				<li><a href="#">전자금융거래이용약관</a> <span aria-hidden="true" class="divider">|</span></li>
+				<li><a href="#">개인정보처리방침</a></li>
+			</ul>
 
-      <div class="detailinfo">
-        <h2>
-          (팀)우아할형제들 <button type="button" class="more-info-btn" aria-label="more information"><i class="fa-solid fa-chevron-down"></i></button>
-        </h2>
-        <div class="company-more-info">
-          <div>
-            <span>장남: 송승학, 차남: 황수현, 막내: 남궁종민</span>
-          </div>
-          <div>
-            <span>통신흉내업 서울 제로베이스 미왕빌딩 10층 어느 곳</span>
-            <span aria-hidden="true" class="divider">|</span>
-            <span>로컬서비스제공자 (팀)우아할형제들</span>
-          </div>
-          <div>
-            <span>CS@woowahal.com</span>
-            <span aria-hidden="true" class="divider">|</span>
-            <span>서울 관악구, 서울 영등포구, 용인 처인구 </span>
-          </div>
-        </div>
-      </div>
-      <small> (팀)우아할형제들은 프론트엔드개발자를 목표로 하며 아직 주니어도 못된 놈들입니다. 따라서 (팀)우아할 형제들은 구린 결과물에 대하여 어떠한 책임도 지지 않습니다. </small>
-    </footer>
-  </body>
+			<div class="detailinfo">
+				<h2>
+					(팀)우아할형제들
+					<button type="button" class="more-info-btn" aria-label="more information">
+						<i class="fa-solid fa-chevron-down"></i>
+					</button>
+				</h2>
+				<div class="company-more-info">
+					<div>
+						<span>장남: 송승학, 차남: 황수현, 막내: 남궁종민</span>
+					</div>
+					<div>
+						<span>통신흉내업 서울 제로베이스 미왕빌딩 10층 어느 곳</span>
+						<span aria-hidden="true" class="divider">|</span>
+						<span>로컬서비스제공자 (팀)우아할형제들</span>
+					</div>
+					<div>
+						<span>CS@woowahal.com</span>
+						<span aria-hidden="true" class="divider">|</span>
+						<span>서울 관악구, 서울 영등포구, 용인 처인구 </span>
+					</div>
+				</div>
+			</div>
+			<small>
+				(팀)우아할형제들은 프론트엔드개발자를 목표로 하며 아직 주니어도 못된 놈들입니다. 따라서 (팀)우아할
+				형제들은 구린 결과물에 대하여 어떠한 책임도 지지 않습니다.
+			</small>
+		</footer>
+	</body>
 </html>
